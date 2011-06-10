@@ -47,7 +47,7 @@
 	       } 
 	       		else {
 	       		$out .= "<a href='$permalink'>	
-	    						<img src='$root/images/businesslite.jpg' alt='iFeaturePro' />
+	    						<img src='$root/images/businesslite.jpg' alt='BusinessLite' />
 	    						<span>
 	    							<strong>$title</strong><br />
 	    							$text
@@ -76,9 +76,7 @@
 	    	$csNavigation = 'false';
 	    else $csNavigation = 'true';
 	    ?>
-	    <style type="text/css" media="screen">
-		#coin-slider-coin-slider { width: <?php echo $csWidth ?>px; margin: auto;}
-</style>
+	
 <?php	    
 	     wp_reset_query();
     $out .= <<<OUT

@@ -10,7 +10,6 @@ $options = get_option('business') ;
 	
 	<?php 
 		$hideslider = $options['bu_hide_slider'];
-		$sliderplacement = $options['bu_slider_placement'];
 		$share = $options['bu_hide_share'];
 		$tags = $options['bu_hide_tags'];
 		$excerpts = $options['bu_show_excerpts']

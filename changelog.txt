@@ -9,5 +9,5 @@ Business lite Changelog\
 \
 ****************************\
 \
-Beta Version 1.0 (6-7-2011)\
+Version 1.0 (6-10-2011)\
 -Initial release}

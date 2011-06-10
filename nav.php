@@ -8,7 +8,6 @@
 	
 */
 
-	$homeimage		= get_option('ne_menuicon') ? '': 'default';
 
 ?>
 

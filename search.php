@@ -3,7 +3,7 @@
 /*
 	Search
 	
-	Establishes the Business Pro search functionality. 
+	Establishes the Business lite search functionality. 
 	
 	Copyright (C) 2011 CyberChimps
 */

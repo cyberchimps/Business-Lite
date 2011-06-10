@@ -1,11 +1,11 @@
 /*   
-Theme Name: Business Pro Beta
-Theme URI: http://cyberchimps.com/businesspro
-Description: iFeature Pro: A Premium WordPress Theme designed by CyberChimps.com featuring customizable theme options, an aesthetically pleasing design with five color choices, a feature slider, callout section, dynamic header for custom logo, social icons, and contact section, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices.
+Theme Name: Business lite
+Theme URI: http://cyberchimps.com/businesslite
+Description: Business lite: A Free WordPress Theme designed by CyberChimps.com featuring customizable theme options, a clean and professional design, a feature slider, dynamic header for custom logo, social icons, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices.
 Author: CyberChimps
 Author URI: http://cyberchimps.com
-Version: 1.0 beta
-Tags: white, light, silver, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
+Version: 1.0 
+Tags: white, light, black, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -179,7 +179,7 @@ hr {
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	margin-bottom: 25px;
-	padding: 0px 5px 5px 5px;
+	padding: 5px 5px px 5px;
 }
 
 .post_container ul {

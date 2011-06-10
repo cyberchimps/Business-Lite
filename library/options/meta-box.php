@@ -563,13 +563,6 @@ $meta_boxes[] = array(
 			'type' => 'text',
 			'std' => ''
 		),
-			array(
-			'name' => 'Show Title Bar',
-			'desc' => 'Click to enable the title bar on this slide:',
-			'id' => $prefix . 'hidetitle',
-			'type' => 'checkbox',
-			'std' => ''
-		),
 
 	)
 );

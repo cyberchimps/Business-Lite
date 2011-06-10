@@ -20,10 +20,6 @@ add_theme_support('automatic-feed-links');
 	
 add_theme_support( 'post-thumbnails' ); 
 set_post_thumbnail_size( 100, 100, true );
-
-
-// This theme allows users to set a custom background
-	add_custom_background();
 	
 // This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();

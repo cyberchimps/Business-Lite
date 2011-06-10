@@ -368,8 +368,8 @@ function theme_options_do_page() {
       
 <h2><?php echo $themename; ?> Settings</h2><br />
 
-<p>Want more features? Click below to upgrade to Business Pro, which includes additional sections, color options, fonts, custom Business slides, and much more.</p>
-<a href="http://cyberchimps.com/ifeaturepro"><img src="<?php echo get_template_directory_uri(); ?>/images/getifeaturepro.png?>" alt="Get iFeature Pro"></a> 
+<p>Want more features? Click below to upgrade to Business Pro, which includes the Business Pro homepage template, additional sections, fonts, custom Business slides, and much more.</p>
+<a href="http://cyberchimps.com/businesspro"><img src="<?php echo get_template_directory_uri(); ?>/images/getbizpro.png?>" alt="Get Business Pro"></a> 
 <p>Want to stick with Business lite, but want to support the developers? Please consider making a donation.</p>
 <a href="http://cyberchimps.com/donate"><img src="<?php echo get_template_directory_uri(); ?>/images/paypal.gif?>" alt="Donate"></a> 
 
@@ -442,40 +442,6 @@ case "close-tab":
  
 <?php break; 
  
-case 'color2':  
-?>  
-  
-<tr>
-
-    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
-    <td width="85%">
-    
-    <?php
-$options = get_option('business');
-
-if (isset($options['bu_header_color']) == "")
-			$picker = '111111';
-			
-		else
-			$picker = $options['bu_header_color']; 
-?>
-
-<input type="text" class="color{required:false}" id="business[bu_header_color]" name="business[bu_header_color]"  value="<?php echo $picker ;?>" style="width: 300px;">   
-
-<br /><br />
-    
-    </td>
-
-  </tr>
- 
-<tr>
-
-</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
-
-
-
-<?php
-break;
 
  
 case 'textarea':
@@ -492,32 +458,6 @@ case 'textarea':
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr>
 <?php break; 
 
-case 'import':
-?>
- 
-<tr>
-
-    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong></label> <br /><small><?php echo $value['desc']; ?></small> </td> 
-    <td width="85%"><textarea id="<?php echo 'business['.$value['id'].']'; ?>" name="<?php echo 'business['.$value['id'].']'; ?>" style="width:600px; height:300px;" type="<?php echo $value['type']; ?>" cols="" rows=""></textarea></td>  
- 
-  
- </tr>
- <tr>
-</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr>
-<?php break; 
-
-case 'export':
-?>
- 
-<tr>
-
-    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong></label> <br /><small><?php echo $value['desc']; ?></small> </td> 
-    <td width="85%"><textarea id="<?php echo 'business['.$value['id'].']'; ?>" name="<?php echo 'business['.$value['id'].']'; ?>" style="width:600px; height:300px;" type="<?php echo $value['type']; ?>" cols="" rows=""><?php echo (serialize($options));?></textarea></td>  
-
- </tr>
- <tr>
-</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr>
-<?php break; 
 
 case 'text':  
 ?>  
@@ -707,39 +647,6 @@ case 'rss':
 break;
 
 
-case 'select1':
-?>
-<tr>
-<td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
-<td width="85%"><select style="width:300px;" name="<?php echo 'business['.$value['id'].']'; ?>">
-
-<?php
-								$selected = $options[$value['id']];
-								$p = '';
-								$r = '';
-
-								foreach ( $select_menu_color as $option ) {
-									$label = $option['label'];
-									if ( $selected == $option['value'] ) // Make default first in list
-										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-									else
-										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";      
-								}
-								echo $p . $r;   
-							?>    
-
-</select></td>
-</tr> 
- 
-<tr>
-
-</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
-
-
-<?php
-break;
-
-
 case 'select2':
 ?>
 <tr>
@@ -764,102 +671,6 @@ case 'select2':
 </select>
 
 </td>
-</tr> 
- 
-<tr>
-
-</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
-
-
-<?php
-break;
-
-case 'select3':
-?>
-<tr>
-<td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
-<td width="85%"><select style="width:300px;" name="<?php echo 'business['.$value['id'].']'; ?>">
-
-<?php
-								$selected = $options[$value['id']];
-								$p = '';
-								$r = '';
-
-								foreach ( $select_slider_effect as $option ) {
-									$label = $option['label'];
-									if ( $selected == $option['value'] ) // Make default first in list
-										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-									else
-										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";      
-								}
-								echo $p . $r;   
-							?>    
-
-</select></td>
-</tr> 
- 
-<tr>
-
-</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
-
-
-<?php
-break;
-
-case 'select4':
-?>
-<tr>
-<td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
-<td width="85%"><select style="width:300px;" name="<?php echo 'business['.$value['id'].']'; ?>">
-
-<?php
-								$selected = $options[$value['id']];
-								$p = '';
-								$r = '';
-
-								foreach ( $select_slider_type as $option ) {
-									$label = $option['label'];
-									if ( $selected == $option['value'] ) // Make default first in list
-										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-									else
-										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";      
-								}
-								echo $p . $r;   
-							?>    
-
-</select></td>
-</tr> 
- 
-<tr>
-
-</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
-
-
-<?php
-break;
-
-case 'select5':
-?>
-<tr>
-<td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
-<td width="85%"><select style="width:300px;" name="<?php echo 'business['.$value['id'].']'; ?>">
-
-<?php
-								$selected = $options[$value['id']];
-								$p = '';
-								$r = '';
-
-								foreach ( $select_slider_placement as $option ) {
-									$label = $option['label'];
-									if ( $selected == $option['value'] ) // Make default first in list
-										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-									else
-										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";      
-								}
-								echo $p . $r;   
-							?>    
-
-</select></td>
 </tr> 
  
 <tr>
@@ -909,7 +720,7 @@ case "checkbox":
 </form> 
 
 <p>Need help? Follow the links below to visit our support forum and documentation pages:</p>
-<a href="http://cyberchimps.com/businesspro/docs"><img src="<?php echo get_template_directory_uri();?>/images/docs.png?>" alt="Docs"></a> <a href="http://cyberchimps.com/forum"><img src="<?php echo get_template_directory_uri(); ?>/images/forum.png?>" alt="Forum"></a> 
+<a href="http://cyberchimps.com/businesslite/docs"><img src="<?php echo get_template_directory_uri();?>/images/docs.png?>" alt="Docs"></a> <a href="http://cyberchimps.com/forum"><img src="<?php echo get_template_directory_uri(); ?>/images/forum.png?>" alt="Forum"></a> 
 
 
 
@@ -1113,20 +924,5 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow ==	"themes.php" )
 if ( isset( $_REQUEST['reset'] ))
   wp_redirect( 'themes.php?page=theme_options' );
   
-/* Update theme options after saving the import code */
-  
-if ( isset( $_REQUEST['updated'] ))
-
-  $options = get_option('business') ; 
-  $checkimport = $options['bu_import_code'];
-		
-		if ($checkimport != '' ) {
-			
-			$options = get_option('business') ;  
-			$import = $options['bu_import_code'];
-			
-			$options_array = (unserialize($import));
-  			update_option( 'business', $options_array );
-		}   		
 
 ?>
