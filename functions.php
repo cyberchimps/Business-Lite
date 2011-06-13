@@ -81,11 +81,13 @@ function business_add_scripts() {
  
     // Register the Superfish javascript file
     wp_register_script( 'superfish', $scriptdir.'sf.js', false, '1.4.8');
+    wp_register_script( 'sf-menu', $scriptdir.'sf-menu.js');
     // Now the superfish CSS
    
     //load the scripts and style.
 	wp_enqueue_style('superfish-css');
     wp_enqueue_script('superfish');
+    wp_enqueue_script('sf-menu');
     } // end the !is_admin function
 } //end add_our_scripts function
  

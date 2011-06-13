@@ -9,5 +9,9 @@ Business lite Changelog\
 \
 ****************************\
 \
+Version 1.0.1 (6-13-2011)\
+-Initial release.\
+-jQuery noconflict patch to fix third-party plugin compatibility issues.\
+\
 Version 1.0 (6-10-2011)\
--Initial release}
+-Initial release.\
