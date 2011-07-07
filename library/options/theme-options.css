@@ -10,6 +10,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 input.button-primary {font-size:15px !important;}
 
+/* 7/6/11 Corrects WordPress 3.2 styling bug related to Dashboard footer */
+#footer {position: relative;}
+
 /* Layout helpers
 
 ---------------------------------*/

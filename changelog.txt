@@ -2,6 +2,12 @@ Business lite Changelog
 
 ****************************
 
+Version 1.0.3 (7-6-11)
+-Adjusted theme option CSS to eliminate WordPress 3.2 footer styling conflict.
+-Security fix in comments.php removing $_SERVER variable statement.
+-Cleaned up options.php, removed unnecessary functions.
+-Now enqueueing WordPress jQuery library instead of Google's for offline functionality. 
+
 Version 1.0.2 (6-16-2011)
 -Fixed whitespace issue at bottom of options.php causing "cannot modify header information" error. 
 
