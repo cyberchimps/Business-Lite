@@ -10,6 +10,8 @@
 	$hidefacebook   = $options['bu_hide_facebook'];
 	$twitter		= $options['bu_twitter'] ;
 	$hidetwitter   = $options['bu_hide_twitter'];
+	$gplus			= $options['bu_gplus'] ;
+	$hidegplus	  = $options['bu_hide_gplus'];
 	$linkedin		= $options['bu_linkedin'] ;
 	$hidelinkedin   = $options['bu_hide_linkedin'];
 	$youtube		= $options['bu_youtube'];
@@ -36,6 +38,12 @@
 	<?php endif;?>
 	<?php if ($hidetwitter != '1' AND $twitter == '' ):?>
 		<a href="http://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/images/social/twitter.png" alt="Twitter" /></a>
+	<?php endif;?>
+	<?php if ($hidegplus != '1' AND $gplus != '' ):?>
+		<a href="<?php echo $gplus ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social/gplus.png" alt="Google Plus" /></a>
+	<?php endif;?>
+	<?php if ($hidegplus != '1' AND $gplus == '' ):?>
+		<a href="http://plus.google.com"><img src="<?php echo get_template_directory_uri(); ?>/images/social/gplus.png" alt="Twitter" /></a>
 	<?php endif;?>
 	<?php if ($hidelinkedin != '1' AND $linkedin != '' ):?>
 		<a href="<?php echo $linkedin ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social/linkedin.png" alt="LinkedIn" /></a>

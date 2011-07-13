@@ -151,6 +151,12 @@ array( "name" => "Twitter URL",
     "type" => "twitter",  
     "std" => "http://twitter.com"),
     
+array( "name" => "Google + URL",  
+    "desc" => "Enter your Google + URL for the Google + social icon.",  
+    "id" => $shortname."_gplus",  
+    "type" => "gplus",  
+    "std" => "http://plus.google.com"),    
+    
 array( "name" => "LinkedIn URL",  
     "desc" => "Enter your LinkedIn URL for the LinkedIn social icon.",  
     "id" => $shortname."_linkedin",  
@@ -527,6 +533,31 @@ case 'twitter':
 <?php
 break;
 
+case 'gplus':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%"><input style="width:300px;" name="<?php echo 'business['.$value['id'].']'; ?>" id="<?php echo 'bu['.$value['id'].']'; ?>" type="<?php echo $value['type']; ?>" value="<?php if (  $options[$value['id']]  != "") { echo esc_attr($options[$value['id']]) ; } else { echo esc_attr($value['std']) ; } ?>" />
+    
+    <br /><br />
+    <input type="checkbox" id="business[bu_hide_gplus]" name="business[bu_hide_gplus]" value="1" <?php checked( '1', $options['bu_hide_gplus'] ); ?>> - Check this box to hide the Google + icon. 
+    
+    </td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+
+<?php
+break;
+
+
 case 'linkedin':  
 ?>  
   
@@ -756,6 +787,10 @@ function theme_options_validate( $input ) {
 	if ( ! isset( $input['bu_hide_twitter'] ) )
 		$input['bu_hide_twitter'] = null;
 	$input['bu_hide_twitter'] = ( $input['bu_hide_twitter'] == 1 ? 1 : 0 ); 
+	
+	if ( ! isset( $input['bu_hide_gplus'] ) )
+		$input['bu_hide_gplus'] = null;
+	$input['bu_hide_gplus'] = ( $input['bu_hide_gplus'] == 1 ? 1 : 0 ); 
 	
 	if ( ! isset( $input['bu_hide_linkedin'] ) )
 		$input['bu_hide_linkedin'] = null;
