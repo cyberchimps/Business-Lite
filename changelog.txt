@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 1.0.5 (7-17-11)
+-Fixed bug causing long site title text to wrap prematurely.
+
 Version 1.0.4 (7-13-11)
 -Added Google + social icon.
 
