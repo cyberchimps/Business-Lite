@@ -6,6 +6,8 @@ Version 2.0 (8-9-11)
 -Updated 404 page, added custom image.
 -Adjusted styling on archive pages.
 -Updated functions.php, added new scripts and cleaned up some existing functions.
+-Updated header.php - fixed title conditionals, added support for new logo/favicon image uploaders, new page-level META options.
+-
 
 Version 1.0.5 (7-17-11)
 -Fixed bug causing long site title text to wrap prematurely.

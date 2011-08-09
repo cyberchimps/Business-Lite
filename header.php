@@ -2,13 +2,45 @@
 
 /*
 	Header
-	
-	Creates the Business lite header. 
-	
+	Authors: Tyler Cunningham, Trent Lapinski
+	Creates the theme header. 
 	Copyright (C) 2011 CyberChimps
+	Version 2.0
 */
-$options = get_option('business') ; 
+
+	$options = get_option('business') ; 
+	$logo = $options['file'] ;
+	$favicon = $options['file2'];
+	$tdurl = get_template_directory_uri();
+	
+	if (!is_page()){
+		$title = '';
+	}
+	
+	else {
+		$title = get_post_meta($post->ID, 'seo_title' , true);
+	}
+	
+	if (!is_page()){
+		$pagedescription = '';
+	}
+	
+	else {
+		$pagedescription = get_post_meta($post->ID, 'seo_description' , true);
+	}
+	if (!is_page()){
+		$keywords = '';
+	}
+	else {
+		$keywords = get_post_meta($post->ID, 'seo_keywords' , true);
+	}
+	
+	$blogtitle = $options['bu_home_title'];
+	$homekeywords = $options['bu_home_keywords'];
+	$homedescription = $options['bu_home_description'];
+	
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes('xhtml'); ?>>
@@ -16,40 +48,90 @@ $options = get_option('business') ;
 <head profile="http://gmpg.org/xfn/11">
 	
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-	<!-- Inserts META Home Description -->
-	<?php  $homedescription = $options['bu_home_description']; ?>
+	
+<!-- Business lite Blog Page SEO options -->
+	<?php if ($blogtitle != '' AND is_front_page()): ?>
+		<meta name="title" content="<?php echo $blogtitle ?>" />
+	<?php endif; ?> 
+	
+	<?php if ($homedescription != '' AND is_front_page()): ?>
 		<meta name="description" content="<?php echo $homedescription ?>" />
-	<!-- Inserts META Keywords -->	
-	<?php  $homekeywords = $options['bu_home_keywords'] ; ?>
+	<?php endif; ?>	
+	
+	<?php if ($homekeywords != '' AND is_front_page()): ?>
 		<meta name="keywords" content="<?php echo $homekeywords ?>" />
+	<?php endif; ?>
+<!-- /Business lite Blog Page SEO options -->
+
+<!-- Business lite Page SEO options -->
+
+	<?php if ($title != '' AND !is_front_page()): ?>
+		<meta name="title" content="<?php echo $title ?>" />
+	<?php endif; ?> 
+	
+	<?php if ($pagedescription != '' AND !is_front_page()): ?>
+		<meta name="description" content="<?php echo $pagedescription ?>" />
+	<?php endif; ?>	
+	
+	<?php if ($keywords != '' AND !is_front_page()): ?>
+		<meta name="keywords" content="<?php echo $keywords ?>" />
+	<?php endif; ?>
+
+<!-- /Business lite Page SEO options -->
+	
 	<meta name="distribution" content="global" />
 	<meta name="language" content="en" />
+	
 <!-- Page title -->
 	<title>
-			<?php  $hometitle = $options['bu_home_title']; ?>
 		   <?php
+		   
+		   	  /*Title for tags */
 		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+		         bloginfo('name'); echo ' - '; single_tag_title("Tag Archive for &quot;"); echo '&quot;  '; }
+		      /*Title for archives */   
 		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
+		          bloginfo('name'); echo ' - '; wp_title(''); echo ' Archive '; }
+		      /*Title for search */     
 		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title('');  }
+		         bloginfo('name'); echo ' - '; echo 'Search for &quot;'.esc_html($s).'&quot;  '; }
+		      /*Title for 404 */    
 		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_front_page() AND $hometitle == '') {
+		          bloginfo('name'); echo ' - '; echo 'Not Found '; }
+		      /*Title if front page is latest posts and no custom title */
+		      elseif (is_front_page() AND !is_page() AND $blogtitle == '') {
 		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      elseif (is_front_page() AND $hometitle != '') {
-		         bloginfo('name'); echo ' - '; echo $hometitle ; }
-		      else {
-		         echo ' - '; bloginfo('name'); }
-		      if ($paged>1) {
+		      /*Title if front page is latest posts with custom title */
+		      elseif (is_front_page() AND !is_page() AND $blogtitle != '') {
+		         bloginfo('name'); echo ' - '; echo $blogtitle ; }
+		      /*Title if front page is static page and no custom title */
+		      elseif (is_front_page() AND is_page() AND $title == '') {
+		         bloginfo('name'); echo ' - '; bloginfo('description'); }
+		      /*Title if front page is static page with custom title */
+		      elseif (is_front_page() AND is_page() AND $title != '') {
+		         bloginfo('name'); echo ' - '; echo $title ; }
+		     /*Title if static page is static page with no custom title */
+		      elseif (is_page() AND $title == '') {
+		         bloginfo('name'); echo ' - '; wp_title(''); }
+		      /*Title if static page is static page with custom title */
+		      elseif (is_page() AND $title != '') {
+		         bloginfo('name'); echo ' - '; echo $title ; }
+		      /*Title if blog page with no custom title */
+		      elseif (is_page() AND is_front_page() AND $blogtitle == '') {
+		         bloginfo('name'); echo ' - '; wp_title(''); }
+		  	  /*Title if blog page with custom title */ 
+		  	  elseif ($blogtitle != '') {
+		         bloginfo('name'); echo ' - '; echo $blogtitle ; }
+		  	   /*Title if blog page without custom title */
+		      else  {
+		         bloginfo('name'); echo ' - '; wp_title(''); }
+		    
+		      if ($paged>1 ) {
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>	
 	<?php  $favicon = $options['bu_favicon']; ?>
-	<link rel="shortcut icon" href="<?php echo stripslashes($favicon); ?>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 	
@@ -81,7 +163,7 @@ $options = get_option('business') ;
 					<?php  $logo = $options['bu_logo'] ; ?>
 						<?php if ($logo != ''):?>
 							<div id="logo" class="grid_4 column">
-								<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($logo); ?>" alt="logo"></a>
+								<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($logo['url']); ?>" alt="logo"></a>
 								<div id="description">
 									<h1 class="description"><?php bloginfo('description'); ?></h1>
 								</div>
