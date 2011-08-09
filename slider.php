@@ -35,9 +35,9 @@
 	    	$out = "<div id='slider' class='nivoSlider'>"; 
 	    	$i = 0;
 	    	
-	    	if ($options['if_slider_posts_number'] == '')
+	    	if ($options['bu_slider_posts_number'] == '')
 	    	$no = '5';
-	    	else $no = $options['if_slider_posts_number'];
+	    	else $no = $options['bu_slider_posts_number'];
 
 	    	while (have_posts() && $i<$no) : 
 	    	

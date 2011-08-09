@@ -276,7 +276,7 @@ array( "name" => "Hide Business Slider",
 array( "name" => "Show posts from category:",  
     "desc" => "(Default is all - WARNING: do not enter a category that does not exist or slider will not display)",  
     "id" => $shortname."_slider_category",  
-    "type" => "text",  
+    "type" => "select6",  
     "std" => ""),
     
 array( "name" => "Number of featured posts:",  
@@ -808,10 +808,10 @@ case 'upload':
     if ($file != ''){
     
     echo "Logo preview:<br /><br /><img src='{$file['url']}'><br /><br />";}
-    echo "<input type='text' name='if_filename_text' size='72' value='{$file['url']}'/>";
+    echo "<input type='text' name='bu_filename_text' size='72' value='{$file['url']}'/>";
     echo "<br />" ;
     echo "<br />" ;
-    echo "<input type='file' name='if_filename' size='30' />";?>
+    echo "<input type='file' name='bu_filename' size='30' />";?>
 
     
     <br />
@@ -856,10 +856,10 @@ case 'upload2':
     if ($file2 != ''){
     
     echo "Favicon preview:<br /><br /><img src='{$file2['url']}'><br /><br />";}
-    echo "<input type='text' name='if_favfilename_text' size='72' value='{$file2['url']}'/>";
+    echo "<input type='text' name='bu_favfilename_text' size='72' value='{$file2['url']}'/>";
     echo "<br />" ;
     echo "<br />" ;
-    echo "<input type='file' name='if_favfilename' size='30' />";?>
+    echo "<input type='file' name='bu_favfilename' size='30' />";?>
 
     
     <br />

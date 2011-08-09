@@ -130,7 +130,6 @@
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>	
-	<?php  $favicon = $options['bu_favicon']; ?>
 	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
@@ -160,7 +159,6 @@
 					<div id="headergrid" class="row">
 						<?php get_template_part('nav', 'header' ); ?>
 					<!-- Inserts Site Logo -->
-					<?php  $logo = $options['bu_logo'] ; ?>
 						<?php if ($logo != ''):?>
 							<div id="logo" class="grid_4 column">
 								<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($logo['url']); ?>" alt="logo"></a>
