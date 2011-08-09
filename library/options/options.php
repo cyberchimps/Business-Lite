@@ -24,6 +24,7 @@ function theme_options_init() {
   wp_register_script('bujquerycookie', get_template_directory_uri(). '/library/js/jquery-cookie.js');
   wp_register_script('bucookie', get_template_directory_uri(). '/library/js/cookie.js');
   wp_register_style('bucss', get_template_directory_uri(). '/library/options/theme-options.css');
+  wp_register_script('bucolor', get_template_directory_uri(). '/library/js/jscolor/jscolor.js');
 }
 
 
@@ -53,15 +54,7 @@ $select_slider_effect = array(
 	'0' => array('value' => 'random', 'label' => __( 'Random')), '1' => array('value' => 'rain', 'label' => __('Rain')), '2' => array('value' => 'straight', 'label' =>__('Straight')), '3' => array('value' => 'swirl', 'label' => __('Swirl')),
   
 );
-
-$select_slider_type = array(
-	'0' => array('value' => 'posts', 'label' => __('Post Categeory')), '1' => array('value' => 'custom', 'label' => __( 'Custom Slides')), 
-);
-
-$select_slider_placement = array(
-	'0' => array('value' => 'feature', 'label' => __( 'Business Pro Homepage')), '1' => array('value' => 'blog', 'label' => __('Default (Post) Template')),
 	
-);
 
 $shortname = "bu";
 
@@ -118,11 +111,93 @@ array( "type" => "close"),
 
 array( "type" => "close-tab"),
 
+//Design
 
+array( "id" => $shortname."-tab2",
+	"type" => "open-tab"),
+ 
+array( "type" => "open"),
+
+array( "type" => "close"),
+
+array( "type" => "close-tab"),
+
+
+//Blog
+
+array( "id" => $shortname."-tab3",
+	"type" => "open-tab"),
+ 
+array( "type" => "open"),
+
+
+array( "name" => "Show Excerpts",  
+    "desc" => "Check this box to show post excerpts instead of full-length content.",  
+    "id" => $shortname."_show_excerpts",  
+      "type" => "checkbox",  
+    "std" => "false"),
+
+array( "name" => "Hide the Author",  
+    "desc" => "Check this box to hide the author link on posts.",  
+    "id" => $shortname."_hide_author",  
+      "type" => "checkbox",  
+    "std" => "false"),
+    
+array( "name" => "Hide the Categories",  
+    "desc" => "Check this box to hide the categories link on posts.",  
+    "id" => $shortname."_hide_categories",  
+      "type" => "checkbox",  
+    "std" => "false"),
+        
+array( "name" => "Hide the Date",  
+    "desc" => "Check this box to hide the date link on posts.",  
+    "id" => $shortname."_hide_date",  
+      "type" => "checkbox",  
+    "std" => "false"),
+    
+array( "name" => "Hide the Comments",  
+    "desc" => "Check this box to hide the comments link on posts.",  
+    "id" => $shortname."_hide_comments",  
+      "type" => "checkbox",  
+    "std" => "false"),
+    
+array( "name" => "Hide the Share Icons",  
+    "desc" => "Check this box to hide the share icons on posts.",  
+    "id" => $shortname."_hide_share",  
+      "type" => "checkbox",  
+    "std" => "false"),
+    
+array( "name" => "Hide the Tags",  
+    "desc" => "Check this box to hide the tags link on posts.",  
+    "id" => $shortname."_hide_tags",  
+      "type" => "checkbox",  
+    "std" => "false"),
+    
+array( "name" => "Home Description",  
+    "desc" => "Enter the META description of your homepage here.",  
+    "id" => $shortname."_home_description",  
+    "type" => "textarea",  
+    "std" => ""),
+    
+array( "name" => "Home Keywords",  
+    "desc" => "Enter the META keywords of your homepage here (separated by commas).",  
+    "id" => $shortname."_home_keywords",  
+    "type" => "textarea",  
+    "std" => ""),
+    
+array( "name" => "Optional Home Title",  
+    "desc" => "Enter an alternative title of your homepage here (default is site tagline).",  
+    "id" => "bu_home_title",  
+    "type" => "text",  
+    "std" => ""),
+ 
+
+array( "type" => "close"),
+array( "type" => "close-tab"),
 
 // Social
 
-array( "id" => $shortname."-tab2",
+array( "id" => $shortname."-tab4",
 	"type" => "open-tab"),
  
 array( "type" => "open"),
@@ -189,90 +264,6 @@ array( "name" => "Custom RSS Link",
  
 array( "type" => "close"),
 
-array( "type" => "close-tab"),
-
-//Blog
-
-array( "id" => $shortname."-tab3",
-	"type" => "open-tab"),
- 
-array( "type" => "open"),
-
-
-array( "name" => "Show Excerpts",  
-    "desc" => "Check this box to show post excerpts instead of full-length content.",  
-    "id" => $shortname."_show_excerpts",  
-      "type" => "checkbox",  
-    "std" => "false"),
-
-array( "name" => "Hide the Author",  
-    "desc" => "Check this box to hide the author link on posts.",  
-    "id" => $shortname."_hide_author",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Categories",  
-    "desc" => "Check this box to hide the categories link on posts.",  
-    "id" => $shortname."_hide_categories",  
-      "type" => "checkbox",  
-    "std" => "false"),
-        
-array( "name" => "Hide the Date",  
-    "desc" => "Check this box to hide the date link on posts.",  
-    "id" => $shortname."_hide_date",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Comments",  
-    "desc" => "Check this box to hide the comments link on posts.",  
-    "id" => $shortname."_hide_comments",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Share Icons",  
-    "desc" => "Check this box to hide the share icons on posts.",  
-    "id" => $shortname."_hide_share",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Tags",  
-    "desc" => "Check this box to hide the tags link on posts.",  
-    "id" => $shortname."_hide_tags",  
-      "type" => "checkbox",  
-    "std" => "false"),
-
-array( "type" => "close"),
-array( "type" => "close-tab"),
-
-
-//SEO
-
-array( "id" => $shortname."-tab4",
-	"type" => "open-tab"),
- 
-array( "type" => "open"),
-
-array( "name" => "Home Description",  
-    "desc" => "Enter the META description of your homepage here.",  
-    "id" => $shortname."_home_description",  
-    "type" => "textarea",  
-    "std" => ""),
-    
-array( "name" => "Home Keywords",  
-    "desc" => "Enter the META keywords of your homepage here (separated by commas).",  
-    "id" => $shortname."_home_keywords",  
-    "type" => "textarea",  
-    "std" => ""),
-    
-array( "name" => "Optional Home Title",  
-    "desc" => "Enter an alternative title of your homepage here (default is site tagline).",  
-    "id" => "bu_home_title",  
-    "type" => "text",  
-    "std" => ""),
- 
-
-
-array( "type" => "close"),
 array( "type" => "close-tab"),
 
 // Business Slider
@@ -366,40 +357,46 @@ function theme_options_do_page() {
    
 ?>
 
-	<div class="wrap">
+<div class="wrap">
   
-
-<?php if ( function_exists('screen_icon') ) screen_icon(); ?>
-
-      
-<h2><?php echo $themename; ?> Settings</h2><br />
-
-<p>Want more features? Click below to upgrade to Business Pro, which includes the Business Pro homepage template, additional sections, fonts, custom Business slides, and much more.</p>
-<a href="http://cyberchimps.com/businesspro"><img src="<?php echo get_template_directory_uri(); ?>/images/getbizpro.png?>" alt="Get Business Pro"></a> 
-<p>Want to stick with Business lite, but want to support the developers? Please consider making a donation.</p>
-<a href="http://cyberchimps.com/donate"><img src="<?php echo get_template_directory_uri(); ?>/images/paypal.gif?>" alt="Donate"></a> 
-
-
+<br />
+<img src="<?php echo get_template_directory_uri() ;?>/images/options/businesslitelogo.png" />
+<br /><br />
+<a href="http://cyberchimps.com/ifeaturepro/" target="_blank"><img src="<?php echo get_template_directory_uri() ;?>/images/options/upgrade.png" /></a>
+<br /><br />
 
 		<?php if ( false !== $_REQUEST['updated'] ) { ?>
-		<?php echo '<div id="message" class="updated fade" style="float:left;"><p><strong>'.$themename.' settings saved</strong></p></div>'; ?>
+		<?php echo '<div id="message" class="updated fade" style="float:left;"><p><strong>'.$name.' settings saved</strong></p></div>'; ?>
     
-    <?php } if( isset( $_REQUEST['reset'] )) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings reset</strong></p></div>'; } ?>  
+    <?php } if( isset( $_REQUEST['reset'] )) { echo '<div id="message" class="updated fade"><p><strong>'.$name.' settings reset</strong></p></div>'; } ?>  
 				
 
 
   <form method="post" action="options.php" enctype="multipart/form-data">
   
-    <p class="submit" style="clear:left;">
+    <p class="submit" style="clear:left;float: right;">
 				<input type="submit" class="button-primary" value="Save Settings" />   
-			</p>  
+	</p>
+	
+	<div class="menu">
+	<ul>
+		<li><a href="http://cyberchimps.com/support" target="_blank">Support</a></li>
+		<li><a href="http://cyberchimps.com/businesslite/docs/">Documentation</a></li>
+		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
+		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
+		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
+		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
+		
+	</ul>
+	</div>
+
       
     <div id="tabs" style="clear:both;">   
     <ul class="tabNavigation">
         <li><a href="#bu-tab1"><span>General</span></a></li>
-        <li><a href="#bu-tab2"><span>Social</span></a></li>
+        <li><a href="#bu-tab2"><span>Design</span></a></li>
         <li><a href="#bu-tab3"><span>Blog</span></a></li>
-        <li><a href="#bu-tab4"><span>SEO</span></a></li>
+        <li><a href="#bu-tab4"><span>Social</span></a></li>
         <li><a href="#bu-tab5"><span>Business Slider</span></a></li>        
         <li><a href="#bu-tab6"><span>Footer</span></a></li>
     
@@ -732,30 +729,23 @@ case "checkbox":
 }
 }
 ?>
-      </div>  
-    </div>    
-
-			<p class="submit">
-				<input type="submit" class="button-primary" value="Save Settings" />   
-			</p>
-		</form>
-
-
+ </div>  
+      <div id="top"><a href='#TOP'><img src="<?php echo get_template_directory_uri() ;?>/images/options/top.png" /></a>
+      </div>
+      <div style="text-align: left;padding: 5px;"><a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri() ;?>/images/options/cyberchimpsmini.png" /></a></div>
     
-    <form method="post">
+    </div>    
+</form>
+    
+<form method="post">
 <p class="submit">
 <input name="reset" type="submit" value="Reset" />
 <input type="hidden" name="action" value="reset" />
-&nbsp;&nbsp;&nbsp;<small>WARNING, THIS RESTORES TO DEFAULT</small>
+&nbsp;&nbsp;&nbsp;<small>WARNING THIS RESTORES ALL DEFAULTS</small>
 </p>
-</form> 
-
-<p>Need help? Follow the links below to visit our support forum and documentation pages:</p>
-<a href="http://cyberchimps.com/businesslite/docs"><img src="<?php echo get_template_directory_uri();?>/images/docs.png?>" alt="Docs"></a> <a href="http://cyberchimps.com/forum"><img src="<?php echo get_template_directory_uri(); ?>/images/forum.png?>" alt="Forum"></a> 
-
-
-
+</form>
 	</div>
+
 	<?php
 }
 
@@ -894,15 +884,6 @@ function theme_options_validate( $input ) {
 ?>
 <?php
   
-/* Custom Menu */   
-  
-add_action( 'init', 'register_my_menu' );
-
-function register_my_menu() {
-	register_nav_menu( 'primary-menu', __( 'Primary Menu' ) );
-}
-
-
 // Add scripts and stylesheet
 
   function bu_scripts() {
@@ -910,6 +891,7 @@ function register_my_menu() {
         wp_enqueue_script('bujqueryui');
         wp_enqueue_script('bujquerycookie');
         wp_enqueue_script('bucookie');
+        wp_enqueue_script('bucolor');
    }
     
  function bu_styles() {
