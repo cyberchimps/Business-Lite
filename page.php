@@ -1,4 +1,22 @@
-<?php get_header(); ?>
+<?php
+
+/*
+	Page
+	Establishes the core Business lite page tempate.
+	Version: 2.0
+	Copyright (C) 2011 CyberChimps
+
+*/
+
+/* Header call. */
+
+	get_header(); 
+	
+/* End header. */	
+
+
+	$hidetitle = get_post_meta($post->ID, 'hide_title' , true);
+?>
 
 <div id="content_wrap">
 
@@ -12,7 +30,10 @@
 			
 				<div class="post" id="post-<?php the_ID(); ?>">
 
+					<?php if ($hidetitle == ""): ?>
+				
 					<h2 class="posts_title"><?php the_title(); ?></h2>
+						<?php endif;?>
 
 					<div class="entry">
 
