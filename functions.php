@@ -8,26 +8,80 @@
 	Copyright (C) 2011 CyberChimps
 */
 
-function new_excerpt_more($more) {
-       global $post;
-	return '<a href="'. get_permalink($post->ID) . '"> <br /><br /> (Read More...)</a>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
+$options = get_option('business');
 
-add_theme_support('automatic-feed-links');
-	if ( ! isset( $content_width ) )
-	$content_width = 600;
+/* Begin custom excerpt functions. */	
+
+function business_new_excerpt_more($more) {
+
+	global $options;
+    
+    	if ($options['bu_excerpt_link_text'] == '') {
+    		$linktext = '(Read More...)';
+   		}
+    
+    	else {
+    		$linktext = $options['bu_excerpt_link_text'];
+   		}
+    
+    global $post;
+	return '<a href="'. get_permalink($post->ID) . '"> <br /><br /> '.$linktext.'</a>';
+}
+add_filter('excerpt_more', 'business_new_excerpt_more');
+
+function business_new_excerpt_length($length) {
+
+	global $options;
 	
-add_theme_support( 'post-thumbnails' ); 
-set_post_thumbnail_size( 100, 100, true );
+		if ($options['bu_excerpt_length'] == '') {
+    		$length = '55';
+    	}
+    
+    	else {
+    		$length = $options['bu_excerpt_length'];
+    	}
+
+	return $length;
+}
+add_filter('excerpt_length', 'business_new_excerpt_length');
+
+/* End excerpt functions. */
+
+/* Add auto-feed links support. */	
+	add_theme_support('automatic-feed-links');
+	
+/* Add post-thumb support. */
+
+	
+if ( function_exists( 'add_theme_support' ) ) {
+
+	global $options;
+	
+		if($options['if_featured_image_height'] == "") {
+			$featureheight = '100';
+	}		
+	
+	else {
+		$featureheight = $options['if_featured_image_height']; 
+		
+	}
+	
+		if ($options['if_featured_image_width'] == "") {
+			$featurewidth = '100';
+	}		
+	
+	else {
+		$featurewidth = $options['if_featured_image_width']; 
+	}
+	add_theme_support( 'post-thumbnails' ); 
+	set_post_thumbnail_size( $featureheight, $featurewidth, true );
+}	
+
+// This theme allows users to set a custom background
+add_custom_background();
 	
 // This theme styles the visual editor with editor-style.css to match the theme style.
-	add_editor_style();
-	
-// Load jQuery
-	if ( !is_admin() ) {
-	   wp_enqueue_script('jquery');
-	}
+add_editor_style();
 
 /**
 * Attach CSS3PIE behavior to elements
@@ -44,29 +98,43 @@ function business_render_ie_pie() { ?>
 
 add_action('wp_head', 'business_render_ie_pie', 8);
 	
-//Checklist Shortcode
+// + 1 Button 
+
+function business_plusone(){
 	
-	function checklist($atts, $content = null) {
-    	return '<div class="checklist">'.$content.'</div>' ;
-}
-
-
-
-// Coin Slider 
-
-function cs_head(){
-	 
-	$path =  get_template_directory_uri() ."/library/cs/";
+	$path =  get_template_directory_uri() ."/library/js/";
 
 	$script = "
 		
-		<script type=\"text/javascript\" src=\"".$path."scripts/coin-slider.min.js\"></script>
+		<script type=\"text/javascript\" src=\"".$path."/plusone.js\"></script>
 		";
 	
 	echo $script;
 }
+add_action('wp_head', 'business_plusone');
 
-add_action('wp_head', 'cs_head');
+	
+// Load jQuery
+	if ( !is_admin() ) {
+	   wp_deregister_script('jquery');
+	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"), false);
+	   wp_enqueue_script('jquery');
+	}
+
+// Nivo Slider 
+
+function business_add_nivoslider(){
+	 
+	$path =  get_template_directory_uri() ."/library/ns/";
+
+	$script = "
+		
+		<script type=\"text/javascript\" src=\"".$path."/jquery.nivo.slider.js\"></script>
+		";
+	
+	echo $script;
+}
+add_action('wp_head', 'business_add_nivoslider');
 
 
 	// Register superfish scripts
@@ -96,7 +164,7 @@ add_action( 'wp_head', 'business_add_scripts',0);
 	
 	function register_business_menus() {
 	register_nav_menus(
-	array( 'header-menu' => __( 'Header Menu' ), 'extra-menu' => __( 'Extra Menu' ))
+	array( 'header-menu' => __( 'Header Menu' ))
   );
 }
 	add_action( 'init', 'register_business_menus' );
@@ -110,16 +178,8 @@ add_action( 'wp_head', 'business_add_scripts',0);
 	<?php wp_list_pages( 'title_li=&sort_column=menu_order&depth=3'); ?>
 	</ul><?php
 }
-
-	// Clean up the <head>
-	function removeHeadLinks() {
-    	remove_action('wp_head', 'rsd_link');
-    	remove_action('wp_head', 'wlwmanifest_link');
-    }
-    add_action('init', 'removeHeadLinks');
-    remove_action('wp_head', 'wp_generator');
     
-    if (function_exists('register_sidebar')) {
+    
     	register_sidebar(array(
     		'name' => 'Sidebar Widgets',
     		'id'   => 'sidebar-widgets',
@@ -129,7 +189,7 @@ add_action( 'wp_head', 'business_add_scripts',0);
     		'before_title'  => '<h2 class="sidebar-widget-title">',
     		'after_title'   => '</h2>'
     	));
-    		if ( function_exists('register_sidebar') )
+    		
 	register_sidebar(array(
 	'name' => 'Footer',
 	'before_widget' => '<div class="footer-widgets">',
@@ -137,7 +197,7 @@ add_action( 'wp_head', 'business_add_scripts',0);
 	'before_title' => '<h3 class="footer-widget-title">',
 	'after_title' => '</h3>',
 	));
-    }
+    
 
 	//Business Pro options file
 	
