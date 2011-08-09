@@ -75,24 +75,30 @@ array( "id" => $shortname."-tab1",
 	"type" => "open-tab"),
 
 array( "type" => "open"),
-
-array( "name" => "Choose a font:",  
-    "desc" => "(Default is Maven Pro)",  
-    "id" => $shortname."_font",  
-    "type" => "select2",  
-    "std" => ""),
     
-array( "name" => "Logo URL",  
-    "desc" => "Enter the link to your logo image, or to use your site title text leave blank.",  
+array( "name" => "Logo",  
+    "desc" => "Use the image uploader or enter your own URL into the input field to use an image as your logo. To display the site title as text, leave blank.",  
     "id" => $shortname."_logo",  
-    "type" => "text",  
-    "std" => ""), 
+    "type" => "upload",  
+    "std" => ""),
+        
+array( "name" => "Hide the Social Icons",  
+    "desc" => "Check this box to hide the social icons above the sidebar.",  
+    "id" => $shortname."_hide_social",  
+      "type" => "checkbox",  
+    "std" => "false"),
+    
+array( "name" => "Hide the Search Box",  
+    "desc" => "Check this box to hide the search box above the sidebar.",  
+    "id" => $shortname."_hide_search",  
+      "type" => "checkbox",  
+    "std" => "false"),        
         
 array( "name" => "Custom Favicon",  
     "desc" => "A favicon is a 16x16 pixel icon that represents your site; paste the URL to a .ico image that you want to use as the image",  
     "id" => $shortname."_favicon",  
-    "type" => "text",  
-    "std" => ""),   
+    "type" => "upload2",  
+    "std" => ""), 
 
 
 array( "name" => "Google Analytics Code",  
@@ -118,6 +124,24 @@ array( "id" => $shortname."-tab2",
  
 array( "type" => "open"),
 
+array( "name" => "Choose a font:",  
+    "desc" => "(Default is Maven Pro)",  
+    "id" => $shortname."_font",  
+    "type" => "select2",  
+    "std" => ""),
+    
+array( "name" => "Link Color",  
+    "desc" => "Use the color picker to select the site link color",  
+    "id" => $shortname."_link_color",  
+      "type" => "color2",  
+    "std" => "false"),
+    
+array( "name" => "Want more options?",  
+    "desc" => "",  
+    "id" => $shortname."_designl_ad",  
+    "type" => "design_ad",  
+    "std" => ""),
+
 array( "type" => "close"),
 
 array( "type" => "close-tab"),
@@ -131,48 +155,30 @@ array( "id" => $shortname."-tab3",
 array( "type" => "open"),
 
 
+array( "name" => "Post Excerpts",  
+    "desc" => "Use the following options to control excerpts.",  
+    "id" => $shortname."_excerpts",  
+      "type" => "excerpts",  
+    "std" => "false"),
+
+array( "name" => "Featured Images",  
+    "desc" => "Use the following options to control featured image alignment and size.",  
+    "id" => $shortname."_featured_images",  
+      "type" => "featured",  
+    "std" => "false"),
+    
 array( "name" => "Show Excerpts",  
     "desc" => "Check this box to show post excerpts instead of full-length content.",  
     "id" => $shortname."_show_excerpts",  
       "type" => "checkbox",  
     "std" => "false"),
 
-array( "name" => "Hide the Author",  
-    "desc" => "Check this box to hide the author link on posts.",  
-    "id" => $shortname."_hide_author",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Categories",  
-    "desc" => "Check this box to hide the categories link on posts.",  
-    "id" => $shortname."_hide_categories",  
-      "type" => "checkbox",  
+array( "name" => "Hide Post Elements",  
+    "desc" => "Use the following checkboxes to hide various post elements.",  
+    "id" => $shortname."_hide_post_elements",  
+    "type" => "post",  
     "std" => "false"),
         
-array( "name" => "Hide the Date",  
-    "desc" => "Check this box to hide the date link on posts.",  
-    "id" => $shortname."_hide_date",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Comments",  
-    "desc" => "Check this box to hide the comments link on posts.",  
-    "id" => $shortname."_hide_comments",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Share Icons",  
-    "desc" => "Check this box to hide the share icons on posts.",  
-    "id" => $shortname."_hide_share",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Tags",  
-    "desc" => "Check this box to hide the tags link on posts.",  
-    "id" => $shortname."_hide_tags",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
 array( "name" => "Home Description",  
     "desc" => "Enter the META description of your homepage here.",  
     "id" => $shortname."_home_description",  
@@ -201,18 +207,6 @@ array( "id" => $shortname."-tab4",
 	"type" => "open-tab"),
  
 array( "type" => "open"),
-
-array( "name" => "Hide the Social Icons",  
-    "desc" => "Check this box to hide the social icons above the sidebar.",  
-    "id" => $shortname."_hide_social",  
-      "type" => "checkbox",  
-    "std" => "false"),
-    
-array( "name" => "Hide the Search Box",  
-    "desc" => "Check this box to hide the search box above the sidebar.",  
-    "id" => $shortname."_hide_search",  
-      "type" => "checkbox",  
-    "std" => "false"),
 
 array( "name" => "Facebook URL",  
     "desc" => "Enter your Facebook page URL for the Facebook social icon.",  
@@ -445,6 +439,449 @@ case "close-tab":
  
 <?php break; 
  
+case 'general_faq':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">Read the <a href="http://cyberchimps.com/question/general-settings-tab/" target="_blank">General Options Tab FAQ</a></td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+<?php
+break;
+
+case 'design_faq':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">Read the <a href="http://cyberchimps.com/question/design-settings-tab/" target="_blank">Design Options Tab FAQ</a></td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+
+<?php
+break;
+
+case 'social_faq':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">Read the <a href="http://cyberchimps.com/question/social-settings-tab/" target="_blank">Social Options Tab FAQ</a></td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+
+<?php
+break;
+
+case 'blog_faq':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">Read the <a href="http://cyberchimps.com/question/blog-settings-tab/" target="_blank">Blog Options Tab FAQ</a></td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+
+<?php
+break;
+
+case 'slider_faq':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">Read the <a href="http://cyberchimps.com/question/ifeature-slider-settings-tab/" target="_blank">Slider Options Tab FAQ</a></td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+
+<?php
+break;
+
+
+case 'design_ad':  
+?>  
+  
+<tr>
+
+    <td width="1%" rowspan="2" valign="middle">  </td>
+    <td width="99%"></a>
+</td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" ><a href="http://cyberchimps.com/ifeaturepro/" target="_blank"><img src="<?php echo get_template_directory_uri() ;?>/images/options/upgradedesign.jpg" height="275" width="550" /></td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+<?php
+break;
+
+
+case 'color2':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">
+    
+<?php
+
+	if (isset($options['bu_link_color']) == "") {
+		$picker = '717171';
+	}
+			
+	else {
+		$picker = $options['bu_link_color']; 
+	}
+?>
+
+<input type="text" class="color{required:false}" id="business[bu_link_color]" name="business[bu_link_color]"  value="<?php echo $picker ;?>" style="width: 300px;" maxlength="6">   
+
+<br /><br />
+    
+    </td>
+
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+<?php
+break; 
+
+
+case 'select6':
+?>
+<tr>
+<td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
+<td width="85%"><select style="width:300px;" name="<?php echo 'business['.$value['id'].']'; ?>">
+
+<?php
+								$selected = $options[$value['id']];
+								$p = '';
+								$r = '';
+								
+								$terms2 = get_terms('category', 'hide_empty=0');
+
+									$blogoptions = array();
+									
+									$blogoptions['all'] = "All";
+
+										foreach($terms2 as $term) {
+
+										$blogoptions[$term->slug] = $term->name;
+
+									}
+									
+
+								foreach ( $blogoptions as $option ) {
+									$label = $option['label'];
+									if ( $selected == $option ) // Make default first in list
+										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option ) . "'>$option</option>";
+									else
+										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option ) . "'>$option</option>";      
+								}
+								echo $p . $r;   
+							?>    
+
+
+</select>
+
+</td>
+</tr> 
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+<?php
+break;
+
+
+case 'excerpts':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">
+    <br />
+    <input type="checkbox" id="business[bu_show_excerpts]" name="business[bu_show_excerpts]" value="1" <?php checked( '1', $options['bu_show_excerpts'] ); ?>> - Show Excerpts
+<br /><br />
+
+	<?php
+		if (isset($options['bu_excerpt_link_text']) == "")
+			$textlink = '(Read More...)';
+			
+		else
+			$textlink = $options['bu_excerpt_link_text']; 
+	?>
+	
+   <input type="text" id="business[bu_excerpt_link_text]" name="business[bu_excerpt_link_text]" value="<?php echo $textlink ;?>"> - Excerpt Link Text
+<br /><br />
+
+	<?php
+		if (isset($options['bu_excerpt_length']) == "")
+			$length = '55';
+			
+		else
+			$length = $options['bu_excerpt_length']; 
+	?>
+
+     <input type="text" id="business[bu_excerpt_length]" name="business[bu_excerpt_length]" value="<?php echo $length ;?>" > - Excerpt Character Length
+<br /><br />
+
+</td>
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+
+<?php
+break;
+
+
+case 'post':  
+?>  
+  
+<tr>
+
+    <td width="15%" rowspan="2" valign="middle"><label for="<?php echo $value['id']; ?>"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></label>  </td>
+    <td width="85%">
+    <br />
+    <input type="checkbox" id="business[bu_hide_author]" name="business[bu_hide_author]" value="1" <?php checked( '1', $options['bu_hide_author'] ); ?>> - Author
+<br /><br />
+
+   <input type="checkbox" id="business[bu_hide_categories]" name="business[bu_hide_categories]" value="1" <?php checked( '1', $options['bu_hide_categories'] ); ?>> - Categories
+<br /><br />
+
+   <input type="checkbox" id="business[bu_hide_date]" name="business[bu_hide_date]" value="1" <?php checked( '1', $options['bu_hide_date'] ); ?>> - Date
+<br /><br />
+
+   <input type="checkbox" id="business[bu_hide_comments]" name="business[bu_hide_comments]" value="1" <?php checked( '1', $options['bu_hide_comments'] ); ?>> - Comments
+<br /><br />
+
+   <input type="checkbox" id="business[bu_hide_share]" name="business[bu_hide_share]" value="1" <?php checked( '1', $options['bu_hide_share'] ); ?>> - Sharing
+<br /><br />
+
+   <input type="checkbox" id="business[bu_hide_tags]" name="business[bu_hide_tags]" value="1" <?php checked( '1', $options['bu_hide_tags'] ); ?>> - Tags
+<br /><br />
+
+</td>
+  </tr>
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+<?php
+break;
+
+case 'featured':
+?>
+<tr>
+<td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
+<td width="85%"><select style="width:300px;" name="<?php echo 'business['.$value['id'].']'; ?>">
+
+<?php
+								$selected = $options[$value['id']];
+								$p = '';
+								$r = '';
+
+								foreach ( $select_featured_images as $option ) {
+									$label = $option['label'];
+									if ( $selected == $option['value'] ) // Make default first in list
+										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
+									else
+										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";      
+								}
+								echo $p . $r;   
+							?>    
+
+</select><br /></br>
+
+Define a custom Featured Image size below (default is 100 by 100):
+
+<br /><br />
+
+<?php
+
+	if (isset($options['bu_featured_image_height']) == "") {
+			$featureheight = '100';
+	}		
+	
+	else {
+		$featureheight = $options['bu_featured_image_height']; 
+	}
+	
+		if (isset($options['bu_featured_image_width']) == "") {
+			$featurewidth = '100';
+	}		
+	
+	else {
+		$featurewidth = $options['bu_featured_image_width']; 
+	}
+	
+?>
+
+<input type="text" id="business[bu_featured_image_height]" name="business[bu_featured_image_height]"  value="<?php echo $featureheight ;?>" style="width: 300px;"> - Height
+
+<br /><br />
+
+<input type="text" id="business[bu_featured_image_width]" name="business[bu_featured_image_width]"  value="<?php echo $featurewidth ;?>" style="width: 300px;"> - Width
+
+</td>
+</tr> 
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+<?php
+break;
+
+
+case 'upload':
+?>   
+
+
+<tr>
+
+<td width="15%" rowspan="2" valign="middle"><strong>Custom Logo</strong>
+
+
+ 
+<tr>
+<td width="85%">
+
+
+    <?php settings_fields('bu_options'); ?>
+    <?php do_settings_sections('bu'); 
+    
+   $file = $options['file'];
+    
+    if ($file != ''){
+    
+    echo "Logo preview:<br /><br /><img src='{$file['url']}'><br /><br />";}
+    echo "<input type='text' name='if_filename_text' size='72' value='{$file['url']}'/>";
+    echo "<br />" ;
+    echo "<br />" ;
+    echo "<input type='file' name='if_filename' size='30' />";?>
+
+    
+    <br />
+    <small>Upload a logo image to use</small>
+
+
+<?php
+	$options = get_option('business');
+	$value = isset($options['file']) ? $options['file'] : '';
+?>
+
+</td>
+</tr>
+
+
+        
+        <tr>
+<td><small></small></td>
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+<?php break; 
+
+case 'upload2':
+?>   
+
+
+<tr>
+
+<td width="15%" rowspan="2" valign="middle"><strong>Custom Favicon</strong>
+
+
+ 
+<tr>
+<td width="85%">
+<br />
+
+    <?php settings_fields('bu_options'); ?>
+    <?php do_settings_sections('bu'); 
+    
+    $file2 = $options['file2'];
+    
+    if ($file2 != ''){
+    
+    echo "Favicon preview:<br /><br /><img src='{$file2['url']}'><br /><br />";}
+    echo "<input type='text' name='if_favfilename_text' size='72' value='{$file2['url']}'/>";
+    echo "<br />" ;
+    echo "<br />" ;
+    echo "<input type='file' name='if_favfilename' size='30' />";?>
+
+    
+    <br />
+    <small>Upload a favicon image to use</small>
+
+
+<?php
+	$options = get_option('business');
+	$value = isset($options['file2']) ? $options['file2'] : '';
+?>
+
+</td>
+</tr>
+
+
+        
+        <tr>
+<td><small></small></td>
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+<?php break; 
+
 
  
 case 'textarea':
@@ -877,6 +1314,30 @@ function theme_options_validate( $input ) {
    $input['bu_email'] = wp_filter_nohtml_kses( $input['bu_email'] );   
   
 
+	$options = get_option('business');
+  if ($_FILES['bu_filename']['name'] != '') {
+       $overrides = array('test_form' => false); 
+       $file = wp_handle_upload($_FILES['bu_filename'], $overrides);
+       $input['file'] = $file;
+   } elseif(isset($_POST['bu_filename_text']) && $_POST['bu_filename_text'] != '') {
+	   $input['file'] = array('url' => $_POST['bu_filename_text']);
+   } else {
+	   $input['file'] = null;
+   }
+
+if ($_FILES['bu_favfilename']['name'] != '') {
+       $overrides = array('test_form' => false); 
+       $file2 = wp_handle_upload($_FILES['bu_favfilename'], $overrides);
+       $input['file2'] = $file2;
+   } elseif(isset($_POST['bu_favfilename_text']) && $_POST['bu_favfilename_text'] != '') {
+	   $input['file2'] = array('url' => $_POST['bu_favfilename_text']);
+   } else {
+	   $input['file2'] = null;
+   }
+   
+
+	
+	
 	return $input;    
 
 }
