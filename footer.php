@@ -91,7 +91,7 @@ $options = get_option('business') ;
 			<?php endif;?>
 			<!--Inserts Site Credit -->
 								<div id="credit">
-						<a href="http://cyberchimps.com"><img src="<?php echo get_template_directory_uri(); ?>/images/cyberchimps.png" alt="CyberChimps"/></a>
+						<a href="http://cyberchimps.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/cyberchimps.png" alt="CyberChimps"/></a>
 					</div>
 		
 		</div>  <!--end afterfooterwrap-->	

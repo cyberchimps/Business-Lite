@@ -386,7 +386,7 @@ function theme_options_do_page() {
 	<div class="menu">
 	<ul>
 		<li><a href="http://cyberchimps.com/support" target="_blank">Support</a></li>
-		<li><a href="http://cyberchimps.com/businesslite/docs/">Documentation</a></li>
+		<li><a href="http://cyberchimps.com/businesslite/docs/" target="_blank">Documentation</a></li>
 		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
 		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
 		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
