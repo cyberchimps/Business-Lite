@@ -69,12 +69,12 @@ function business_add_link_color() {
 
 	global $options;
 
-	if ($options['if_link_color'] == "") 
+	if ($options['bu_link_color'] == "") 
 		$link = '717171';
 	
 
 	else 
-		$link = $options['if_link_color']; 
+		$link = $options['bu_link_color']; 
 					
 	
 		echo '<style type="text/css">';

@@ -45,16 +45,21 @@ global $themename, $shortname, $options;
  
 }
 
+/* Include options functions */
+
+	require_once ( get_template_directory() . '/library/options/options-functions.php' );
+
+/* End options functions */
+
 $select_font = array(
 '0' => array('value' =>'Maven+Pro','label' => __('Maven Pro(default)')),'1' => array('value' =>'Arial','label' => __('Arial')),'2' => array('value' =>'Courier New','label' => __('Courier New')),'3' => array('value' =>'Georgia','label' => __('Georgia')),'4' => array('value' =>'Lucida Grande','label' => __('Lucida Grande')),'5' => array('value' =>'Tahoma','label' => __('Tahoma')),'6' => array('value' =>'Times New Roman','label' => __('Times New Roman')),'7' => array('value' =>'Ubuntu','label' => __('Ubuntu')),
 
 );
 
-$select_slider_effect = array(
-	'0' => array('value' => 'random', 'label' => __( 'Random')), '1' => array('value' => 'rain', 'label' => __('Rain')), '2' => array('value' => 'straight', 'label' =>__('Straight')), '3' => array('value' => 'swirl', 'label' => __('Swirl')),
-  
+$select_featured_images = array(
+'0' => array('value' => 'left','label' => __('Left (default)' )),'1' => array('value' => 'center','label' => __('Center')), '2' => array('value' => 'right','label' => __('Right')),
+
 );
-	
 
 $shortname = "bu";
 
@@ -107,12 +112,6 @@ array( "name" => "Google Analytics Code",
     "type" => "textarea",  
     "std" => ""),  
 
-array(  "name" => "Show Facebook Like Button",
-        "desc" => "Check this box to show the Facebook Like Button on blog posts",
-        "id" => $shortname."_show_fb_like",
-        "type" => "checkbox",
-        "std" => "false"),  
-        
 array( "type" => "close"),
 
 array( "type" => "close-tab"),
@@ -178,6 +177,18 @@ array( "name" => "Hide Post Elements",
     "id" => $shortname."_hide_post_elements",  
     "type" => "post",  
     "std" => "false"),
+    
+array(  "name" => "Show Facebook Like Button",
+        "desc" => "Check this box to show the Facebook Like Button on blog posts",
+        "id" => $shortname."_show_fb_like",
+        "type" => "checkbox",
+        "std" => "false"),  
+        
+array(  "name" => "Show Google +1 button",
+	"desc" => "Check this box to show the Google +1 Button on blog posts",
+	"id" => $shortname."_show_gplus",
+	"type" => "checkbox",
+	"std" => "false"),   
         
 array( "name" => "Home Description",  
     "desc" => "Enter the META description of your homepage here.",  
@@ -335,7 +346,7 @@ array( "type" => "close-tab"),
  * Create the options page
  */
 function theme_options_do_page() {
-	global $themename, $shortname, $optionlist, $select_font, $select_slider_effect, $select_slider_type, $select_slider_placement;
+	global $themename, $shortname, $optionlist, $select_font, $select_featured_images;
   
 
 	if ( ! isset( $_REQUEST['updated'] ) ) {
@@ -1189,7 +1200,7 @@ case "checkbox":
 
 
 function theme_options_validate( $input ) {
-	global  $select_font, $select_slider_effect, $select_slider_type, $select_slider_placement;
+	global  $select_font, $select_featured_images;
 
 	// Assign checkbox value
   
@@ -1278,7 +1289,10 @@ function theme_options_validate( $input ) {
 	  if ( ! isset( $input['bu_show_fb_like'] ) )
 		$input['bu_show_fb_like'] = null;
 	$input['bu_show_fb_like'] = ( $input['bu_show_fb_like'] == 1 ? 1 : 0 ); 
-  
+	
+	 if ( ! isset( $input['bu_show_gplus'] ) )
+		$input['bu_show_gplus'] = null;
+	$input['bu_show_gplus'] = ( $input['bu_show_gplus'] == 1 ? 1 : 0 ); 
   
      if ( ! isset( $input['bu_hide_slider'] ) )
 		$input['bu_hide_slider'] = null;
