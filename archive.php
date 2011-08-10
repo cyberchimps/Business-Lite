@@ -36,7 +36,7 @@ get_header(); ?>
 				<h2 class="pagetitle"><font size="5">Archive for <?php the_time('Y'); ?>:</font></h2><br />
 
 			<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-				<h2 class="pagetitle"><font size="5">Author Archive:</font></h2><br />
+				<h2 class="pagetitle"><font size="5">Author Archive: </font></h2><br />
 
 			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h2 class="pagetitle"><font size="5">Blog Archives:</font></h2><br />
