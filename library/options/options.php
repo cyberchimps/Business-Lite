@@ -135,12 +135,6 @@ array( "name" => "Link Color",
       "type" => "color2",  
     "std" => "false"),
     
-array( "name" => "Want more options?",  
-    "desc" => "",  
-    "id" => $shortname."_designl_ad",  
-    "type" => "design_ad",  
-    "std" => ""),
-
 array( "type" => "close"),
 
 array( "type" => "close-tab"),
@@ -539,26 +533,6 @@ case 'slider_faq':
 
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
-
-
-<?php
-break;
-
-
-case 'design_ad':  
-?>  
-  
-<tr>
-
-    <td width="1%" rowspan="2" valign="middle">  </td>
-    <td width="99%"></a>
-</td>
-
-  </tr>
- 
-<tr>
-
-</tr><tr><td colspan="2" ><a href="http://cyberchimps.com/ifeaturepro/" target="_blank"><img src="<?php echo get_template_directory_uri() ;?>/images/options/upgradedesign.jpg" height="275" width="550" /></td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 
 <?php
