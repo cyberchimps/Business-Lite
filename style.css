@@ -32,7 +32,6 @@ a img {border: none; }
 	margin-top: 14px; 
 	margin-right: 12px; 
 	margin-bottom: 10px; 
-	float: left;
 
 }
 
@@ -234,7 +233,6 @@ ol {
 
 .entry {
 	padding-top: 10px;
-	overflow:hidden;
 }
 
 .meta { 
