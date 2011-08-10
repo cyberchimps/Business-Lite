@@ -7,7 +7,13 @@ Version 2.0 (8-9-11)
 -Adjusted styling on archive pages.
 -Updated functions.php, added new scripts and cleaned up some existing functions.
 -Updated header.php - fixed title conditionals, added support for new logo/favicon image uploaders, new page-level META options.
--
+-Added image uploader for logo and favicon, removed text input for URL.
+-Added color picker for link color.
+-Added Google +1 button option.
+-Added link to Author archives in post meta content.
+-Added drop down menu option for picking blog post category for feature slider. 
+-Restyled theme options page. 
+-General bug fixes. 
 
 Version 1.0.5 (7-17-11)
 -Fixed bug causing long site title text to wrap prematurely.
