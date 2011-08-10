@@ -567,6 +567,47 @@ $meta_boxes[] = array(
 	)
 );
 
+$meta_boxes[] = array(
+	'id' => 'slides',
+	'title' => 'Business lite Page Options',
+	'pages' => array('page'),
+
+	'fields' => array(
+	
+	array(
+			'name' => 'Hide page title',
+			'desc' => 'Check this box to hide your page title',
+			'id' =>  'hide_title',
+			'type' => 'checkbox',
+			'std' => ''
+		),
+			array(
+						'name' => 'SEO Title',
+						'desc' => 'Enter your page title',
+						'id' => 'seo_title',
+						'type' => 'text',
+						'std' => ''
+					),
+					array(
+						'name' => 'SEO Description',
+						'desc' => 'Enter your page description',
+						'id' => 'seo_description',
+						'type' => 'textarea',
+						'std' => ''
+					),
+
+					array(
+						'name' => 'SEO Keywords',
+						'desc' => 'Enter your page keywords',
+						'id' => 'seo_keywords',
+						'type' => 'text',
+						'std' => ''
+					),	
+
+	)
+);
+
+
 
 foreach ($meta_boxes as $meta_box) {
 	$my_box = new RW_Meta_Box_Taxonomy($meta_box);
