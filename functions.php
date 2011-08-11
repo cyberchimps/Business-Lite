@@ -10,6 +10,8 @@
 
 $options = get_option('business');
 
+if ( ! isset( $content_width ) ) $content_width = 900;
+
 /* Begin custom excerpt functions. */	
 
 function business_new_excerpt_more($more) {
