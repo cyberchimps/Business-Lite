@@ -13,5 +13,4 @@ For the support forum please visit: http://cyberchimps.com/forum/
 
 For more support options please visit http://cyberchimps.com/support/
 
-e-mail: cyberchimpspro@gmail.com
 
