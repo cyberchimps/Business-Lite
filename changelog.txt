@@ -3,8 +3,15 @@ Business lite Changelog
 ****************************
 
 Version 2.0.1 (9-8-11)
--Updated Nivo Slider to 2.6
+-Updated Nivo Slider to 2.6.
 -Enqueueing WP jQuery library again en lieu of Nivo Slider update. 
+-Footer and Sidebar widgets now within a function that hooks into widgets_init.
+-Now stripping HTML from several option URL inputs. 
+-Added trailing slashes to default social icon URLs.
+-Added height and width element to social icons.
+-Fixed floats not clearing on images. 
+-Removed unnecessary text domain properties in options.php.
+-Added link to theme options settings in the Admin bar.
 
 Version 2.0 (8-9-11)
 -Updated 404 page, added custom image.

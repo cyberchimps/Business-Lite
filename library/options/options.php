@@ -52,12 +52,12 @@ global $themename, $shortname, $options;
 /* End options functions */
 
 $select_font = array(
-'0' => array('value' =>'Maven+Pro','label' => __('Maven Pro(default)')),'1' => array('value' =>'Arial','label' => __('Arial')),'2' => array('value' =>'Courier New','label' => __('Courier New')),'3' => array('value' =>'Georgia','label' => __('Georgia')),'4' => array('value' =>'Lucida Grande','label' => __('Lucida Grande')),'5' => array('value' =>'Tahoma','label' => __('Tahoma')),'6' => array('value' =>'Times New Roman','label' => __('Times New Roman')),'7' => array('value' =>'Ubuntu','label' => __('Ubuntu')),
+'0' => array('value' =>'Maven+Pro','label' => 'Maven Pro(default)'),'1' => array('value' =>'Arial','label' => 'Arial'),'2' => array('value' =>'Courier New','label' => 'Courier New'),'3' => array('value' =>'Georgia','label' => 'Georgia'),'4' => array('value' =>'Lucida Grande','label' => 'Lucida Grande'),'5' => array('value' =>'Tahoma','label' => 'Tahoma'),'6' => array('value' =>'Times New Roman','label' => 'Times New Roman'),'7' => array('value' =>'Ubuntu','label' => 'Ubuntu'),
 
 );
 
 $select_featured_images = array(
-'0' => array('value' => 'left','label' => __('Left (default)' )),'1' => array('value' => 'center','label' => __('Center')), '2' => array('value' => 'right','label' => __('Right')),
+'0' => array('value' => 'left','label' => 'Left (default)' ),'1' => array('value' => 'center','label' => 'Center'), '2' => array('value' => 'right','label' => 'Right'),
 
 );
 
@@ -385,6 +385,7 @@ function theme_options_do_page() {
 		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
 		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
 		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
+		<li><a href="http://cyberchimpspro.com/" target="_blank">CyberChimps Pro</a></li>
 		
 	</ul>
 	</div>
@@ -1287,11 +1288,15 @@ function theme_options_validate( $input ) {
   
   	// Strip HTML from certain options
   	
-   $input['bu_logo'] = wp_filter_nohtml_kses( $input['bu_logo'] );
+   $input['bu_filename_text'] = wp_filter_nohtml_kses( $input['bu_filename_text'] );
+   
+   $input['bu_favfilename_text'] = wp_filter_nohtml_kses( $input['bu_favfilename_text'] );
   
    $input['bu_facebook'] = wp_filter_nohtml_kses( $input['bu_facebook'] ); 
     
    $input['bu_twitter'] = wp_filter_nohtml_kses( $input['bu_twitter'] ); 
+   
+   $input['bu_gplus'] = wp_filter_nohtml_kses( $input['bu_gplus'] ); 
   
    $input['bu_linkedin'] = wp_filter_nohtml_kses( $input['bu_linkedin'] );   
   

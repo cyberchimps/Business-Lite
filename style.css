@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/businesslite
 Description: Business lite: A Free WordPress Theme designed by CyberChimps.com featuring customizable theme options, a clean and professional design, a feature slider, dynamic header for custom logo, social icons, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices.
 Author: CyberChimps
 Author URI: http://cyberchimps.com
-Version: 2.0
+Version: 2.0.1
 Tags: white, light, black, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -254,23 +254,31 @@ ol {
 	margin-bottom: 6px;
 }
 
-img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-a img.alignright {float:right; margin:0 0 1em 1em}
-a img.alignleft {float:left; margin: 1em 1em 1em 0}
-a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-
-.aligncenter, div.aligncenter {
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+  margin-right: 1.5em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+  margin-left: 1.5em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
-.alignleft {
-	float: left;
-}
-.alignright {
-	float: right;
+p {
+     clear: both;
 }
 .wp-caption {
 	background-color: #f3f3f3;

@@ -169,9 +169,9 @@ add_action( 'wp_head', 'business_add_scripts',0);
 }
 	add_action( 'init', 'register_business_menus' );
 	
-	// Menu fallback
+// Menu fallback
 	
-	function menu_fallback() {
+	function business_menu_fallback() {
 	global $post; ?>
 	
 	<ul id="menu-nav" class="sf-menu">
@@ -179,7 +179,9 @@ add_action( 'wp_head', 'business_add_scripts',0);
 	</ul><?php
 }
     
-    
+// Register Sidebar
+
+function business_sidebars() {
    register_sidebar(array(
    		'name' => 'Sidebar Widgets',
     	'id'   => 'sidebar-widgets',
@@ -196,10 +198,20 @@ add_action( 'wp_head', 'business_add_scripts',0);
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="footer-widget-title">',
 		'after_title' => '</h3>',
-	));
-    
+	)); 
+}
+add_action( 'widgets_init', 'business_sidebars' );
 
-	//Business Pro options file
+function business_admin_link() {
+
+	global $wp_admin_bar;
+
+	$wp_admin_bar->add_menu( array( 'id' => 'Business lite', 'title' => 'Business lite Settings', 'href' => admin_url('themes.php?page=theme_options')  ) ); 
+  
+}
+add_action( 'admin_bar_menu', 'business_admin_link', 113 );
+
+//Business Pro options file
 	
 require_once ( get_template_directory() . '/library/options/options.php' );
 require_once ( get_template_directory() . '/library/options/options-themes.php' );
