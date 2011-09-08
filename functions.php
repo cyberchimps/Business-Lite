@@ -118,8 +118,6 @@ add_action('wp_head', 'business_plusone');
 	
 // Load jQuery
 	if ( !is_admin() ) {
-	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"), false);
 	   wp_enqueue_script('jquery');
 	}
 
@@ -166,7 +164,7 @@ add_action( 'wp_head', 'business_add_scripts',0);
 	
 	function register_business_menus() {
 	register_nav_menus(
-	array( 'header-menu' => __( 'Header Menu' ))
+	array( 'header-menu' => 'Header Menu' )
   );
 }
 	add_action( 'init', 'register_business_menus' );
@@ -182,22 +180,22 @@ add_action( 'wp_head', 'business_add_scripts',0);
 }
     
     
-    	register_sidebar(array(
-    		'name' => 'Sidebar Widgets',
-    		'id'   => 'sidebar-widgets',
-    		'description'   => 'These are widgets for the sidebar.',
-    		'before_widget' => '<div id="%1$s" class="sidebar-widget-style">',
-    		'after_widget'  => '</div>',
-    		'before_title'  => '<h2 class="sidebar-widget-title">',
-    		'after_title'   => '</h2>'
-    	));
+   register_sidebar(array(
+   		'name' => 'Sidebar Widgets',
+    	'id'   => 'sidebar-widgets',
+    	'description'   => 'These are widgets for the sidebar.',
+    	'before_widget' => '<div id="%1$s" class="sidebar-widget-style">',
+    	'after_widget'  => '</div>',
+    	'before_title'  => '<h2 class="sidebar-widget-title">',
+    	'after_title'   => '</h2>'
+    ));
     		
 	register_sidebar(array(
-	'name' => 'Footer',
-	'before_widget' => '<div class="footer-widgets">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3 class="footer-widget-title">',
-	'after_title' => '</h3>',
+		'name' => 'Footer',
+		'before_widget' => '<div class="footer-widgets">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
 	));
     
 
