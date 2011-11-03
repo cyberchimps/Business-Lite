@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/businesslite
 Description: Business lite: A Free WordPress Theme designed by CyberChimps.com featuring customizable theme options, a clean and professional design, a feature slider, dynamic header for custom logo, social icons, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices.
 Author: CyberChimps
 Author URI: http://cyberchimps.com
-Version: 2.0.1
+Version: 2.0.2
 Tags: white, light, black, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,28 +22,48 @@ body { font-size: 14px;	}
 
 .error { font-size: 28px; text-align: center;}
 
-p { margin: 0 0 10px 0; }
+p { margin: 0 0 10px 0; line-height: 1.3em;}
 a { color: #777; text-decoration: none; }
 a:hover { color: #555; }
 
 a img {border: none; }
 
 .featured-image {
-	margin-top: 14px; 
-	margin-right: 12px; 
-	margin-bottom: 10px; 
 
+	margin: 4px 12px 10px 1px;
 }
 
 ul, ol { margin: 0 0 10px 0; }
 
+#crumbs {
+	margin-bottom: 5px;
+	margin-left: 8px;	
+}
+
+th { padding-right: 30px; padding-bottom: 10px; }
+
+td {
+border-top: 1px solid #DDD;
+padding: 6px 10px 6px 0;
+}
+
+table {border-bottom: 1px solid #DDD;}
+
+dt {font-weight: bold; margin-top: 5px; margin-bottom: 5px; margin-left: 26px; }
+
+dd {margin-bottom: 15px; margin-left: 26px; }
+
+pre {margin-left: 20px;}
+
+fieldset {border: none;}
+
 
 /* Headlines  */
 
-h1, h2, h3 { font-weight: bold; margin: 0px; }
-h1 { font-size: 36px; }
-h2 { font-size: 16px; }
-h3 { font-size: 14px; }
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
 
 /* Header  */
 
@@ -146,10 +166,14 @@ input[type=text] {
    
 /* Content */
 
+.pagetitle, .archivetitle, .datetitle, .tagtitle {
+	margin-left: 5px;
+}
+
 #content_wrap {
 	width: 990px;
 	margin: auto;
-	padding-top: 5px;
+	padding-top: 15px;
 }
 
 #content_left {
@@ -177,8 +201,8 @@ hr {
 	background-color: #fff;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
-	margin-bottom: 25px;
-	padding: 5px 5px px 5px;
+	margin-bottom: 10px;
+	padding: 5px 5px 0px 5px;
 }
 
 .post_container ul {
@@ -224,20 +248,21 @@ ol {
 		font-size: 32px;
 		font-weight: 300;
 		margin-bottom: 5px;
-		color: #444;
+		color: #666;
 }
 
 .post { 
 		font-size: 14px;
 }
 
-.entry {
-	padding-top: 10px;
+.entry p {
+	clear: none;
 }
 
 .meta { 
 	color: #ababab;
 	font-size: 12px;
+	margin-bottom: 10px;
 }
 
 .post-edit-link {
@@ -259,16 +284,12 @@ img.alignleft {
 	display: inline;
 	float: left;
   margin-right: 1.5em;
-  margin-bottom: 10px;
-  margin-top: 5px;
 }
 .alignright,
 img.alignright {
 	display: inline;
 	float: right;
   margin-left: 1.5em;
-  margin-bottom: 10px;
-  margin-top: 5px;
 }
 .aligncenter,
 img.aligncenter {
@@ -277,9 +298,16 @@ img.aligncenter {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+img.size-full {
+	max-width: 640px;
+	height: auto;
+}
+
 p {
      clear: both;
 }
+
 .wp-caption {
 	background-color: #f3f3f3;
 	border: 1px solid #ddd;
@@ -307,8 +335,10 @@ p {
 blockquote { 
 	background-color: #ccc;
 	margin: 10px;
-	padding: 3px;
-			 }
+	padding: 10px;
+	font-style: italic;
+}
+
 blockquote p { }
 
 .sticky { }
@@ -372,7 +402,7 @@ label[for="comment"] {display: block;}
 	display: block;
 	margin-top: -5px;
 	padding-top: 5px;
-	border-left: 1px dotted #dadada;
+
 }
 
 
@@ -806,7 +836,12 @@ ol.commentlist li.thread-odd { }
 
 form { }
 
-textarea { }
+textarea {
+	margin-top: 10px;
+	padding-bottom: 10px; 
+	width: 90%
+	
+ }
 
 @media print {
 

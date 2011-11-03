@@ -14,13 +14,15 @@ get_header(); ?>
 	
 	<div id="content_left">
 	
+	<?php if (function_exists('business_breadcrumbs') && $options['bu_disable_breadcrumbs'] != "1") business_breadcrumbs(); ?>
+	
 		<div class="content_padding">
 		
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
 				<div class="post_container">
 				
-					<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+				
 
 					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
@@ -31,6 +33,10 @@ get_header(); ?>
 							<div class="entry">
 								<?php the_content(); ?>
 							</div><!--end entry-->
+						<div style="clear:both;"></div>
+							
+						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+						
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 						
 							<?php 

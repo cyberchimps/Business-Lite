@@ -52,7 +52,7 @@ global $themename, $shortname, $options;
 /* End options functions */
 
 $select_font = array(
-'0' => array('value' =>'Maven+Pro','label' => 'Maven Pro(default)'),'1' => array('value' =>'Arial','label' => 'Arial'),'2' => array('value' =>'Courier New','label' => 'Courier New'),'3' => array('value' =>'Georgia','label' => 'Georgia'),'4' => array('value' =>'Lucida Grande','label' => 'Lucida Grande'),'5' => array('value' =>'Tahoma','label' => 'Tahoma'),'6' => array('value' =>'Times New Roman','label' => 'Times New Roman'),'7' => array('value' =>'Ubuntu','label' => 'Ubuntu'),
+'0' => array('value' =>'Arial','label' => 'Arial (default)'),'1' => array('value' =>'Courier New','label' => 'Courier New'),'2' => array('value' =>'Georgia','label' => 'Georgia'),'3' => array('value' =>'Lucida Grande','label' => 'Lucida Grande'), '4' => array('value' =>'Maven+Pro','label' => 'Maven Pro'),'5' => array('value' =>'Tahoma','label' => 'Tahoma'),'6' => array('value' =>'Times New Roman','label' => 'Times New Roman'),'7' => array('value' =>'Ubuntu','label' => 'Ubuntu'),
 
 );
 
@@ -97,7 +97,13 @@ array( "name" => "Hide the Search Box",
     "desc" => "Check this box to hide the search box above the sidebar.",  
     "id" => $shortname."_hide_search",  
       "type" => "checkbox",  
-    "std" => "false"),        
+    "std" => "false"), 
+    
+array( "name" => "Disable Breadcrumbs",
+    "desc" => "Check this box to disable breadcrumb links",  
+    "id" => $shortname."_disable_breadcrumbs",  
+      "type" => "checkbox",  
+    "std" => "false"),       
         
 array( "name" => "Custom Favicon",  
     "desc" => "A favicon is a 16x16 pixel icon that represents your site; paste the URL to a .ico image that you want to use as the image",  
@@ -1285,6 +1291,10 @@ function theme_options_validate( $input ) {
 	  if ( ! isset( $input['bu_slider_navigation'] ) )
 		$input['bu_slider_navigation'] = null;
 	$input['bu_slider_navigation'] = ( $input['bu_slider_navigation'] == 1 ? 1 : 0 ); 
+	
+	  if ( ! isset( $input['bu_disable_breadcrumbs'] ) )
+		$input['bu_disable_breadcrumbs'] = null;
+	$input['bu_disable_breadcrumbs'] = ( $input['bu_disable_breadcrumbs'] == 1 ? 1 : 0 ); 
   
   	// Strip HTML from certain options
   	

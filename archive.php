@@ -14,6 +14,8 @@ get_header(); ?>
 
 	<div id="content_left">
 		
+	<?php if (function_exists('business_breadcrumbs') && $options['bu_disable_breadcrumbs'] != "1") business_breadcrumbs(); ?>
+		
 		<div class="content_padding">
 		
 		<?php if (have_posts()) : ?>
@@ -21,16 +23,16 @@ get_header(); ?>
  			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
 			<?php /* If this is a category archive */ if (is_category()) { ?>
-				<h2><font size="5">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category:</font></h2><br />
+				<h2 class="archivetitle"><font size="5">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category:</font></h2><br />
 
 			<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-				<h2><font size="5">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;:</font></h2><br />
+				<h2 class="tagtitle"><font size="5">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;:</font></h2><br />
 
 			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-				<h2><font size="5">Archive for <?php the_time('F jS, Y'); ?>:</font></h2><br />
+				<h2 class="datetitle"><font size="5">Archive for <?php the_time('F jS, Y'); ?>:</font></h2><br />
 
 			<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-				<h2><font size="5">Archive for <?php the_time('F, Y'); ?>:</font></h2><br />
+				<h2 class="datetitle"><font size="5">Archive for <?php the_time('F, Y'); ?>:</font></h2><br />
 
 			<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
 				<h2 class="pagetitle"><font size="5">Archive for <?php the_time('Y'); ?>:</font></h2><br />
@@ -49,13 +51,14 @@ get_header(); ?>
 
 				<div <?php post_class() ?>>
 				
-						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+						<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 					
 						<?php get_template_part('meta', 'archive'); ?>
 
 						<div class="entry">
 							<?php the_content(); ?>
 						</div>
+						<div style="clear:both;"></div>
 				<div class="tags">
 								<?php the_tags('Tags: ', ', ', '<br />'); ?>
 							</div><!--end tags-->
@@ -63,11 +66,13 @@ get_header(); ?>
 							<div class="postmetadata">
 										<?php get_template_part('share', 'index' ); ?>
 								
-							</div><!--end postmetadata-->
-							
+							</div><!--end postmetadata--><br />
+							<hr>
+								
 				</div><!--end post-->
+			
 			</div><!--end post_container-->
-
+			
 			<?php endwhile; ?>
 
 			<?php get_template_part('pagination', 'archive' ); ?>

@@ -138,7 +138,7 @@
 	
 		<?php  
 		if ($options['bu_font'] == "" AND $options['bu_custom_font'] == "")
-			$font = 'Maven+Pro';
+			$font = 'Arial';
 		
 
 		else
@@ -153,7 +153,7 @@
 	
 </head>
 
-<body style="font-family:'<?php echo $fontstrip ?>'" <?php body_class(); ?> >		
+<body style="font-family:'<?php echo $fontstrip ?>', Helvetica, serif" <?php body_class(); ?> >		
 			<div id="header">
 				<div id="headerwrap">
 					<div id="headergrid" class="row">

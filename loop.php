@@ -40,7 +40,9 @@
 						}
 					 ?>
 				</div><!--end entry-->
-				
+			
+			<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>	
+			
 			<?php edit_post_link('Edit', '<p>', '</p>'); ?>	
 					
 			<?php if ($showgplus == "1"):?>
@@ -67,13 +69,8 @@
 				<div class="postmetadata">
 					<?php if ($share != '1'):?>
 						<?php get_template_part('share', 'index' ); ?>
-					<?php endif;?>
-
-				<div class="comments">
-					<?php if ($comments != '1'):?>
-						<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-					<?php endif;?>
-				</div><!--end comments-->	
+					<?php endif;?><br />
+					<hr>
 				</div><!--end postmetadata-->
 							
 	</div><!--end post_class-->

@@ -2,6 +2,15 @@ Business lite Changelog
 
 ****************************
 
+Version 2.1 (11-02-11)
+-Cleaned up HTML element styling.
+-Removed extra display of comments from index.
+-Added post page links to index. 
+-Removed border on sidebar, added bottom border to posts instead. 
+-Changed font family to websafe Arial, Helvetica, serif. 
+-Fixed image alignment issue.
+-Added breadcrumb support. 
+
 Version 2.0.1 (9-8-11)
 -Updated Nivo Slider to 2.6.
 -Enqueueing WP jQuery library again en lieu of Nivo Slider update. 

@@ -21,6 +21,8 @@
 <div id="content_wrap">
 
 	<div id="content_left">
+	
+	<?php if (function_exists('business_breadcrumbs') && $options['bu_disable_breadcrumbs'] != "1") business_breadcrumbs(); ?>
 		
 		<div class="content_padding">
 		
