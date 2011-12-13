@@ -220,9 +220,12 @@ add_action('wp_head', 'business_plusone');
 
 	
 // Load jQuery
+function bu_jquery() {
 	if ( !is_admin() ) {
 	   wp_enqueue_script('jquery');
 	}
+}
+add_action('wp_enqueue_scripts', 'bu_jquery');	
 
 // Nivo Slider 
 

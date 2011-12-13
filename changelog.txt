@@ -2,6 +2,10 @@ Business lite Changelog
 
 ****************************
 
+Version 2.1.1 (12-12-11)
+-Visual fix to theme options for WordPress 3.3 compatibility. 
+-Fixed jQuery call for WordPress 3.3 compatibility. 
+
 Version 2.1 (11-02-11)
 -Cleaned up HTML element styling.
 -Removed extra display of comments from index.

@@ -29,8 +29,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 .menu ul{
     margin: 0; padding: 0;
-    float: left;}
- 
+    float: left;
+    width:80%;
+    margin-top:11px;}
+     
 .menu ul li{
     display: inline;margin-right: 5px;}
  
