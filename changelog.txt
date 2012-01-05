@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 2.1.2 (01-05-12)
+-Fixed broken upgrade link.
+
 Version 2.1.1 (12-12-11)
 -Visual fix to theme options for WordPress 3.3 compatibility. 
 -Fixed jQuery call for WordPress 3.3 compatibility. 

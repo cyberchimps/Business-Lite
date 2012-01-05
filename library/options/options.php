@@ -367,7 +367,7 @@ function theme_options_do_page() {
 <br />
 <img src="<?php echo get_template_directory_uri() ;?>/images/options/businesslitelogo.png" />
 <br /><br />
-<a href="http://cyberchimps.com/ifeaturepro/" target="_blank"><img src="<?php echo get_template_directory_uri() ;?>/images/options/upgrade.png" /></a>
+<a href="http://cyberchimps.com/businesspro/" target="_blank"><img src="<?php echo get_template_directory_uri() ;?>/images/options/upgrade.png" /></a>
 <br /><br />
 
 		<?php if ( false !== $_REQUEST['updated'] ) { ?>
