@@ -1,4 +1,4 @@
-Business Pro Changelog
+Business lite Changelog
 
 ****************************
 
@@ -8,17 +8,14 @@ Version 3.0 (03-07-12)
 -Added Front Page template.
 -Added Templates Theme Options.
 
-Version 2.1.2 (12-12-11)
--Visual fix to theme options for WordPress 3.3.
+Version 2.1.2 (01-05-12)
+-Fixed broken upgrade link.
 
-Version 2.1.1 (11-14-11)
--Fixed menu dropdown bug. 
--Fixed broken hide title option. 
--Calling WP provided jQuery library now. 
--General bug fixes. 
+Version 2.1.1 (12-12-11)
+-Visual fix to theme options for WordPress 3.3 compatibility. 
+-Fixed jQuery call for WordPress 3.3 compatibility. 
 
 Version 2.1 (11-02-11)
--WordThumb image resizing now off by default, must be enabled on page options or blog options tab.
 -Cleaned up HTML element styling.
 -Removed extra display of comments from index.
 -Added post page links to index. 
@@ -26,40 +23,48 @@ Version 2.1 (11-02-11)
 -Changed font family to websafe Arial, Helvetica, serif. 
 -Fixed image alignment issue.
 -Added breadcrumb support. 
--register_sidebar calls now inside a function that hooks into widgets_init.
--Javascript fix to slider templates. 
+
+Version 2.0.1 (9-8-11)
+-Updated Nivo Slider to 2.6.
+-Enqueueing WP jQuery library again en lieu of Nivo Slider update. 
+-Footer and Sidebar widgets now within a function that hooks into widgets_init.
+-Now stripping HTML from several option URL inputs. 
+-Added trailing slashes to default social icon URLs.
+-Added height and width element to social icons.
+-Fixed floats not clearing on images. 
+-Removed unnecessary text domain properties in options.php.
+-Added link to theme options settings in the Admin bar.
 
 Version 2.0 (8-9-11)
--Added Design tab, includes user control over several visual elements of the theme.
--Added Blog options tab, includes support for post excerpts, featured images, ability to hide meta elements.
--Added support for menu font choice.
--Replaced CoinSlider with Nivoslider, adds more animation effects and functionality options.
--Added taxonomy structure to Custom Slides, users can now assign slides to custom categories to be called on a per-page basis.
--Added image uploader support for site logo and favicon in theme options.
--Added category drop-down menu support for theme options page.
--Added tabbed meta options for per-page options.
--Slider, SEO, and Callout options tabs removed, moved options to page meta options.
--Added Loop file.
--Added Plus One button option.
--General bug fixes.
+-Updated 404 page, added custom image.
+-Adjusted styling on archive pages.
+-Updated functions.php, added new scripts and cleaned up some existing functions.
+-Updated header.php - fixed title conditionals, added support for new logo/favicon image uploaders, new page-level META options.
+-Added image uploader for logo and favicon, removed text input for URL.
+-Added color picker for link color.
+-Added Google +1 button option.
+-Added link to Author archives in post meta content.
+-Added drop down menu option for picking blog post category for feature slider. 
+-Restyled theme options page. 
+-General bug fixes. 
 
-Version 1.0.4 (7-14-2011)
--Fixed sitetitle issue in header causing blowout.
+Version 1.0.5 (7-17-11)
+-Fixed bug causing long site title text to wrap prematurely.
 
-Version 1.0.3 (7-13-2011)
+Version 1.0.4 (7-13-11)
 -Added Google + social icon.
--Fixed WordPress 3.2 related bug in update.php.
 
-
-Version 1.0.2 (7-6-2011)
--Added dropdown menu support, corresponding header height option in theme options.
+Version 1.0.3 (7-6-11)
 -Adjusted theme option CSS to eliminate WordPress 3.2 footer styling conflict.
 -Security fix in comments.php removing $_SERVER variable statement.
 -Cleaned up options.php, removed unnecessary functions.
 -Now enqueueing WordPress jQuery library instead of Google's for offline functionality. 
 
+Version 1.0.2 (6-16-2011)
+-Fixed whitespace issue at bottom of options.php causing "cannot modify header information" error. 
+
 Version 1.0.1 (6-13-2011)
--API added for push updates.
+-Moved hardcoded Superfish script out of header, now enqueued in functions.php.
 -jQuery noconflict patch to fix third-party plugin compatibility issues.
 
 Version 1.0 (6-10-2011)

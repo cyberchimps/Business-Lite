@@ -1,6 +1,6 @@
 <?php
 /**
-* Initializes the Business Theme Options
+* Initializes the Business lite Theme Options
 *
 * Author: Tyler Cunningham
 * Copyright: © 2012
@@ -11,7 +11,7 @@
 * along with this software. In the main directory, see: /licensing/
 * If not, see: {@link http://www.gnu.org/licenses/}.
 *
-* @package Business
+* @package Business lite
 * @since 3.0
 */
 
