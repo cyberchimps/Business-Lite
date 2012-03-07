@@ -306,7 +306,7 @@ function business_logo_menu_content() {
 			<div id="nav">
 			<?php wp_nav_menu( array(
 			'items_wrap'      => '<ul id="nav_menu">%3$s</ul>',
-			'fallback_cb' => 'menu_fallback',
+			'fallback_cb' => 'bu_menu_fallback',
 		    'theme_location' => 'header-menu' // Setting up the location for the main-menu, Main Navigation.
 			    )
 			);
