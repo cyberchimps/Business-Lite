@@ -625,7 +625,7 @@ function presstrends() {
 
 // Add your PressTrends and Theme API Keys
 $api_key = 'zwhgyc1lnt56hki8cpwobb47bblas4er226b';
-$auth = 'tq6sq5oku262h83p71t6h2h12frnba77v';
+$auth = 'm1geofjla0avgqof2hq41oxdg46laiul6';
 
 // NO NEED TO EDIT BELOW
 $data = get_transient( 'presstrends_data' );
