@@ -3,13 +3,6 @@
         <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
     
 		<div class="widget-container">    
-		<h2 class="widget-title">Business Pro 3</h2>
-		<p>Thank you for purchasing Business Pro 3.</p>
-		<p>We designed Business Pro 3 to be as user friendly as possible, but if you do run into trouble we provide a <a href="http://cyberchimps.com/forum">support forum</a>, and <a href="http://www.cyberchimps.com/ifeature-pro/docs/">precise documentation</a>.</p>
-
-    	</div>
-		
-		<div class="widget-container">    
 		<h2 class="widget-title"><?php printf( __('Pages', 'ifeature' )); ?></h2>
 		<ul>
     	<?php wp_list_pages('title_li=' ); ?>

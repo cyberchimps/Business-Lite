@@ -490,6 +490,10 @@ function business_box_section() {
 function business_callout_section() {
 	do_action ('business_callout_section');
 }
+
+function business_page_slider() {
+	do_action ('business_page_slider');
+}
 /**
 * End
 */

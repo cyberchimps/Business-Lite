@@ -19,8 +19,7 @@
 * Business slider actions
 */
 
-add_action ('business_blog_slider', 'business_slider_lite_content' );
-add_action ('business_page_slider', 'business_slider_lite_content' );
+add_action ('business_page_slider', 'business_slider_content' );
 
 /**
 * Lite slider function
