@@ -129,7 +129,7 @@ $options
 			->text($themeslug."_blog_slide_three_url", "Slide Three Link", array('default' => 'http://cyberchimps.com'))
 		->subsection_end()
 		->subsection("Callout Options")
-			->textarea($themeslug."_front_callout_text", "Enter your Callout text")
+			->textarea($themeslug."_blog_callout_text", "Enter your Callout text")
 		->subsection_end()
 	->section("Templates")
 		->subsection("Single Post")

@@ -31,7 +31,7 @@ function initialize_the_meta_boxes() {
 			->section_order('page_section_order', 'Page Elements', '', array('options' => array(
 					'page_section' => 'Page',
 					'breadcrumbs' => 'Breadcrumbs',
-					'page_slider' => 'Content Slider',
+					'page_slider' => 'Slider',
 					'callout_section' => 'Callout',
 					'box_section' => 'Boxes'		
 					),
@@ -48,9 +48,6 @@ function initialize_the_meta_boxes() {
 			->sliderhelp('', 'Need Help?', '')
 		->tab("Callout Options")
 			->textarea('callout_text', 'Callout Text', '')
-			->checkbox('extra_callout_options', 'Custom Callout Options', '', array('std' => 'off'))
-			->color('custom_callout_text_color', 'Custom Text Color', '')
-			->color('custom_callout_link_color', 'Custom Link Color', '')
 			->pagehelp('', 'Need help?', '')
 		->tab("SEO Options")
 			->text('seo_title', 'SEO Title', '')
