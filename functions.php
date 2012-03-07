@@ -56,7 +56,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow =="themes.php" ) {
 function bu_admin_link() {
 	global $wp_admin_bar;
 
-	$wp_admin_bar->add_menu( array( 'id' => 'Business', 'title' => 'Business Pro Options', 'href' => admin_url('themes.php?page=business')  ) ); 
+	$wp_admin_bar->add_menu( array( 'id' => 'Business', 'title' => 'Business lite Options', 'href' => admin_url('themes.php?page=business')  ) ); 
 }
 add_action( 'admin_bar_menu', 'bu_admin_link', 113 );
 
