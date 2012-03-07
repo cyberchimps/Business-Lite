@@ -63,7 +63,7 @@ function business_callout_section_content() {
 /* Define Callout text. */	
 
 	if ($text == '') {
-		$callouttext = '<div style="margin-bottom:10px; font-size:20px;"><i>"Business Pro from CyberChimps WordPress Themes is a Professional Responsive WordPress Theme perfect for any business on any device."</i><br /></div> Learn more about <a href="http://cyberchimps.com/businesspro">Business Pro</a>.';
+		$callouttext = '<div style="margin-bottom:10px; font-size:20px;"><i>"Business lite from CyberChimps WordPress Themes is a Professional Responsive WordPress Theme perfect for any business on any device."</i><br /></div> Want more features? <a href="http://cyberchimps.com/businesspro">Go Pro</a>.';
 	}
 	else {
 		$callouttext = $text;

@@ -52,7 +52,7 @@ function business_box_section_content() {
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Box 4") ) : ?>
 		<div id="box4" class="three columns">
 			<h2 class="box-widget-title">Excellent Support</h2>
-			<p class="boxtext"><img src="<?php echo $root ; ?>/images/icons/search.png" height="24" alt="slider" class="alignleft" />Business is built for any business, and offers intuitive theme options. If you do run into trouble we provide a <a href="http://cyberchimps.com/forum/pro/">Support Forum</a>, and precise <a title="Business Pro Docs" href="http://cyberchimps.com/business/docs/">Documentation</a>.</p>
+			<p class="boxtext"><img src="<?php echo $root ; ?>/images/icons/search.png" height="24" alt="slider" class="alignleft" />Business is built for any business, and offers intuitive theme options. If you do run into trouble we provide a <a href="http://cyberchimps.com/forum/pro/">Support Forum</a>, and precise <a title="Business Pro Docs" href="http://cyberchimps.com/businesslite/docs/">Documentation</a>.</p>
 		</div><!--end box3-->
 		<?php endif; ?>
 </div>

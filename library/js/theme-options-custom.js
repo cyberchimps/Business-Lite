@@ -196,7 +196,7 @@ jQuery(function($) {
 	$("input[name='business[bu_blog_section_order]']").change(function(){
 		var show = $(this).val().split(",");
 		var map = {
-			business_page_slider: "subsection-blogslider",
+			business_page_slider: "subsection-featureslider",
 			business_callout_section: "subsection-calloutoptions",
 			business_portfolio_element: "subsection-portfoliooptions",
 			business_twitterbar_section: "subsection-twtterbaroptions",
@@ -218,11 +218,7 @@ jQuery(function($) {
 		var show = $(this).val().split(",");
 		var map = {
 			business_page_slider: "subsection-slider",
-			business_callout_section: "subsection-callout",
-			business_portfolio_element: "subsection-portfolio",
-			business_twitterbar_section: "subsection-twtterbar",
-			business_index_carousel_section: "subsection-carousel",
-			business_product_element: "subsection-product"
+			business_callout_section: "subsection-callout"
 			// , business_box_section: ""
 		};
 
