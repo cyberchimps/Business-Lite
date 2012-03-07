@@ -46,13 +46,8 @@ jQuery(document).ready(function($) {
 	$("#subsection-Portfolio-Element > h4").click();
 	$("#subsection-Page-Options > h4").click();
 	var page_subsection_map = {
-		page_slider: "subsection-Business-Pro-Slider-Options",
-		callout_section: "subsection-Callout-Options",
-		carousel_section: "subsection-Carousel-Options",
-		product_element: "subsection-Carousel-Options",
-		portfolio_element: "subsection-Portfolio-Options",
-		product_element: "subsection-Product-Options",
-		twitterbar_section: "subsection-Twitter-Options"
+		page_slider: "subsection-Slider-Options",
+		callout_section: "subsection-Callout-Options"
 	};
 	$("#page_section_order").change(function(){
 		var array = $(this).val().split(",");
