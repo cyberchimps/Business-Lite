@@ -93,6 +93,8 @@ class ClassyOptions {
 				<div class="logo">
 				<h2><?php echo $themenamefull; ?> Options</h2>
 				</div>
+				<div class="upgradepro"><a href="http://cyberchimps.com/businesspro/" target="_blank">Upgrade to Business Pro</a>
+				</div>
 				<div class="clear"></div>
 					<p class="submit">
 						<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options' ); ?>" />
