@@ -612,7 +612,6 @@ function custom_pagination($pages = '', $range = 4)
 * Initialize business Core Framework and Pro Extension.
 */ 
 require_once ( get_template_directory() . '/core/core-init.php' );
-require_once ( get_template_directory() . '/core/pro/pro-init.php' );
 
 /**
 * Call additional files required by theme.
@@ -620,7 +619,6 @@ require_once ( get_template_directory() . '/core/pro/pro-init.php' );
 require_once ( get_template_directory() . '/includes/classy-options-init.php' ); // Theme options markup.
 require_once ( get_template_directory() . '/includes/options-functions.php' ); // Custom functions based on theme options.
 require_once ( get_template_directory() . '/includes/meta-box.php' ); // Meta options markup.
-require_once ( get_template_directory() . '/includes/update.php' ); // Notify user of theme update on "Updates" page in Dashboard.
 
 // Presstrends
 function presstrends() {
