@@ -94,13 +94,13 @@ function business_secondary_footer_copyright() {
 function business_secondary_footer_credit() { 
 	global $options, $themeslug; //call globals
 	
-	if ($options->get($themeslug.'_hide_link') == "1") {?>
+	?>
 		
 		<div id="credit" class="six columns">
 			<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>
 		</div> 
 	
-	<?php }
+	<?php 
 }
 /**
 * End
