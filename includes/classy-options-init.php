@@ -33,19 +33,17 @@ $terms2 = get_terms('category', 'hide_empty=0');
 
 $options
 	->section("Welcome")
-		->info("<h1>Business 3</h1>
+		->info("<h1>Business lite 3</h1>
 		
-<p><strong>Business Professional Responsive WordPress Theme</strong></p>
+<p><strong>Business lite Professional Responsive WordPress Theme</strong></p>
 
-<p>Business 3 from CyberChimps WordPress Themes is a Free Professional Responsive WordPress Theme perfect for any business on any device. It gives your company the tools to turn WordPress into a modern Drag and Drop Content Management System (CMS).</p>
+<p>Business lite 3 from CyberChimps WordPress Themes is a Free Professional Responsive Business WordPress Theme perfect for any business on any device. It gives your company the tools to turn WordPress into a modern Drag and Drop Content Management System (CMS).</p>
 
-<p>To get started simply work your way through the menus to the left, select your options, add your content, and always remember to hit save after making any changes.</p>
+<p>If you want even more amazing new features <a href='http://cyberchimps.com/businesspro/' target='_blank'>upgrade to Business Pro 3</a> which includes a Responsive Content Feature Slider, Portfolio, Product Element, Page Content, Image Carousel, Twitter bar, Widgetized boxes, Callout section, expanded typography including TypeKit support, and many more powerful new features. Please visit <a href='http://cyberchimps.com/businesspro/' target='_blank'>CyberChimps.com</a> to learn more!</p>
 
-<p>The Content Feature Slider options are under the Business Pro Page Options which are available below the Page content entry area in WP-Admin when you edit a page. This way you can configure each page individually. You will also find the Drag & Drop Page Elements editor within the Business Pro Page Options as well.</p>
+<p>We tried to make Business lite as easy to use as possible, but if you still need help please read the <a href='http://cyberchimps.com/businesslite/docs/' target='_blank'>documentation</a>, and visit our <a href='http://cyberchimps.com/forum/' target='_blank'>support forum</a>.</p>
 
-<p>We tried to make Business Pro as easy to use as possible, but if you still need help please read the <a href='http://cyberchimps.com/businesspro/docs/' target='_blank'>documentation</a>, and visit our <a href='http://cyberchimps.com/forum/pro/' target='_blank'>support forum</a>.</p>
-
-<p>Thank you for using Business Pro.</p>
+<p>Thank you for using Business lite.</p>
 
 <p><strong>A Professional Business WordPress Theme</strong></p>
 ")
