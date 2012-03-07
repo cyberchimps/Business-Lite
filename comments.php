@@ -1,73 +1,30 @@
 <?php
-
-/*
-	Comments
-	
-	Creates the Business lite comments section.
-	
-	Copyright (C) 2011 CyberChimps
+/**
+* Comments template used by Business lite
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Business lite
+* @since 3.0
 */
 
-	if ( post_password_required() ) { ?>
-		This post is password protected. Enter the password to view comments.
-	<?php
-		return;
-	}
 ?>
 
-<?php if ( have_comments() ) : ?>
-	<br />
-	<h2 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?></h2>
+<!-- Begin @business business_before_comments hook content-->
+	<?php business_before_comments(); ?>
+<!-- Begin @business business_before_comments hook content-->
 
-	<div class="navigation">
-		<div class="next-posts"><?php previous_comments_link() ?></div>
-		<div class="prev-posts"><?php next_comments_link() ?></div>
-	</div>
+<!-- Begin @business business_comments hook content-->
+	<?php business_comments(); ?>
+<!-- Begin @business business_comments hook content-->
 
-	<ol class="commentlist">
-		<?php wp_list_comments(); ?>
-	</ol>
-
-	<div class="navigation">
-		<div class="next-posts"><?php previous_comments_link() ?></div>
-		<div class="prev-posts"><?php next_comments_link() ?></div>
-	</div>
-	
- <?php else : // this is displayed if there are no comments so far ?>
-
-	<?php if ( comments_open() ) : ?>
-		<!-- If comments are open, but there are no comments. -->
-
-	 <?php else : // comments are closed ?>
-		
-
-	<?php endif; ?>
-	
-<?php endif; ?>
-
-<?php if ( comments_open() ) : ?>
-
-<div id="respond">
-
-	<div class="cancel-comment-reply">
-		<?php cancel_comment_reply_link(); ?>
-	</div>
-
-	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-		<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
-	<?php else : ?>
-	
-	<?php comment_form(); ?>
-	
-		<?php endif; ?>
-
-		<!--<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->	
-		
-		
-		<?php do_action('comment_form', $post->ID); ?>
-
-	</form>
-	
-</div>
-
-	<?php endif; // If registration required and not logged in ?>
+<!-- Begin @business business_after_comments hook content-->
+	<?php business_after_comments(); ?>
+<!-- Begin @business business_after_comments hook content-->

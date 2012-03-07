@@ -1,92 +1,84 @@
 <?php 
-
-/*
-	Archive
-	
-	Creates the Business lite archive pages.
-	
-	Copyright (C) 2011 CyberChimps
+/**
+* Archive template used by Business lite
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Business lite
+* @since 3.0
 */
 
-get_header(); ?>
+	global $options, $themeslug, $post, $content_grid; // call globals
+	
+/* Header call. */
 
-<div id="content_wrap">
+	business_sidebar_init();
+	get_header(); 
+	
+/* End header. */
 
-	<div id="content_left">
+?>
+
+<div class="container">
+	<div class="row">
+	<!--Begin @business before content sidebar hook-->
+		<?php business_before_content_sidebar(); ?>
+	<!--End @business before content sidebar hook-->
+	<?php if (have_posts()) : ?>
+	
+		<div id="content" class="<?php echo $content_grid; ?>">
 		
-	<?php if (function_exists('business_breadcrumbs') && $options['bu_disable_breadcrumbs'] != "1") business_breadcrumbs(); ?>
+		<!--Begin @business before_archive hook-->
+			<?php business_before_archive(); ?>
+		<!--End @business before_archive hook-->
 		
-		<div class="content_padding">
+		<?php while (have_posts()) : the_post(); ?>
 		
-		<?php if (have_posts()) : ?>
-
- 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-
-			<?php /* If this is a category archive */ if (is_category()) { ?>
-				<h2 class="archivetitle"><font size="5">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category:</font></h2><br />
-
-			<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-				<h2 class="tagtitle"><font size="5">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;:</font></h2><br />
-
-			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-				<h2 class="datetitle"><font size="5">Archive for <?php the_time('F jS, Y'); ?>:</font></h2><br />
-
-			<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-				<h2 class="datetitle"><font size="5">Archive for <?php the_time('F, Y'); ?>:</font></h2><br />
-
-			<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-				<h2 class="pagetitle"><font size="5">Archive for <?php the_time('Y'); ?>:</font></h2><br />
-
-			<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-				<h2 class="pagetitle"><font size="5">Author Archive: </font></h2><br />
-
-			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-				<h2 class="pagetitle"><font size="5">Blog Archives:</font></h2><br />
+		<div class="post_container">
+			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		
+			<!--Begin @business archive hook-->
+				<?php business_loop(); ?>
+			<!--End @business archive hook-->
 			
-			<?php } ?>
+			</div><!--end post_class-->	
+		</div><!--end post container--> 
+		<!--Begin @iFeature post bar hook-->
+				<?php business_post_bar(); ?>
+			<!--End @iFeature post bar hook-->
 
-			<?php while (have_posts()) : the_post(); ?>
-			
-			<div class="post_container">
-
-				<div <?php post_class() ?>>
-				
-						<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-					
-						<?php get_template_part('meta', 'archive'); ?>
-
-						<div class="entry">
-							<?php the_content(); ?>
-						</div>
-						<div style="clear:both;"></div>
-				<div class="tags">
-								<?php the_tags('Tags: ', ', ', '<br />'); ?>
-							</div><!--end tags-->
-
-							<div class="postmetadata">
-										<?php get_template_part('share', 'index' ); ?>
-								
-							</div><!--end postmetadata--><br />
-							<hr>
-								
-				</div><!--end post-->
-			
-			</div><!--end post_container-->
-			
-			<?php endwhile; ?>
-
-			<?php get_template_part('pagination', 'archive' ); ?>
-			
-	<?php else : ?>
+		 <?php endwhile; ?>
+	 
+	 <?php else : ?>
 
 		<h2>Nothing found</h2>
 
 	<?php endif; ?>
+
+		<!--Begin @business pagination hook-->
+			<?php business_pagination(); ?>
+		<!--End @business pagination hook-->
+		
+		<!--Begin @business after_archive hook-->
+			<?php business_after_archive(); ?>
+		<!--End @business after_archive hook-->
+	
 		</div><!--end content_padding-->
-	</div><!--end content_left-->
 
-	<div id="sidebar_right"><?php get_sidebar(); ?></div>
-</div><!--end content_wrap-->
+	<!--Begin @business after content sidebar hook-->
+		<?php business_after_content_sidebar(); ?>
+	<!--End @business after content sidebar hook-->
+	
+		</div><!--end content-->
+	</div><!--end row-->
+		<?php if ($options->get($themeslug.'_archive_breadcrumbs') == "1") { business_breadcrumbs();}?>
+</div><!--end container-->
 
-<div style=clear:both;></div>
 <?php get_footer(); ?>

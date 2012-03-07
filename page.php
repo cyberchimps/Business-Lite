@@ -1,11 +1,18 @@
-<?php
-
-/*
-	Page
-	Establishes the core Business lite page tempate.
-	Version: 2.0
-	Copyright (C) 2011 CyberChimps
-
+<?php 
+/**
+* Page template used by Business lite
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Business lite
+* @since 3.0
 */
 
 /* Header call. */
@@ -14,52 +21,21 @@
 	
 /* End header. */	
 
-
-	$hidetitle = get_post_meta($post->ID, 'hide_title' , true);
-?>
-
-<div id="content_wrap">
-
-	<div id="content_left">
+/* Define global variables. */
+	global $options, $post, $themeslug;
+	$page_section_order = get_post_meta($post->ID, 'page_section_order' , true);
+	if(!$page_section_order) {
+		$page_section_order = 'page_section';
+	}
 	
-	<?php if (function_exists('business_breadcrumbs') && $options['bu_disable_breadcrumbs'] != "1") business_breadcrumbs(); ?>
+/* End define global variables. */
+
+	foreach(explode(",", $page_section_order) as $key) {
+		$fn = 'business_' . $key;
+		if(function_exists($fn)) {
+			call_user_func_array($fn, array());
+		}
+	}
 		
-		<div class="content_padding">
-		
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
-			<div class="post_container">
-			
-				<div class="post" id="post-<?php the_ID(); ?>">
-
-					<?php if ($hidetitle == ""): ?>
-				
-					<h2 class="posts_title"><?php the_title(); ?></h2>
-						<?php endif;?>
-
-					<div class="entry">
-
-						<?php the_content(); ?>
-
-						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-
-					</div><!--end entry-->
-
-				<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-
-				</div><!--end post-->
-		
-			<?php comments_template(); ?>
-
-			<?php endwhile; endif; ?>
-			</div><!--end post_container-->
-			
-		</div><!--end content_padding-->
-		
-	</div><!--end content_left-->
-
-	<?php get_sidebar(); ?>
-</div><!--end content_wrap-->
-
-<div style=clear:both;></div>
-<?php get_footer(); ?>
+get_footer(); 
+?>

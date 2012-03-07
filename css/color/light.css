@@ -1,0 +1,12 @@
+/* Light */
+
+a {color: #555;text-decoration:underline}
+
+a:hover {color: #aaa;}
+
+#header {
+	border-top: 4px solid #e1e1e1;	
+	border-bottom: 4px solid #e1e1e1;
+	min-height: 80px;
+	background: #eaeaea url(../../images/headerbg.png);
+}

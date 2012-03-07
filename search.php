@@ -1,55 +1,49 @@
 <?php 
-
-/*
-	Search
-	
-	Establishes the Business lite search functionality. 
-	
-	Copyright (C) 2011 CyberChimps
+/**
+* Search template used by Business lite
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Business.
+* @since 3.0
 */
 
-get_header(); ?>
+global $options, $themeslug, $post, $sidebar, $content_grid; // call globals
+	
+business_sidebar_init();
+get_header(); 
 
-<div id="content_wrap">
+?>
 
-	<div id="content_left">
-		
-		<div class="content_padding">
+<div class="container">
+	<div class="row">
+		<!--Begin @business before content sidebar hook-->
+			<?php business_before_content_sidebar(); ?>
+		<!--End @business before content sidebar hook-->
+		<div id="content" class="<?php echo $content_grid; ?>">
+			<!-- Begin @business before_search hook -->
+				<?php business_before_search(); ?>
+			<!-- End @business before_search hook -->
+	
+			<!-- Begin @business search hook -->
+				<?php business_search(); ?>
+			<!-- End @business search hook -->
+	
+			<!-- Begin @business after_search hook -->
+				<?php business_after_search(); ?>
+			<!-- End @business after_search hook -->		
+		</div>	
+		<!--Begin @business after content sidebar hook-->
+			<?php business_after_content_sidebar(); ?>
+		<!--End @business after content sidebar hook-->
+	</div><!--end row-->
+</div><!--end container-->
 
-	<?php if (have_posts()) : ?>
-
-		<h2>Search Results</h2>
-
-		
-
-		<?php while (have_posts()) : the_post(); ?>
-
-			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
-				<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-				<?php get_template_part('meta', 'search' ); ?>
-
-				<div class="entry">
-
-					<?php the_excerpt(); ?>
-
-				</div>
-
-			</div>
-
-		<?php endwhile; ?>
-
-		<?php get_template_part('pagination', 'search'); ?>
-
-	<?php else : ?>
-
-		<h2>No posts found.</h2>
-
-	<?php endif; ?>
-		</div><!--end content_padding-->
-	</div><!--end content_left-->
-
-	<div id="sidebar_right"><?php get_sidebar(); ?></div>
-</div><!--end content_wrap-->
-<div class="clear"></div>
 <?php get_footer(); ?>

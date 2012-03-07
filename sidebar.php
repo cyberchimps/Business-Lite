@@ -1,86 +1,51 @@
-<?php
-$options = get_option('business') ; 
-/*
-	Sidebar
-	
-	Creates the widgetized sidebar of Business lite. 
-	
-	Copyright (C) 2011 CyberChimps
-*/
-
-?>
-
-<div id="sidebar_right">
-	<div id="sidebar">
-	
-	<?php 
-		$social = $options['bu_hide_social'];
-		$search = $options['bu_hide_search'];
-	?>
-
-	<?php if ($social != '1'):?>
-		<div class="sidebar-widget-style">
-			<div id="social">
-				<?php get_template_part('icons', 'header'); ?>
-			</div><!-- end social -->
-    	</div>
-    	<?php endif;?>
-    	<?php if ($search != '1'):?>
-    	<div class="sidebar-widget-style">
-			<div id="searchbar">
-				<?php get_search_form(); ?>
-			</div>
-		</div>
-		<?php endif;?>
-    <?php if (dynamic_sidebar('Sidebar Widgets')) : else : ?>
+<?php if (dynamic_sidebar('Sidebar Widgets')) : else : ?>
     
-        <!-- All these widgets only shows up if you DON'T have any widgets active in this zone -->
+        <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
+    
+		<div class="widget-container">    
+		<h2 class="widget-title">Business Pro 3</h2>
+		<p>Thank you for purchasing Business Pro 3.</p>
+		<p>We designed Business Pro 3 to be as user friendly as possible, but if you do run into trouble we provide a <a href="http://cyberchimps.com/forum">support forum</a>, and <a href="http://www.cyberchimps.com/ifeature-pro/docs/">precise documentation</a>.</p>
+
+    	</div>
 		
-		<div class="sidebar-widget-style">
-    	<h2 class="sidebar-widget-title">Subscribe</h2>
-    	<ul>
-    		<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
-    		<li><a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a></li>
+		<div class="widget-container">    
+		<h2 class="widget-title"><?php printf( __('Pages', 'ifeature' )); ?></h2>
+		<ul>
+    	<?php wp_list_pages('title_li=' ); ?>
     	</ul>
     	</div>
-		
-		<div class="sidebar-widget-style">    
-		<h2 class="sidebar-widget-title">Recent Posts</h2>
-		<ul>
-		<?php
-			$args = array( 'numberposts' => '5' );
-			$recent_posts = wp_get_recent_posts( $args );
-			foreach( $recent_posts as $post ){
-					echo '<li><a href="' . get_permalink($post["ID"]) . '" title="Look '.$post["post_title"].'" >' .   $post["post_title"].'</a> </li> ';
-		}
-		?>
-		</ul>
-    	</div>
     
-    	<div class="sidebar-widget-style">
-    	<h2 class="sidebar-widget-title">Archives</h2>
+		<div class="widget-container">    
+    	<h2 class="widget-title"><?php printf( __( 'Archives', 'ifeature' )); ?></h2>
     	<ul>
     		<?php wp_get_archives('type=monthly'); ?>
     	</ul>
     	</div>
         
-        <div class="sidebar-widget-style">
-        <h2 class="sidebar-widget-title">Categories</h2>
+		<div class="widget-container">    
+       <h2 class="widget-title"><?php printf( __('Categories', 'ifeature' )); ?></h2>
         <ul>
     	   <?php wp_list_categories('show_count=1&title_li='); ?>
         </ul>
         </div>
         
-    	<div class="sidebar-widget-style">
-    	<h2 class="sidebar-widget-title">WordPress</h2>
+		<div class="widget-container">    
+    	<h2 class="widget-title"><?php printf( __('WordPress', 'ifeature' )); ?></h2>
     	<ul>
     		<?php wp_register(); ?>
     		<li><?php wp_loginout(); ?></li>
-    		<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+    		<li><a href="<?php echo esc_url( __('http://wordpress.org/', 'ifeature' )); ?>" target="_blank" title="<?php esc_attr_e('Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'ifeature'); ?>"> <?php printf( __('WordPress', 'ifeature' )); ?></a></li>
     		<?php wp_meta(); ?>
     	</ul>
     	</div>
+    	
+    	<div class="widget-container">
+    	<h2 class="widget-title"><?php printf( __('Subscribe', 'ifeature' )); ?></h2>
+    	<ul>
+    		<li><a href="<?php bloginfo('rss2_url'); ?>"><?php printf( __('Entries (RSS)', 'ifeature' )); ?></a></li>
+    		<li><a href="<?php bloginfo('comments_rss2_url'); ?>"><?php printf( __('Comments (RSS)', 'ifeature' )); ?></a></li>
+    	</ul>
+    	</div>
 	
-	<?php endif; ?>
-	</div><!--end sidebar-->
-</div><!--end sidebar_right-->
+<?php endif; ?>

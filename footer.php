@@ -1,102 +1,57 @@
 <?php
-
-/*
-	
-	Footer
-	
-	Establishes the widgetized footer and static post-footer section of Business lite. 
-	
-	Copyright (C) 2011 CyberChimps
-	
+/**
+* Footer template used by Business.
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Business.
+* @since 3.0
 */
-$options = get_option('business') ;  
-?>	
-		
-<div id="footer">
-    <div id="footer_wrap">
+
+global $options, $themeslug;
+
+?>
+</div>
+<?php if ($options->get($themeslug.'_disable_footer') != "0"):?>	
+
+	<div id="footer">
+     	<div class="container">
+     		<div class="row">
     	
-    	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer") ) : ?>
-		
-		<div class="footer-widgets">
-			<h3 class="footer-widget-title">Recent Posts</h3>
-			<ul>
-				<?php wp_get_archives('type=postbypost&limit=4'); ?>
-			</ul>
-		</div>
-		
-		<div class="footer-widgets">
-			<h3 class="footer-widget-title">Archives</h3>
-			<ul>
-				<?php wp_get_archives('type=monthly&limit=16'); ?>
-			</ul>
-		</div>
-
-		<div class="footer-widgets">
-			<h3 class="footer-widget-title">Links</h3>
-			<ul>
-				<?php wp_list_bookmarks('categorize=0&title_li='); ?>
-			</ul>
-		</div>
-
-		<div class="footer-widgets">
-			<h3 class="footer-widget-title">WordPress</h3>
-			<ul>
-    		<?php wp_register(); ?>
-    		<li><?php wp_loginout(); ?></li>
-    		<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
-    		<?php wp_meta(); ?>
-    		</ul>
-		</div>
-		
-		<div class="footer-widgets">
-			<h3 class="footer-widget-title">Search</h3>
-			<div id="search_footer">
-				<?php get_search_form(); ?>
-			</div>
-		</div>
-		
-			<?php endif; ?>
-		<div class="clear"></div>
-
-		<!--Inserts Google Analytics Code-->
-		<?php  $analytics = $options['bu_ga_code']; ?>
-		<?php echo stripslashes($analytics); ?>
-			   
-		<?php wp_footer(); ?>
-	</div><!--end footer_wrap-->
-</div><!--end footer-->
+	<!-- Begin @business footer hook content-->
+		<?php business_footer(); ?>
+	<!-- End @business footer hook content-->
 	
+	<?php endif;?>
+	
+
+		</div><!--end footer_wrap-->
+	</div><!--end footer-->
+</div> 
+
+<?php if ($options->get($themeslug.'_disable_afterfooter') != "0"):?>
+
 	<div id="afterfooter">
 		<div id="afterfooterwrap">
-			<!--Inserts Copyright Text-->
-			<?php  $copyright = $options['bu_footer_text']; ?>
-				<?php if ($copyright == ''): ?> 
-					<div id="afterfootercopyright">
-						&copy; <?php echo bloginfo ( 'name' );  ?>
-					</div>
-				<?php endif;?>
-				<?php if ($copyright != ''):?> 
-					<div id="afterfootercopyright">
-						&copy; <?php echo $copyright; ?>
-					</div>
-				<?php endif;?>
-			<!--Inserts Afterfooter Social Icons -->
-			<?php 
-								$hidefootersocial		= $options['bu_hide_footer_social'];
-							?>
-			<?php if ($hidefootersocial != "1" ):?>
-			<div id="social_footer">
-				<?php get_template_part('icons', 'header'); ?>
-			</div><!-- end social -->
-			<?php endif;?>
-			<!--Inserts Site Credit -->
-								<div id="credit">
-						<a href="http://cyberchimps.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/cyberchimps.png" alt="CyberChimps"/></a>
-					</div>
-		
+		<div class="container">
+		<div class="row">	
+		<!-- Begin @business afterfooter hook content-->
+			<?php business_secondary_footer(); ?>
+		<!-- End @business afterfooter hook content-->
 		</div>  <!--end afterfooterwrap-->	
 	</div> <!--end afterfooter-->	
+		</div> 	
+		</div>
+	<?php endif;?>
 	
+	<?php wp_footer(); ?>	
 </body>
 
 </html>

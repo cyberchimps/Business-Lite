@@ -1,47 +1,32 @@
 <?php
-$options = get_option('business') ;  
+/**
+* Header template used by Business lite
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Business lite
+* @since 3.0
+*/
+
+	global $options, $themeslug, $post; // call globals
+	$reorder = $options->get($themeslug.'_blog_section_order');
 ?>
 
 <?php get_header(); ?>
 
-<div id="content_wrap">
-		
-	<div id="content_left">
-	
-	<?php 
-		$hideslider = $options['bu_hide_slider'];
-		$share = $options['bu_hide_share'];
-		$tags = $options['bu_hide_tags'];
-		$excerpts = $options['bu_show_excerpts']
-	?>
-	
-		<?php if ($hideslider != '1'):?>
-			<?php get_template_part('slider', 'index' ); ?>
-		<?php endif;?>
-	
-		<div class="content_padding">
-		
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
-				
-				<!--Call the Loop-->
-			<?php get_template_part('loop', 'index' ); ?>
-
-		<?php endwhile; ?>
-
-		<?php get_template_part('pagination', 'index' ); ?>
-
-		<?php else : ?>
-
-			<h2>Not Found</h2>
-
-		<?php endif; ?>
-		</div> <!--end content_padding-->
-	</div> <!--end content_left-->
-
-	<?php get_sidebar(); ?>
-	
-</div><!--end content_wrap-->
-<div style="clear:both;"></div>
+		<?php
+			foreach(explode(",", $options->get($themeslug.'_blog_section_order')) as $fn) {
+				if(function_exists($fn)) {
+					call_user_func_array($fn, array());
+				}
+			}
+		?>
 
 <?php get_footer(); ?>

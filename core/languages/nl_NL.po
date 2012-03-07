@@ -1,0 +1,432 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Core 1.0\n"
+"Report-Msgid-Bugs-To: http://cyberchimps.com/forum\n"
+"POT-Creation-Date: 10-17-11\n"
+"PO-Revision-Date: \n"
+"Last-Translator: CoMPa Technology - T Scholten <info@NOSPAM@compa.nl>\n"
+"Language-Team: CoMPa Technology <info@compa.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: core/actions/archive-actions.php:32
+#@ business
+msgid "Archive for the &#8216;"
+msgstr "Archief voor de &#8216;"
+
+#: core/actions/archive-actions.php:32
+#@ business
+msgid "&#8217; Category:"
+msgstr "&#8217; Categorie:"
+
+#: core/actions/archive-actions.php:35
+#@ business
+msgid "Posts Tagged &#8216;"
+msgstr "Getagde posts &#8216;"
+
+#: core/actions/archive-actions.php:35
+#@ business
+msgid "&#8217;:"
+msgstr ""
+
+#: core/actions/archive-actions.php:38
+#: core/actions/archive-actions.php:41
+#@ business
+msgid "Archive for"
+msgstr "Archief voor "
+
+#: core/actions/archive-actions.php:44
+#@ business
+msgid "Archive for:"
+msgstr "Archief voor:"
+
+#: core/actions/archive-actions.php:47
+#@ business
+msgid "Author Archive:"
+msgstr "Archief van auteur:"
+
+#: core/actions/archive-actions.php:50
+#@ business
+msgid "Blog Archives:"
+msgstr "Blog archief:"
+
+#: core/actions/comments-actions.php:49
+#@ business
+msgid "No Responses"
+msgstr "Geen reacties"
+
+#: core/actions/comments-actions.php:49
+#@ business
+msgid "One Response"
+msgstr "Een reactie"
+
+#: core/actions/comments-actions.php:49
+#@ business
+msgid "% Responses"
+msgstr "% reacties"
+
+#: core/actions/comments-actions.php:89
+#@ business
+msgid "You must be"
+msgstr "U moet"
+
+#: core/actions/comments-actions.php:89
+#@ business
+msgid "logged in"
+msgstr "ingelogd zijn"
+
+#: core/actions/comments-actions.php:89
+#@ business
+msgid "to post a comment."
+msgstr "om een reactie te plaatsen."
+
+#: core/actions/footer-actions.php:43
+#@ business
+msgid "Recent Posts"
+msgstr "Recente berichten"
+
+#: core/actions/footer-actions.php:50
+#: sidebar.php:20
+#@ business
+#@ ifeature
+msgid "Archives"
+msgstr "Archieven"
+
+#: core/actions/footer-actions.php:57
+#: core/actions/footer-actions.php:61
+#: sidebar.php:34
+#: sidebar.php:38
+#@ business
+#@ ifeature
+msgid "WordPress"
+msgstr ""
+
+#: core/actions/footer-actions.php:61
+#: sidebar.php:38
+#@ business
+#@ ifeature
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: core/actions/footer-actions.php:61
+#: sidebar.php:38
+#@ business
+#@ ifeature
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Draait op WordPress, een modern semantisch en persoonlijk publicatie-platform."
+
+#: core/core-functions.php:240
+#@ default
+msgid "Page"
+msgstr "Pagina"
+
+#: core/classy-options/classy-options-framework/classy-options.php:98
+#@ default
+msgid "Save Options"
+msgstr "Bewaar instellingen"
+
+#: core/classy-options/classy-options-framework/classy-options.php:103
+#@ ifeature
+msgid "Support"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:104
+#@ ifeature
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: core/classy-options/classy-options-framework/classy-options.php:105
+#@ ifeature
+msgid "Forum"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:106
+#@ ifeature
+msgid "Twitter"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:107
+#@ ifeature
+msgid "Facebook"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:102
+#@ ifeature
+msgid "CyberChimps Store"
+msgstr "CyberChimps Winkel"
+
+#: core/classy-options/classy-options-framework/classy-options.php:108
+#@ ifeature
+msgid "CyberChimps Pro"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:127
+#@ default
+msgid "Restore Defaults"
+msgstr "Herstel standaarden"
+
+#: core/classy-options/classy-options-framework/classy-options.php:127
+#@ default
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Klik OK om te resetten. Alle thema-instellingen zullen verloren gaan!"
+
+#: core/classy-options/classy-options-framework/classy-options.php:157
+#@ optionsframework
+msgid "Default options restored."
+msgstr "Standaard instellingen hersteld."
+
+#: core/classy-options/classy-options-framework/classy-options.php:166
+#@ optionsframework
+msgid "Options Imported"
+msgstr "Instellingen geimporteerd."
+
+#: core/classy-options/classy-options-framework/classy-options.php:169
+#@ optionsframework
+msgid "Invalid Data for Import"
+msgstr "Import-data is niet valide."
+
+#: core/classy-options/classy-options-framework/classy-options.php:226
+#@ optionsframework
+msgid "Options saved."
+msgstr "Instellingen opgeslagen."
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:26
+#@ default
+msgid "Options Framework Internal Container"
+msgstr "Framewerk instellingen voor interne container"
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:128
+#@ default
+msgid "Upload"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:151
+#@ optionsframework
+msgid "View File"
+msgstr "Toon bestand"
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:288
+#@ optionsframework
+msgid "Gallery"
+msgstr "Gallerij"
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:288
+#@ optionsframework
+msgid "Previously Uploaded"
+msgstr "Voorheen geuploade"
+
+#: core/core-functions.php:125
+#, php-format
+#@ default
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\"></span>"
+msgstr ""
+
+#: core/core-functions.php:128
+#@ core
+msgid "Your comment is awaiting moderation."
+msgstr "Uw reactie wacht op moderatie."
+
+#: core/core-functions.php:132
+#, php-format
+#@ core
+msgid "%1$s at %2$s"
+msgstr "%1$s op %2$s"
+
+#: core/core-functions.php:132
+#@ core
+msgid "(Edit)"
+msgstr "(Wijzig)"
+
+#: functions.php:181
+#@ default
+msgid "Slides"
+msgstr "Dia's"
+
+#: functions.php:197
+#@ default
+msgid "Carousel"
+msgstr "Caroussel"
+
+#: functions.php:481
+#@ default
+msgid "Header Menu"
+msgstr "Kopmenu"
+
+#: functions.php:481
+#@ default
+msgid "Footer Menu"
+msgstr "Voetmenu"
+
+#: sidebar.php:13
+#@ ifeature
+msgid "Pages"
+msgstr "Pagina's"
+
+#: functions.php:311
+#: functions.php:355
+#: functions.php:401
+#: sidebar.php:27
+#@ default
+#@ ifeature
+msgid "Categories"
+msgstr "Categorieën "
+
+#: sidebar.php:44
+#@ ifeature
+msgid "Subscribe"
+msgstr "Abonneer"
+
+#: sidebar.php:46
+#@ ifeature
+msgid "Entries (RSS)"
+msgstr "Aantal (RSS)"
+
+#: sidebar.php:47
+#@ ifeature
+msgid "Comments (RSS)"
+msgstr "Reacties (RSS)"
+
+#: core/actions/footer-actions.php:36
+#@ business
+msgid "Footer Widgets"
+msgstr ""
+
+#: core/actions/global-actions.php:126
+#@ business
+msgid "No Comments"
+msgstr ""
+
+#: core/actions/global-actions.php:126
+#: core/widgets/tabbed-widget.php:71
+#: core/widgets/tabbed-widget.php:98
+#@ business
+#@ ifeature
+msgid "1 Comment"
+msgstr ""
+
+#: core/actions/global-actions.php:126
+#: core/widgets/tabbed-widget.php:71
+#: core/widgets/tabbed-widget.php:98
+#@ business
+#@ ifeature
+msgid "% Comments"
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:14
+#@ ifeature
+msgid "iFeature: A tabbed widget that display popular posts, recent posts, comments and tags."
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:25
+#@ ifeature
+msgid "iFeature Tabbed Widget"
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:71
+#: core/widgets/tabbed-widget.php:98
+#@ ifeature
+msgid "No comments"
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:114
+#: core/widgets/tabbed-widget.php:118
+#@ ifeature
+msgid "on "
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:161
+#@ default
+msgid "Popular Title:"
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:166
+#@ default
+msgid "Recent Title:"
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:171
+#@ default
+msgid "Comment Title:"
+msgstr ""
+
+#: core/widgets/tabbed-widget.php:176
+#@ default
+msgid "Tag Title:"
+msgstr ""
+
+#: functions.php:180
+#@ default
+msgid "Content Slides"
+msgstr ""
+
+#: functions.php:196
+#@ default
+msgid "Image Carousel"
+msgstr ""
+
+#: functions.php:212
+#@ default
+msgid "Image Portfolio"
+msgstr ""
+
+#: functions.php:213
+#@ default
+msgid "Images"
+msgstr ""
+
+#: functions.php:309
+#: functions.php:353
+#: functions.php:399
+#@ default
+msgctxt "column name"
+msgid "Title"
+msgstr ""
+
+#: functions.php:310
+#: functions.php:354
+#: functions.php:400
+#@ default
+msgid "Image"
+msgstr ""
+
+#: functions.php:312
+#: functions.php:356
+#: functions.php:402
+#@ default
+msgid "Author"
+msgstr ""
+
+#: functions.php:313
+#: functions.php:357
+#: functions.php:403
+#@ default
+msgid "Date"
+msgstr ""
+
+#: functions.php:338
+#: functions.php:384
+#: functions.php:430
+#@ default
+msgid "No Category."
+msgstr ""
+
+#: functions.php:481
+#@ default
+msgid "Sub Menu"
+msgstr ""
+
+#: searchform.php:15
+#@ business
+msgid "Search"
+msgstr ""
+
