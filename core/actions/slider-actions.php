@@ -24,7 +24,7 @@ add_action ('business_page_slider', 'business_slider_content' );
 /**
 * Lite slider function
 */
-function business_slider_lite_content() {
+function business_slider_content() {
 
 	global $themename, $themeslug, $options, $wp_query, $post, $slider_default, $root;
 		
