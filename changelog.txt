@@ -4,9 +4,11 @@ Business lite Changelog
 
 Version 3.0 (03-07-12)
 -Moved to CyberChimps Response Core Framework based codebase.
--Added Page Elements.
+-Moved to Foundation Responsive CSS grid.
+-Added Slider, Callout and Widgetized Boxes Page Elements.
 -Added Front Page template.
 -Added Templates Theme Options.
+-Added localization support with built-in support for German, Dutch and Portuguese. 
 
 Version 2.1.2 (01-05-12)
 -Fixed broken upgrade link.
