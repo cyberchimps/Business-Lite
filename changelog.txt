@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.0.1 (03-08-12)
+-Removed PressTrends function.
+
 Version 3.0 (03-07-12)
 -Moved to CyberChimps Response Core Framework based codebase.
 -Moved to Foundation Responsive CSS grid.
