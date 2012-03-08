@@ -40,10 +40,6 @@ jQuery(document).ready(function($) {
 
 	// show by default
 	
-	$("#subsection-Custom-Slide-Options > h4").click();
-	$("#subsection-Featured-Post-Carousel-Options > h4").click();
-	$("#subsection-Slider-Options > h4").click();
-	$("#subsection-Portfolio-Element > h4").click();
 	$("#subsection-Page-Options > h4").click();
 	var page_subsection_map = {
 		page_slider: "subsection-Slider-Options",
@@ -111,42 +107,5 @@ jQuery(document).ready(function($) {
      $('.checkbox').toggle()
      e.preventDefault();
     });
-
-    $('#checkbox-extra_callout_options').change(function(){
-	    var items = $(" tr.custom_callout_text_color, tr.custom_callout_link_color");
-		if($(this).is(':checked')) {
-			items.show();
-		} else {
-			items.hide();
-		}
-		$("#checkbox-disable_callout_button").trigger("change");
-    }).trigger('change');
-
-    $('#checkbox-disable_callout_button').change(function(){
-	    var items = $("tr.callout_button_text, tr.callout_url");
-		if($(this).is(':checked')) {
-			items.show();
-		} else {
-			items.hide();
-		}
-    }).trigger('change');
-    
-    $('#checkbox-portfolio_title_toggle').change(function(){
-	    var items = $("tr.portfolio_title,");
-		if($(this).is(':checked')) {
-			items.show();
-		} else {
-			items.hide();
-		}
-    }).trigger('change');
-    
-        $('#checkbox-product_link_toggle').change(function(){
-	    var items = $("tr.product_link_url, tr.product_link_text");
-		if($(this).is(':checked')) {
-			items.show();
-		} else {
-			items.hide();
-		}
-    }).trigger('change');
 
 });
