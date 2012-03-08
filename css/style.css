@@ -787,22 +787,7 @@ fieldset,
 figure {
 }
 
-
-/* Tabs */
-
-.ifeature-tabbed-header li {
-	float: left;
-	padding: 5px;
-}
-
-.ifeature-tabbed-tab {
-	clear: both;
-}
-
-.ui-tabs-hide {
-	display: none;
-}
-
+/* Responsive CSS */
 
 @media handheld, only screen and (max-width: 767px) {
 
