@@ -38,8 +38,6 @@ function business_page_section_content() {
 			
 		<div id="content" class="<?php echo $content_grid; ?>">
 		
-		<?php business_page_content_slider(); ?>
-		
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
 			<div class="post_container">
