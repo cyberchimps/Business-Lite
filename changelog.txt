@@ -2,8 +2,9 @@ Business lite Changelog
 
 ****************************
 
-Version 3.0.2 (03-09-12)
+Version 3.0.2 (03-10-12)
 -Fixed bug with archive template. 
+-Widgetized Box element bug fix.
 
 Version 3.0.1 (03-08-12)
 -Removed PressTrends function.

@@ -239,28 +239,37 @@ function bu_widgets_init() {
    	));
     	
     register_sidebar(array(
-		'name' => 'Box Left',
-		'id' => 'box-left',
-		'description' => 'This is the left widget of the three-box section',
-		'before_widget' => '<div id="box1" class="four columns">',
+		'name' => 'Box 1',
+		'id' => 'box-1',
+		'description' => 'This is the first widget of the four-box section',
+		'before_widget' => '<div id="box1" class="three columns">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="box-widget-title">',
 		'after_title' => '</h3>',
 	));
 	register_sidebar(array(
-		'name' => 'Box Middle',
-		'id' => 'box-middle',
-		'description' => 'This is the middle widget of the three-box section',
-		'before_widget' => '<div id="box2" class="four columns">',
+		'name' => 'Box 2',
+		'id' => 'box-2',
+		'description' => 'This is the second widget of the four-box section',
+		'before_widget' => '<div id="box2" class="three columns">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="box-widget-title">',
 		'after_title' => '</h3>',
 	));
 	register_sidebar(array(
-		'name' => 'Box Right',
-		'id' => 'box-right',
-		'description' => 'This is the right widget of the three-box section',
-		'before_widget' => '<div id="box3" class="four columns">',
+		'name' => 'Box 3',
+		'id' => 'box-3',
+		'description' => 'This is the third widget of the four-box section',
+		'before_widget' => '<div id="box3" class="three columns">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="box-widget-title">',
+		'after_title' => '</h3>',
+	));
+		register_sidebar(array(
+		'name' => 'Box 4',
+		'id' => 'box-4',
+		'description' => 'This is the fourth widget of the four-box section',
+		'before_widget' => '<div id="box4" class="three columns">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="box-widget-title">',
 		'after_title' => '</h3>',
