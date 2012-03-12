@@ -2,7 +2,7 @@ Business lite Changelog
 
 ****************************
 
-Version 3.0.2 (03-10-12)
+Version 3.0.2 (03-13-12)
 -Fixed bug with archive template. 
 -Widgetized Box element bug fix.
 
