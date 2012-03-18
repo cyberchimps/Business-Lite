@@ -2,7 +2,7 @@ Business lite Changelog
 
 ****************************
 
-Version 3.0.3 (03-19-12)
+Version 3.0.3 (03-18-12)
 -Added French translation files.
 -Added option to disable slider navigation arrows. 
 -Updated search template code.
