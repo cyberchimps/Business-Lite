@@ -69,6 +69,8 @@ function business_search_content() {
 	<?php else : ?>
 
 		<h2><?php printf( __( $noresults, 'business' )) ; ?></h2>
+			<?php printf( __( 'Try your search again', 'business' )); ?>
+			<?php get_search_form(); ?>
 
 	<?php endif; ?>
 		</div><!--end content_padding-->

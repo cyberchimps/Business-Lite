@@ -47,6 +47,7 @@ function initialize_the_meta_boxes() {
 			->single_image('page_slide_two_image', 'Slide Two Image', '', array('std' =>  TEMPLATE_URL . '/images/slide_default_2.jpg'))
 			->text('page_slide_two_url', 'Slide Two Link', '', array('std' => 'http://cyberchimps.com/businesspro/'))
 			->single_image('page_slide_three_image', 'Slide Three Image', '', array('std' =>  TEMPLATE_URL . '/images/slide_default_3.jpg'))
+			->checkbox('hide_arrows', 'Navigation Arrows', '', array('std' => 'on'))
 			->text('page_slide_three_url', 'Slide Three Link', '', array('std' => 'http://cyberchimps.com'))
 			->sliderhelp('', 'Need Help?', '')
 		->tab("Callout Options")

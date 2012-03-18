@@ -29,6 +29,7 @@ function business_slider_content() {
 	global $themename, $themeslug, $options, $wp_query, $post, $slider_default, $root;
 		
 	if (is_front_page()) {
+		$hidenav = $options->get($themeslug.'_front_hide_slider_arrows');
 		$slide1source = $options->get($themeslug.'_front_slide_one_image');
 		$slide2source = $options->get($themeslug.'_front_slide_two_image');
 		$slide3source = $options->get($themeslug.'_front_slide_three_image');
@@ -42,6 +43,7 @@ function business_slider_content() {
 		$link3 = $options->get($themeslug.'_front_slide_three_url');
 	}
 	elseif (is_page() && !is_front_page()) {
+		$hidenav = get_post_meta($post->ID, 'hide_arrows' , true);
 		$slide1 = get_post_meta($post->ID, 'page_slide_one_image' , true);
 		$slide2 = get_post_meta($post->ID, 'page_slide_two_image' , true);
 		$slide3 = get_post_meta($post->ID, 'page_slide_three_image' , true);
@@ -51,6 +53,7 @@ function business_slider_content() {
 		$link3 = get_post_meta($post->ID, 'page_slide_three_url' , true);
 	}
 	else {
+		$hidenav = $options->get($themeslug.'_blog_hide_slider_arrows');
 		$slide1source = $options->get($themeslug.'_blog_slide_one_image');
 		$slide2source = $options->get($themeslug.'_blog_slide_two_image');
 		$slide3source = $options->get($themeslug.'_blog_slide_three_image');
@@ -63,6 +66,16 @@ function business_slider_content() {
 		$link2 = $options->get($themeslug.'_blog_slide_two_url');
 		$link3 = $options->get($themeslug.'_blog_slide_three_url');
 	}
+	
+	/* Slider navigation options */
+
+	if ($hidenav == '0' OR $hidenav == "off") { ?>
+		<style type="text/css">
+		div.slider-nav {display: none !important;}
+		</style> <?php
+	}
+		
+	/* End navigation options */
 ?>
 	<div id="sliderbg">
 		<div class="container">
