@@ -6,6 +6,7 @@ Version 3.0.4 (03-22-12)
 -Fixed blank space in licensing folder name.
 -Removed link underlines from post byline.
 -Fixed third slide link on Front Page.
+-Re-added opt-in PressTrends option.
 
 Version 3.0.3 (03-18-12)
 -Added French translation files.
