@@ -4,6 +4,7 @@ Business lite Changelog
 
 Version 3.0.5 (03-28-12)
 -Fixed default slide image proportion. 
+-Fix for Google Font library call for SSL compatibility. 
 
 Version 3.0.4 (03-22-12)
 -Fixed blank space in licensing folder name causing update issues.
