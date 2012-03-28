@@ -2,6 +2,8 @@ Business lite Changelog
 
 ****************************
 
+Version 3.0.5 (03-28-12)
+
 Version 3.0.4 (03-22-12)
 -Fixed blank space in licensing folder name causing update issues.
 -Removed link underlines from post byline.
