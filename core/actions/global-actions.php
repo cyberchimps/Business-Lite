@@ -82,7 +82,7 @@ function business_loop_content($content) {
 						the_excerpt();
 						}
 						else {
-							the_content();
+							the_content(__('Read more…', 'business'));
 						}
 					 ?>
 				<!--Begin @business link pages hook-->

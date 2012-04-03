@@ -4,6 +4,8 @@ Business lite Changelog
 
 Version 3.0.6 (04-03-12)
 -Added Romanian language files.
+-Updated business.pot.
+-Changed <!--more--> link text to "Read more…".
 
 Version 3.0.5 (03-28-12)
 -Fixed default slide image proportion. 
