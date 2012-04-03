@@ -31,9 +31,10 @@
 	<!--Begin @business before content sidebar hook-->
 		<?php business_before_content_sidebar(); ?>
 	<!--End @business before content sidebar hook-->
-	<?php if (have_posts()) : ?>
 	
-		<div id="content" class="<?php echo $content_grid; ?>">
+	<div id="content" class="<?php echo $content_grid; ?>">
+	
+	<?php if (have_posts()) : ?>
 		
 		<!--Begin @business before_archive hook-->
 			<?php business_before_archive(); ?>
