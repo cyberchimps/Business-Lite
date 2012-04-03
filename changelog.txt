@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.0.7 (04-03-12)
+-Fixed text bug related to previous "Read more" fix. 
+
 Version 3.0.6 (04-03-12)
 -Unidentified index error fix for meta box code. 
 -Added Romanian language files.
