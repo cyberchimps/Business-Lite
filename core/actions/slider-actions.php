@@ -68,11 +68,19 @@ function business_slider_content() {
 	}
 	
 	/* Slider navigation options */
-
-	if ($hidenav == '0' OR $hidenav == "off") { ?>
+	
+	if ($hidenav == '0' OR $hidenav == "off" ) { ?>
 		<style type="text/css">
 		div.slider-nav {display: none !important;}
 		</style> <?php
+	}
+	
+	if ($hidenav == "true"){ ?>
+	
+		<style type="text/css">
+		div.slider-nav {display: block !important;}
+		</style> <?php
+
 	}
 		
 	/* End navigation options */

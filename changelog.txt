@@ -5,6 +5,7 @@ Business lite Changelog
 Version 3.0.8 (04-10-12)
 -Added Hebrew language files.
 -Subheader responsive CSS tweak.
+-Fixed slider arrows not displaying until settings saved.
 
 Version 3.0.7 (04-03-12)
 -Fixed text bug related to previous "Read more" fix. 
