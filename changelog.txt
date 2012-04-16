@@ -6,6 +6,7 @@ Version 3.0.9 (04-17-12)
 -Removed ereg_replace from Google Font code for PHP 5.3 compatibility. 
 -Re-added IE Quirks fix. 
 -Removed several unnecessary options from theme options.
+-Removed some unused translation functions.
 
 Version 3.0.8 (04-10-12)
 -Added Hebrew language files.
