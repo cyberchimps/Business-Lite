@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.0.9 (04-17-12)
+-
+
 Version 3.0.8 (04-10-12)
 -Added Hebrew language files.
 -Subheader responsive CSS tweak.
