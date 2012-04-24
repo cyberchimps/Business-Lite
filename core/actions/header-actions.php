@@ -337,6 +337,8 @@ function business_header_social_icons_content() {
 	$hidegplus      = $options->get($themeslug.'_hide_gplus_icon');
 	$flickr		    = $options->get($themeslug.'_flickr');
 	$hideflickr     = $options->get($themeslug.'_hide_flickr');
+	$pinterest		= $options->get($themeslug.'_pinterest');
+	$hidepinterest	= $options->get($themeslug.'_hide_pinterest');
 	$linkedin		= $options->get($themeslug.'_linkedin');
 	$hidelinkedin   = $options->get($themeslug.'_hide_linkedin');
 	$youtube		= $options->get($themeslug.'_youtube');
@@ -378,6 +380,12 @@ function business_header_social_icons_content() {
 		<?php endif;?>
 		<?php if ($hideflickr == '1' AND $flickr == '' ):?>
 			<a href="https://flickr.com" target="_blank" rel="me"><img src="<?php echo get_template_directory_uri(); ?>/images/social/<?php echo $folder; ?>/flickr.png" alt="Flickr" /></a>
+		<?php endif;?>
+		<?php if ($hidepinterest == '1' AND $pinterest != '' ):?>
+			<a href="<?php echo $pinterest ?>" target="_blank" rel="me"><img src="<?php echo get_template_directory_uri(); ?>/images/social/<?php echo $folder; ?>/pinterest.png" alt="Pinterest" /></a>
+		<?php endif;?>
+		<?php if ($hidepinterest == '1' AND $pinterest == '' ):?>
+			<a href="https://pinterest.com" target="_blank" rel="me"><img src="<?php echo get_template_directory_uri(); ?>/images/social/<?php echo $folder; ?>/pinterest.png" alt="Pinterest" /></a>
 		<?php endif;?>
 		<?php if ($hidelinkedin == '1' AND $linkedin != '' ):?>
 			<a href="<?php echo $linkedin ?>" target="_blank" rel="me"><img src="<?php echo get_template_directory_uri(); ?>/images/social/<?php echo $folder; ?>/linkedin.png" alt="LinkedIn" /></a>

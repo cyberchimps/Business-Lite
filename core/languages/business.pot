@@ -164,12 +164,45 @@ msgid "Read more…"
 msgstr ""
 
 #: core/actions/global-actions.php:187
-#@ core
+#@ business
 msgid "Tags: "
 msgstr ""
 
+#: core/actions/pagination-actions.php:49
+#: core/core-functions.php:241
+#@ business
+#@ default
+msgid "Page"
+msgstr ""
+
+#: core/actions/pagination-actions.php:50
+#@ business
+msgid "&laquo; First"
+msgstr ""
+
+#: core/actions/pagination-actions.php:51
+#@ business
+msgid "&lsaquo; Previous"
+msgstr ""
+
+#: core/actions/pagination-actions.php:61
+#@ business
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: core/actions/pagination-actions.php:62
+#@ business
+msgid "Last &raquo;"
+msgstr ""
+
+#: core/actions/pagination-actions.php:99
+#@ business
+msgid "Pages:"
+msgstr ""
+
+
 #: searchform.php:15
-#@ core
+#@ business
 msgid "Search"
 msgstr 
 
