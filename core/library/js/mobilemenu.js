@@ -8,7 +8,7 @@
     
     //plugin's default options
     var settings = {
-      switchWidth: 400,
+      switchWidth: 500,
       topOptionText: 'Select a page',
       indentString: '&nbsp;&nbsp;&nbsp;'
     };

@@ -2,6 +2,10 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.1 (05-01-12)
+-Mobile Menu now works in phone landscape mode. 
+-Fixed bug with broken "next" link in pagination.
+
 Version 3.1 (04-24-12)
 -Added missing $content_width global to theme setup function.
 -Updated pagination function with missing translation functions.

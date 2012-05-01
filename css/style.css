@@ -810,6 +810,11 @@ figure {
     #sidebar.four.columns {float: left;} 
 }
 
+@media handheld, only screen and (max-width: 500px) {
+	#mobileMenu_nav_menu {margin-top: 10px; margin-right: 10px; text-align:center;}
+	#halfnav {text-align: center; float: none;}
+}
+
 @media handheld, only screen and (max-width: 400px) {
 	#box1 {margin-top:0px;margin-bottom:7px;}
 	#box2 {margin-top:7px;margin-bottom:7px;}

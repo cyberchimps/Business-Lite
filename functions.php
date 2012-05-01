@@ -319,7 +319,7 @@ function bu_custom_pagination($pages = '', $range = 4)
              }
          }
  
-         if ($paged < $pages && $showitems < $pages) echo '<a href=\"'.get_pagenum_link($paged + 1).'"\">'.__( 'Next &rsaquo;', 'business').'</a>';
+         if ($paged < $pages && $showitems < $pages) echo '<a href="'.get_pagenum_link($paged + 1).'"">'.__( 'Next &rsaquo;', 'business').'</a>';
          if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo '<a href="'.get_pagenum_link($pages).'">'.__( 'Last &raquo;', 'business' ).'</a>';
          echo "</div>\n";
      }
