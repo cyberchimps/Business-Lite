@@ -20,96 +20,94 @@ msgstr ""
 #: core/actions/archive-actions.php:36
 #@ business
 msgid "Archive for the &#8216;"
-msgstr ""
+msgstr "&#8216 arşivi"
 
 #: core/actions/archive-actions.php:36
 #@ business
 msgid "&#8217; Category:"
-msgstr ""
+msgstr "&#8217; Kategorisi"
 
 #: core/actions/archive-actions.php:39
 #@ business
 msgid "Posts Tagged &#8216;"
-msgstr ""
+msgstr "&#8216 Etiketli Mesajlar"
 
 #: core/actions/archive-actions.php:39
 #@ business
 msgid "&#8217;:"
-msgstr ""
+msgstr "&#8217;:"
 
 #: core/actions/archive-actions.php:42
 #: core/actions/archive-actions.php:45
 #@ business
 msgid "Archive for"
-msgstr ""
+msgstr "Arşivi"
 
 #: core/actions/archive-actions.php:48
 #@ business
 msgid "Archive for:"
-msgstr ""
+msgstr "Arşivi"
 
 #: core/actions/archive-actions.php:51
 #@ business
 msgid "Author Archive:"
-msgstr ""
+msgstr "Yazar Arşivi"
 
 #: core/actions/archive-actions.php:54
 #@ business
 msgid "Blog Archives:"
-msgstr ""
+msgstr "Blog Arşivi"
 
 #: core/actions/comments-actions.php:49
 #@ business
 msgid "No Responses"
-msgstr ""
+msgstr "Cevap Yok"
 
 #: core/actions/comments-actions.php:49
 #@ business
 msgid "One Response"
-msgstr ""
+msgstr "Bir Cevap"
 
 #: core/actions/comments-actions.php:49
 #@ business
 msgid "% Responses"
-msgstr ""
+msgstr "% Cevap"
 
 #: core/actions/comments-actions.php:88
 #@ business
 msgid "You must be"
-msgstr ""
+msgstr "Adınız"
 
 #: core/actions/comments-actions.php:88
 #@ business
 msgid "logged in"
-msgstr ""
+msgstr "giriş yapıldı"
 
 #: core/actions/comments-actions.php:88
 #@ ifeture
 msgid "to post a comment."
-msgstr ""
+msgstr "yorum yazmak için"
 
 #: core/actions/footer-actions.php:39
 #@ business
 msgid "Recent Posts"
-msgstr ""
+msgstr "Son Mesajlar"
 
 #: core/actions/footer-actions.php:46
 #: sidebar.php:26
 #@ business
-#@ business
 msgid "Archives"
-msgstr ""
+msgstr "Arşiv"
 
 #: core/actions/footer-actions.php:53
 #@ business
 msgid "Links"
-msgstr ""
+msgstr "Bağlantılar"
 
 #: core/actions/footer-actions.php:60
 #: core/actions/footer-actions.php:64
 #: sidebar.php:40
 #: sidebar.php:44
-#@ business
 #@ business
 msgid "WordPress"
 msgstr ""
@@ -117,41 +115,39 @@ msgstr ""
 #: core/actions/footer-actions.php:64
 #: sidebar.php:44
 #@ business
-#@ business
 msgid "http://wordpress.org/"
-msgstr ""
+msgstr "http://wordpress.org/"
 
 #: core/actions/footer-actions.php:64
 #: sidebar.php:44
 #@ business
-#@ business
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
+msgstr "Son teknoloji semantik yayıncılık platformu WordPress ile güçlendirilmiştir."
 
 #: core/actions/global-actions.php:43
 #@ business
 msgid "Published on"
-msgstr ""
+msgstr "Tarih"
 
 #: core/actions/global-actions.php:44
 #@ business
 msgid "by"
-msgstr ""
+msgstr "yazar"
 
 #: core/actions/global-actions.php:45
 #@ business
 msgid "in"
-msgstr ""
+msgstr "içinde"
 
 #: core/actions/global-actions.php:70
 #@ business
 msgid "No Comments &#187;"
-msgstr ""
+msgstr "Yorum yok"
 
 #: core/actions/global-actions.php:70
 #@ business
 msgid "1 Comment &#187;"
-msgstr ""
+msgstr "1 Yorum &#187"
 
 #: core/actions/global-actions.php:70
 #@ business
@@ -161,124 +157,39 @@ msgstr ""
 #: core/actions/global-actions.php:86
 #@ business
 msgid "Read more…"
-msgstr ""
+msgstr "Devamını oku..."
 
 #: core/actions/global-actions.php:187
 #@ business
 msgid "Tags: "
-msgstr ""
-
-#: core/actions/pagination-actions.php:49
-#@ business
-msgid "of"
-msgstr ""
-
-#: core/actions/pagination-actions.php:49
-#: core/core-functions.php:241
-#@ business
-#@ default
-msgid "Page"
-msgstr ""
-
-#: core/actions/pagination-actions.php:50
-#@ business
-msgid "&laquo; First"
-msgstr ""
-
-#: core/actions/pagination-actions.php:51
-#@ business
-msgid "&lsaquo; Previous"
-msgstr ""
-
-#: core/actions/pagination-actions.php:61
-#@ business
-msgid "Next &rsaquo;"
-msgstr ""
-
-#: core/actions/pagination-actions.php:62
-#@ business
-msgid "Last &raquo;"
-msgstr ""
-
-#: core/actions/pagination-actions.php:99
-#@ business
-msgid "Pages:"
-msgstr ""
-
+msgstr "Etiketler: "
 
 #: searchform.php:15
 #@ business
 msgid "Search"
-msgstr 
-
-#: core/actions/index-actions.php:276
-#@ business
-msgid "Page"
-msgstr ""
-
-#: functions.php:85
-#@ business
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: functions.php:89
-#, php-format
-#@ business
-msgid "%1$s at %2$s"
-msgstr ""
-
-#: functions.php:89
-#@ business
-msgid "(Edit)"
-msgstr ""
-
-#: functions.php:222
-#@ business
-msgid "Slides"
-msgstr ""
-
-#: functions.php:237
-#@ business
-msgid "Carousel"
-msgstr ""
-
-#: functions.php:238
-#@ business
-msgid "Posts"
-msgstr ""
-
-#: functions.php:390
-#@ business
-msgid "Header Menu"
-msgstr ""
-
-#: functions.php:390
-#@ business
-msgid "Footer Menu"
-msgstr ""
+msgstr "Arama"
 
 #: sidebar.php:19
 #@ business
 msgid "Pages"
-msgstr ""
+msgstr "Sayfalar"
 
 #: sidebar.php:33
 #@ business
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriler"
 
 #: sidebar.php:50
 #@ business
 msgid "Subscribe"
-msgstr ""
+msgstr "Kayıt Ol"
 
 #: sidebar.php:52
 #@ business
 msgid "Entries (RSS)"
-msgstr ""
+msgstr "Kayıtlar (RSS)"
 
 #: sidebar.php:53
 #@ business
 msgid "Comments (RSS)"
-msgstr ""
-
+msgstr "Yorumlar (RSS)"
