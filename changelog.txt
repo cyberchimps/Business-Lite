@@ -4,7 +4,7 @@ Business lite Changelog
 
 Version 3.1.2 (05-09-12)
 -Added Spanish, Italian, Turkish and Persian language files. 
--Updated Croatian and Swedish translation files. 
+-Updated Swedish translation files. 
 -Updated business.pot
 -Fixed/added missing translation wrappers to post pagination function.
 
