@@ -52,6 +52,20 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow =="themes.php" ) {
 	wp_redirect( 'themes.php?page=business' );
 }
 
+/** Replaces RSS link from HTML 'head' with custom feed also used with the 'social icon' */
+function bu_feed_links() {
+	global $themename, $themeslug, $options;
+	$my_feed=$options->get($themeslug.'_rsslink');
+	if ($my_feed) {
+		echo '<link rel="alternate" type="application/rss+xml" title="RSS feed" href="'.$my_feed.'"/>';
+	}
+	else {
+		feed_links();
+	}
+}
+remove_action( 'wp_head', 'feed_links', 2); // Display the links to the general feeds: Post and Comment Feed
+add_action('wp_head', 'bu_feed_links');
+
 /**
 * Add link to theme options in Admin bar.
 */ 
