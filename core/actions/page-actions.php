@@ -31,6 +31,7 @@ function business_page_section_content() {
 	business_sidebar_init();
 	$hidetitle = get_post_meta($post->ID, 'hide_page_title' , true);
 ?>
+<div class="container">
 <div class="row">
 	<!--Begin @business before content sidebar hook-->
 		<?php business_before_content_sidebar(); ?>
@@ -71,6 +72,7 @@ function business_page_section_content() {
 	<!--Begin @business after content sidebar hook-->
 		<?php business_after_content_sidebar(); ?>
 	<!--End @business after content sidebar hook-->
+</div>
 </div>
 <?php
 }
