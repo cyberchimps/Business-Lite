@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.6 (06-05-12)
+-Added Czech language files.
+
 Version 3.1.5 (05-30-12)
 -Added Hindi language files.
 -Cleaned up code in comments-actions.php.
