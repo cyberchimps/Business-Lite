@@ -788,6 +788,12 @@ figure {
 
 /* Responsive CSS */
 
+@media handheld, only screen and (max-width: 1024px) {
+div.slider-nav span.right {right: 5px !important;}
+div.slider-nav span.left {margin-left: 5px !important;}
+div.slider-nav span {top: 45%;}
+}
+
 @media handheld, only screen and (max-width: 767px) {
 
 	#box1, #box2 {margin-right: 0px !important;} 
@@ -835,6 +841,7 @@ figure {
 	.content_text {font-size: 12px;}
 	#callout_text {font-size: 14px;}
 	div.slider-nav span {top: 40%;}
+	
 	
 	#nav {right: 140px; width: 100px;}
 }
