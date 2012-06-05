@@ -833,6 +833,8 @@ figure {
 	#mobileMenu_nav_menu {margin-top: 10px; margin-right: 10px; text-align:center;}
 	.content_title {font-size: 14px;}
 	.content_text {font-size: 12px;}
+	#callout_text {font-size: 14px;}
+	div.slider-nav span {top: 40%;}
 	
 	#nav {right: 140px; width: 100px;}
 }
