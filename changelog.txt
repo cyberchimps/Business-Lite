@@ -3,7 +3,7 @@ Business lite Changelog
 ****************************
 
 Version 3.1.8 (06-15-12)
--Replaced wp_theme_data() (deprecated) with wp_get_theme() in opt-in PressTrends function.
+-Replaced wp_theme_data() (deprecated) with wp_get_theme() in opt-in PressTrends function, backwards compatible with 3.3 and below.
 
 Version 3.1.7 (06-12-12)
 -Fixed breadcrumb issue related to single posts/media attachments causing a fatal error. 
