@@ -275,10 +275,10 @@ a:hover {color: #5ca9d6;}
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
+	border: 1px solid #CCCCCC;
 	width: 160px;
 	padding: 0;
 	height: 20px;
-	box-shadow:inset 0 0 1px #222;
 	background: #fff;
 }
 
