@@ -37,7 +37,10 @@
 <!-- Begin @business before_header hook  content-->
 	<?php business_before_header(); ?> 
 <!-- End @business before_header hook content -->
-			
+	
+<!-- Adding wrapper class for sticky footer -->
+<div class="wrapper">	
+	
 <header>		
 	<?php
 		foreach(explode(",", $options->get('header_section_order')) as $fn) {

@@ -36,6 +36,10 @@
 			call_user_func_array($fn, array());
 		}
 	}
-		
-get_footer(); 
 ?>
+	
+<!-- For sticky footer -->
+<div class="push"></div>  
+</div>	<!-- End of wrapper -->
+	
+<?php get_footer(); ?>

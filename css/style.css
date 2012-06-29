@@ -845,3 +845,25 @@ div.slider-nav span {top: 45%;}
 	
 	#nav {right: 140px; width: 100px;}
 }
+
+/* ==========================	For sticky footer =======================================	*/
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	margin:0px !important;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0px auto -233px auto; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push{
+	height: 233px;
+	clear:both;
+}
