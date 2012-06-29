@@ -2,6 +2,10 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.10 (06-28-12)
+- Stopped sidebar from blowing out at certain widths.
+- Fixed rounded search and buttons in IE8. 
+
 Version 3.1.9 (06-22-12)
 - Fixed the validation issue with read more link.
 
