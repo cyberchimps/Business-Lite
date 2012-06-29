@@ -41,7 +41,7 @@ function business_content_layout() {
 		echo '<style type="text/css">';
 		echo "#content.six.columns {width: 52.8%;  margin-right: 2%}";
 		echo "#content.six.columns {width: 52.8%;  margin-right: 1.9%\9;}";
-		echo "#sidebar-right.three.columns {margin-left: 0%; width: 21.68%;}";
+		echo "#sidebar-right.three.columns {margin-left: 0%; width: 21.6%;}";
 		echo "#sidebar-left.three.columns {margin-left: 0%; width: 21.68%; margin-right:2%}";
 		echo "#sidebar-left.three.columns {margin-left: 0%; width: 21.68%; margin-right:1.9%\9;}";
 		echo "@-moz-document url-prefix() {#content.six.columns {width: 52.8%;  margin-right: 1.9%} #sidebar-left.three.columns {margin-left: 0%; width: 21.68%; margin-right:1.9%}}";
@@ -51,7 +51,7 @@ function business_content_layout() {
 		echo '<style type="text/css">';
 		echo "#content.six.columns {width: 52.8%; margin-left: 2%; margin-right: 2%}";
 		echo "#content.six.columns {width: 52.8%; margin-left: 1.9%\9; margin-right: 1.9%\9;}";
-		echo "#sidebar-right.three.columns {margin-left: 0%; width: 21.68%;}";
+		echo "#sidebar-right.three.columns {margin-left: 0%; width: 21.6%;}";
 		echo "#sidebar-left.three.columns {margin-left: 0%; width: 21.68%;}";
 		echo "@-moz-document url-prefix() {#content.six.columns {width: 52.8%; margin-left: 1.9%; margin-right: 1.9%}}";
 		echo '</style>';
