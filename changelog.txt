@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.11 (07-02-12)
+- Sticky footer CSS fix.
+
 Version 3.1.10 (06-28-12)
 - Stopped sidebar from blowing out at certain widths.
 - Fixed rounded search and buttons in IE8. 
