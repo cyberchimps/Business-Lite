@@ -272,6 +272,7 @@ a:hover {color: #5ca9d6;}
 /* Search Bar */
 
 .searchform {
+  position: relative;
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
@@ -299,7 +300,7 @@ a:hover {color: #5ca9d6;}
 
 #magnify {float:left;position:absolute;margin: 2px 0 0 5px;}
 
-#magnify {margin: 0 0 0 5px\0/IE8+9; /* IE8+9  */}
+#magnify {margin: 2px 0 0 5px\0/IE8+9; /* IE8+9  */}
 
 .searchform .s:focus {outline:0; border:none;}
 
