@@ -69,11 +69,6 @@ function business_scripts() {
 		wp_register_script( 'video' ,$path.'/js/video.js');
 		wp_enqueue_script ('video');	
 	}
-
-	if ($options->get($themeslug.'_lazy_load') == '1' ) {
-		wp_register_script( 'lazyload' ,$path.'/js/jquery.lazyload.js');
-		wp_enqueue_script ('lazyload');
-	}
 }
 add_action('wp_enqueue_scripts', 'business_scripts');	
 
@@ -96,27 +91,6 @@ function shorten_with_ellipsis($inputstring,$characters) {
 
 add_filter('previous_post_link','business_shorten_linktext',10,2);
 add_filter('next_post_link','business_shorten_linktext',10,2);
-
-/**
-* Lazy Load
-*
-* @since 3.0
-*/
-function business_lazy_load() {
-	global $root;
-    $placeholder = "$root/images/grey.gif";
-    echo <<<EOF
-	<script type="text/javascript">
-	jQuery(document).ready(function($){
-  	jQuery("img").not("#orbitDemo img, .es-carousel img, #credit img").lazyload({
-    	effect:"fadeIn",
-    	placeholder: "$placeholder"
-  	});
-});
-</script>
-EOF;
-}
-add_action('wp_head', 'business_lazy_load');
 
 /**
 * Comment function
