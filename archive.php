@@ -79,8 +79,4 @@
 		<?php if ($options->get($themeslug.'_archive_breadcrumbs') == "1") { business_breadcrumbs();}?>
 </div><!--end container-->
 
-<!-- For sticky footer -->
-<div class="push"></div>  
-</div>	<!-- End of wrapper -->
-
 <?php get_footer(); ?>
