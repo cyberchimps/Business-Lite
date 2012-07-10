@@ -295,7 +295,7 @@ function business_logo_menu_content() {
 	<div class="container">
 		<div class="row">	
 			
-			<div class="five columns"">
+			<div class="five columns">
 				
 				<!-- Begin @Core header sitename hook -->
 					<?php business_header_sitename(); ?> 

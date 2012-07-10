@@ -54,7 +54,6 @@
 		<?php business_after_content_sidebar(); ?>
 	<!--End @business after content sidebar hook-->
 	
-</div><!--end content_wrap-->
 	</div><!--end row-->
 </div><!--end container-->
 
