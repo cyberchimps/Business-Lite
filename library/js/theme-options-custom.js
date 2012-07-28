@@ -13,6 +13,14 @@ jQuery(document).ready(function($) {
       toShow.hide();
     }
   }).change();	
+	$("#bu_apple_touch_toggle").change(function() {
+    var toShow = $("#section-bu_apple_touch");
+    if($(this).is(':checked')) {
+      toShow.show();
+    } else {
+      toShow.hide();
+    }
+  }).change();
   $("#bu_show_excerpts").change(function() {
     var toShow = $("#section-bu_excerpt_link_text, #section-bu_excerpt_length");
     if($(this).is(':checked')) {
