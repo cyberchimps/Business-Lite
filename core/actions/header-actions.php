@@ -193,8 +193,10 @@ function business_link_rel() {
 	else {
 		$color = $options->get($themeslug.'_color_scheme');
 	}?>
-	
-<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
+
+<?php if( $options->get($themeslug.'_favicon_toggle') != false ): ?>	
+	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
+<?php endif; ?>
 
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/foundation.css" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/app.css" type="text/css" />
