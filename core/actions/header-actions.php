@@ -194,7 +194,7 @@ function business_link_rel() {
 		$color = $options->get($themeslug.'_color_scheme');
 	}?>
 
-<?php if( $options->get($themeslug.'_favicon_toggle') != false ): ?>	
+<?php if( $options->get($themeslug.'_favicon_toggle') == true ): ?>	
 	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 <?php endif; ?>
 
