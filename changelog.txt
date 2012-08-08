@@ -2,6 +2,10 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.17 (08-08-12)
+-Callout section text updated.
+-Favicon option added (off by default).
+
 Version 3.1.16 (07-29-12)
 -Apple-touch icon off by default.
 
