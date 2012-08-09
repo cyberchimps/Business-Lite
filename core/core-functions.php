@@ -53,6 +53,7 @@ function business_styles() {
 	
 	// register stylesheets
 	wp_register_style( 'foundation', $core_path.'/foundation.css' );
+	wp_register_style( 'foundation_apps', $core_path.'/app.css', array( 'foundation' ) );
 	wp_register_style( 'shortcode', $path.'/shortcode.css' );
 	wp_register_style( 'business_style', $path.'/style.css', array( 'foundation' ) );
 	wp_register_style( 'elements', $path.'/elements.css', array( 'foundation', 'business_style' ) );
@@ -83,6 +84,7 @@ function business_styles() {
 	
 	// enqueue stylesheets
 	wp_enqueue_style( 'foundation' );
+	wp_enqueue_style( 'foundation_apps' );
 	wp_enqueue_style( 'shortcode' );
 	wp_enqueue_style( 'business_style' );
 	wp_enqueue_style( 'elements' );
