@@ -581,6 +581,7 @@ class ClassyOptions {
 				$output .=  "<div class='list_items'>";
 				foreach($values as $k) {
 					if(!$k) continue;
+					if(!isset($value['options'][$k])) continue;
 					$val = $value['options'][$k];
 					$output .=  "<div class='list_item'>";
 					$output .=  "<img src='$root/images/minus.png' class='action' title='Remove'/>";
