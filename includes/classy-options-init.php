@@ -3,7 +3,7 @@
 * Initializes the Business lite Theme Options
 *
 * Author: Tyler Cunningham
-* Copyright: © 2012
+* Copyright: &#169; 2012
 * {@link http://cyberchimps.com/ CyberChimps LLC}
 *
 * Released under the terms of the GNU General Public License.
@@ -116,7 +116,7 @@ $options
 			->images($themeslug."_blog_sidebar", "Sidebar Options", array( 'options' => array("none" => TEMPLATE_URL . '/images/options/none.png',"two-right" => TEMPLATE_URL . '/images/options/tworight.png', "right-left" => TEMPLATE_URL . '/images/options/rightleft.png', "left" => TEMPLATE_URL . '/images/options/left.png',  "right" => TEMPLATE_URL . '/images/options/right.png'), 'default' => 'right'))
 			->checkbox($themeslug."_post_formats", "Post Format Icons",  array('default' => true))
 			->checkbox($themeslug."_show_excerpts", "Post Excerpts")
-			->text($themeslug."_excerpt_link_text", "Excerpt Link Text", array('default' => 'Continue Reading…'))
+			->text($themeslug."_excerpt_link_text", "Excerpt Link Text", array('default' => 'Continue Reading&#8230;'))
 			->text($themeslug."_excerpt_length", "Excerpt Character Length", array('default' => '55'))
 			->checkbox($themeslug."_show_featured_images", "Featured Images")
 			->multicheck($themeslug."_hide_byline", "Post Byline Elements", array( 'options' => array($themeslug."_hide_author" => "Author" , $themeslug."_hide_categories" => "Categories", $themeslug."_hide_date" => "Date", $themeslug."_hide_comments" => "Comments",  $themeslug."_hide_tags" => "Tags"), 'default' => array( $themeslug."_hide_tags" => true, $themeslug."_hide_author" => true, $themeslug."_hide_date" => true, $themeslug."_hide_comments" => true, $themeslug."_hide_categories" => true ) ) )

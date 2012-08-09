@@ -3,7 +3,7 @@
 * Archive actions used by Business lite
 *
 * Author: Tyler Cunningham
-* Copyright: © 2012
+* Copyright: &#169; 2012
 * {@link http://cyberchimps.com/ CyberChimps LLC}
 *
 * Released under the terms of the GNU General Public License.

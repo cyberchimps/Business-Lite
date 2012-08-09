@@ -198,15 +198,15 @@ function business_link_rel() {
 	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 <?php endif; ?>
 
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/foundation.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/app.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/foundation.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/app.css" type="text/css" />
 <!--[if IE]>
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/ie.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/ie.css" type="text/css" />
 <![endif]-->
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/shortcode.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/elements.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/style.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/shortcode.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/elements.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
 
 <?php if( $options->get($themeslug.'_apple_touch_toggle') == true && is_array( $options->get($themeslug.'_apple_touch') ) ): ?>
 <!--  For apple touch icon -->
@@ -215,7 +215,7 @@ function business_link_rel() {
 <?php endif; ?>
 
 <?php if (is_child_theme()) :  //add support for child themes?>
-	<link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory') ; ?>/style.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/style.css" type="text/css" />
 <?php endif; ?>
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />

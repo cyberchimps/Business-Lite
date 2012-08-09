@@ -3,7 +3,7 @@
 * Box section actions used by Business lite
 *
 * Author: Tyler Cunningham
-* Copyright: © 2012
+* Copyright: &#169; 2012
 * {@link http://cyberchimps.com/ CyberChimps LLC}
 *
 * Released under the terms of the GNU General Public License.
@@ -34,7 +34,7 @@ function business_box_section_content() {
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Box 1") ) : ?>
 		<div id="box1" class="three columns">
 			<h2 class="box-widget-title">Responsive Design</h2>	
-			<p class="boxtext"><img src="<?php echo $root ; ?>/images/icons/iphone.png" height="24" alt="slider" class="alignleft" />Business lites’s Modern Responsive Design automatically adjusts to any mobile device including the iPhone, iPad, and Android devices.</p>
+			<p class="boxtext"><img src="<?php echo $root ; ?>/images/icons/iphone.png" height="24" alt="slider" class="alignleft" />Business lites&#39;s Modern Responsive Design automatically adjusts to any mobile device including the iPhone, iPad, and Android devices.</p>
 		</div><!--end box1-->
 		<?php endif; ?>
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Box 2") ) : ?>

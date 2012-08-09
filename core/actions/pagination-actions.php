@@ -32,7 +32,7 @@ function business_previous_posts() {
 	$previous_text = apply_filters('business_previous_posts_text', '&laquo; Older Entries' ); 
 	
 	echo "<div class='pagnext-posts'>";
-	next_posts_link( __( $previous_text, 'business' ));
+	next_posts_link( $previous_text );
 	echo "</div>";
 }
 
@@ -45,7 +45,7 @@ function business_newer_posts() {
 	$newer_text = apply_filters('business_newer_posts_text', 'Newer Entries &raquo;' );
 	
 	echo "<div class='pagprev-posts'>";
-	previous_posts_link( __( $newer_text, 'business' ));
+	previous_posts_link( $newer_text );
 	echo "</div>";
 }
 

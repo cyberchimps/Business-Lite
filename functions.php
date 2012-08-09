@@ -207,7 +207,7 @@ add_action('wp_head', 'google_analytics');
 */ 
 function bu_register_menus() {
 	register_nav_menus(
-	array( 'header-menu' => __( 'Header Menu' ))
+	array( 'header-menu' => __( 'Header Menu', 'business' ))
   );
 }
 add_action( 'init', 'bu_register_menus' );

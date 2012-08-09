@@ -21,10 +21,10 @@
 * @since 3.0
 */
 function business_text_domain() {
-	load_theme_textdomain( 'business', TEMPLATEPATH . '/core/languages' );
+	load_theme_textdomain( 'business', get_template_directory() . '/core/languages' );
 
 	    $locale = get_locale();
-	    $locale_file = TEMPLATEPATH . "/core/languages/$locale.php";
+	    $locale_file = get_template_directory() . "/core/languages/$locale.php";
 	    if ( is_readable( $locale_file ) )
 		    require_once( $locale_file );
 		
@@ -140,7 +140,7 @@ function business_breadcrumbs() {
     echo '<div class="row"><div id="crumbs" class="twelve columns"><div class="crumbs_text">';
  
     global $post;
-    $homeLink = get_bloginfo('url');
+    $homeLink = home_url();
     echo '<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
  
     if ( is_category() ) {
@@ -219,7 +219,7 @@ function business_breadcrumbs() {
  
     if ( get_query_var('paged') ) {
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-      echo __('Page') . ' ' . get_query_var('paged');
+      echo __('Page', 'business') . ' ' . get_query_var('paged');
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
     }
  

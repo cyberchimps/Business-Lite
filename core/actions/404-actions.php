@@ -34,7 +34,7 @@ function business_404_content() {
 	else {
 		$message_text = apply_filters( 'business_404_message', 'Error 404' );
 	} ?>
-	<div class="error"><?php printf( __( $message_text, 'business' )); ?><br />	</div> 
+	<div class="error"><?php printf( $message_text ); ?><br />	</div> 
 	<?php
 }
 

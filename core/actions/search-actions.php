@@ -35,7 +35,7 @@ function business_search_content() {
 
 		<?php if (have_posts()) : ?>
 
-		<h3><?php printf( __( $results ), '<span>' . get_search_query() . '</span>' ); ?></h3><br />
+		<h3><?php printf( $results, '<span>' . get_search_query() . '</span>' ); ?></h3><br />
 
 		<?php while (have_posts()) : the_post(); ?>
 		
@@ -68,7 +68,7 @@ function business_search_content() {
 
 	<?php else : ?>
 
-		<h2><?php printf( __( $noresults, 'business' )) ; ?></h2>
+		<h2><?php printf( $noresults ) ; ?></h2>
 			<?php printf( __( 'Try your search again', 'business' )); ?>
 			<?php get_search_form(); ?>
 
