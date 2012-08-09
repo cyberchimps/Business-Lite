@@ -52,6 +52,7 @@ function business_comments_loop() {
 			<div class="next-posts"><?php previous_comments_link() ?></div>
 			<div class="prev-posts"><?php next_comments_link() ?></div>
 		</div>
+    <div class="clear"></div>
 
 		<ol class="commentlist">
 			<?php wp_list_comments('callback=business_comment'); ?>
@@ -60,7 +61,8 @@ function business_comments_loop() {
 		<div class="navigation">
 			<div class="next-posts"><?php previous_comments_link() ?></div>
 			<div class="prev-posts"><?php next_comments_link() ?></div>
-		</div>
+		</div>		
+    <div class="clear"></div>
 		
 	</div><!--end comments_container-->
 	

@@ -26,13 +26,28 @@
 	$sliderdocs = 'http://cyberchimps.com/question/business-lite-slider/';
 
 /**
+* Set Content Width.
+*/ 
+	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
+	
+/**
 * Basic theme setup.
 */ 
 function bu_theme_setup() {
-	global $content_width;
 	
-	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
-	
+
+// Initialize business Core Framework and Pro Extension.
+ 
+	require_once ( get_template_directory() . '/core/core-init.php' );
+
+
+// Call additional files required by theme.
+ 
+	require_once ( get_template_directory() . '/includes/classy-options-init.php' ); // Theme options markup.
+	require_once ( get_template_directory() . '/includes/options-functions.php' ); // Custom functions based on theme options.
+	require_once ( get_template_directory() . '/includes/meta-box.php' ); // Meta options markup.
+	require_once ( get_template_directory() . '/includes/presstrends.php' ); // Opt-in PressTrends option.
+
 	add_theme_support(
 		'post-formats',
 		array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat')
@@ -194,13 +209,13 @@ add_action('wp_head', 'bu_render_ie_pie', 8);
 /**
 * Add TypeKit support based on theme option.
 */ 
-function google_analytics() {
+function bu_google_analytics() {
 	global $themename, $themeslug, $options;
 	
 	echo stripslashes ($options->get($themeslug.'_ga_code'));
 
 }
-add_action('wp_head', 'google_analytics');
+add_action('wp_head', 'bu_google_analytics');
 	
 /**
 * Register custom menus for header, footer.
@@ -338,18 +353,6 @@ function bu_custom_pagination($pages = '', $range = 4)
          echo "</div>\n";
      }
 }
-/**
-* Initialize business Core Framework and Pro Extension.
-*/ 
-require_once ( get_template_directory() . '/core/core-init.php' );
-
-/**
-* Call additional files required by theme.
-*/ 
-require_once ( get_template_directory() . '/includes/classy-options-init.php' ); // Theme options markup.
-require_once ( get_template_directory() . '/includes/options-functions.php' ); // Custom functions based on theme options.
-require_once ( get_template_directory() . '/includes/meta-box.php' ); // Meta options markup.
-require_once ( get_template_directory() . '/includes/presstrends.php' ); // Opt-in PressTrends option.
 
 /**
 * End
