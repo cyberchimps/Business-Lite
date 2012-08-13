@@ -101,8 +101,8 @@ function business_before_comments() {
 *
 * @since 3.0
 */
-function business_comments() {
-	do_action('business_comments');
+function bu_comments() {
+	do_action('bu_comments');
 }
 
 /**

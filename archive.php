@@ -76,7 +76,7 @@
 	
 		</div><!--end content-->
 	</div><!--end row-->
-		<?php if ($options->get($themeslug.'_archive_breadcrumbs') == "1") { business_breadcrumbs();}?>
+		<?php if ($options->get($themeslug.'_archive_breadcrumbs') == "1") { bu_breadcrumbs();}?>
 </div><!--end container-->
 
 <?php get_footer(); ?>

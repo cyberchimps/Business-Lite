@@ -18,15 +18,15 @@
 /**
 * Business comments actions
 */
-add_action( 'business_comments', 'business_comments_password_required' );
-add_action( 'business_comments', 'business_comments_loop' );
+add_action( 'bu_comments', 'bu_comments_password_required' );
+add_action( 'bu_comments', 'bu_comments_loop' );
 
 /**
 * Checks if password is required to comment, sets a filter for text that displays.
 *
 * @since 3.0
 */
-function business_comments_password_required() {
+function bu_comments_password_required() {
 	
 	global $post;
 	
@@ -42,7 +42,7 @@ function business_comments_password_required() {
 *
 * @since 3.0
 */
-function business_comments_loop() { 
+function bu_comments_loop() { 
 	global $post; ?>
 <?php if ( have_comments() ) : ?>
 	<div class="comments_container">
@@ -55,7 +55,7 @@ function business_comments_loop() {
     <div class="clear"></div>
 
 		<ol class="commentlist">
-			<?php wp_list_comments('callback=business_comment'); ?>
+			<?php wp_list_comments('callback=bu_comment'); ?>
 		</ol>
 
 		<div class="navigation">
