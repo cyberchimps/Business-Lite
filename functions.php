@@ -33,7 +33,7 @@
 /**
 * Basic theme setup.
 */ 
-function bu_theme_setup() {
+function business_theme_setup() {
 	
 
 // Initialize business Core Framework and Pro Extension.
@@ -58,7 +58,7 @@ function bu_theme_setup() {
 	add_theme_support('automatic-feed-links');
 	add_editor_style();
 }
-add_action( 'after_setup_theme', 'bu_theme_setup' );
+add_action( 'after_setup_theme', 'business_theme_setup' );
 
 /**
 * Redirect user to theme options page after activation.
@@ -68,7 +68,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow =="themes.php" ) {
 }
 
 /** Replaces RSS link from HTML 'head' with custom feed also used with the 'social icon' */
-function bu_feed_links() {
+function business_feed_links() {
 	global $themename, $themeslug, $options;
 	$my_feed=$options->get($themeslug.'_rsslink');
 	if ($my_feed) {
@@ -79,22 +79,22 @@ function bu_feed_links() {
 	}
 }
 remove_action( 'wp_head', 'feed_links', 2); // Display the links to the general feeds: Post and Comment Feed
-add_action('wp_head', 'bu_feed_links');
+add_action('wp_head', 'business_feed_links');
 
 /**
 * Add link to theme options in Admin bar.
 */ 
-function bu_admin_link() {
+function business_admin_link() {
 	global $wp_admin_bar;
 
 	$wp_admin_bar->add_menu( array( 'id' => 'Business', 'title' => 'Business lite Options', 'href' => admin_url('themes.php?page=business')  ) ); 
 }
-add_action( 'admin_bar_menu', 'bu_admin_link', 113 );
+add_action( 'admin_bar_menu', 'business_admin_link', 113 );
 
 /**
 * Custom markup for gallery posts in main blog index.
 */ 
-function bu_custom_gallery_post_format( $content ) {
+function business_custom_gallery_post_format( $content ) {
 	global $options, $themeslug, $post;
 	$root = get_template_directory_uri(); 
 	
@@ -151,12 +151,12 @@ function bu_custom_gallery_post_format( $content ) {
 		$content = ob_get_clean();	
 		return $content; 
 }
-add_filter('business_post_formats_gallery_content', 'bu_custom_gallery_post_format' ); 
+add_filter('business_post_formats_gallery_content', 'business_custom_gallery_post_format' ); 
 	
 /**
 * Set custom post excerpt link text based on theme option.
 */ 
-function bu_new_excerpt_more($more) {
+function business_new_excerpt_more($more) {
 
 	global $themename, $themeslug, $options, $post;
     
@@ -169,12 +169,12 @@ function bu_new_excerpt_more($more) {
 
 	return '</p><div class="more-link"><a href="'. get_permalink($post->ID) . '">'.$linktext.'</a></div>';
 }
-add_filter('excerpt_more', 'bu_new_excerpt_more');
+add_filter('excerpt_more', 'business_new_excerpt_more');
 
 /**
 * Set custom post excerpt length based on theme option.
 */ 
-function bu_new_excerpt_length($length) {
+function business_new_excerpt_length($length) {
 
 	global $themename, $themeslug, $options;
 	
@@ -187,12 +187,12 @@ function bu_new_excerpt_length($length) {
     	
 	return $length;
 }
-add_filter('excerpt_length', 'bu_new_excerpt_length');
+add_filter('excerpt_length', 'business_new_excerpt_length');
 
 /**
 * Attach CSS3PIE behavior to elements
 */   
-function bu_render_ie_pie() { ?>
+function business_render_ie_pie() { ?>
 	
 	<style type="text/css" media="screen">
 		#wrapper input, textarea, #twitterbar, input[type=submit], input[type=reset], #imenu, .searchform, .post_container, .postformats, .postbar, .post-edit-link, .widget-container, .widget-title, .footer-widget-title, .comments_container, ol.commentlist li.even, ol.commentlist li.odd, .slider_nav, ul.metabox-tabs li, .tab-content, .list_item, .section-info, #of_container #header, .menu ul li a, .submit input, #of_container textarea, #of_container input, #of_container select, #of_container .screenshot img, #of_container .of_admin_bar, #of_container .subsection > h3, .subsection, #of_container #content .outersection .section, #carousel_list, #calloutwrap, #calloutbutton, .box1, .box2, .box3, .es-carousel-wrapper, #nav #nav_menu > li > a, .input-submit, .button_link span, .searchform
@@ -204,33 +204,33 @@ function bu_render_ie_pie() { ?>
 <?php
 }
 
-add_action('wp_head', 'bu_render_ie_pie', 8);
+add_action('wp_head', 'business_render_ie_pie', 8);
 
 /**
 * Add TypeKit support based on theme option.
 */ 
-function bu_google_analytics() {
+function business_google_analytics() {
 	global $themename, $themeslug, $options;
 	
 	echo stripslashes ($options->get($themeslug.'_ga_code'));
 
 }
-add_action('wp_head', 'bu_google_analytics');
+add_action('wp_head', 'business_google_analytics');
 	
 /**
 * Register custom menus for header, footer.
 */ 
-function bu_register_menus() {
+function business_register_menus() {
 	register_nav_menus(
 	array( 'header-menu' => __( 'Header Menu', 'business' ))
   );
 }
-add_action( 'init', 'bu_register_menus' );
+add_action( 'init', 'business_register_menus' );
 	
 /**
 * Menu fallback if custom menu not used.
 */ 
-function bu_menu_fallback() {
+function business_menu_fallback() {
 	global $post; ?>
 	
 	<ul id="nav_menu">
@@ -240,7 +240,7 @@ function bu_menu_fallback() {
 /**
 * Register widgets.
 */ 
-function bu_widgets_init() {
+function business_widgets_init() {
     register_sidebar(array(
     	'name' => 'Full Sidebar',
     	'id'   => 'sidebar-widgets',
@@ -315,9 +315,9 @@ function bu_widgets_init() {
 		'after_title' => '</h3>',
 	));
 }
-add_action ('widgets_init', 'bu_widgets_init');
+add_action ('widgets_init', 'business_widgets_init');
 
-function bu_custom_pagination($pages = '', $range = 4)
+function business_custom_pagination($pages = '', $range = 4)
 {
      $showitems = ($range * 2)+1;  
  

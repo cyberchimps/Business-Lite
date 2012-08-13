@@ -82,7 +82,7 @@ function business_post_content() {
 			<?php endif; ?>
 			
 			<!--Begin @business pagination hook-->
-			<?php bu_custom_pagination(); ?>
+			<?php business_custom_pagination(); ?>
 			<!--End @business pagination loop hook-->
 		
 		</div><!--end row-->

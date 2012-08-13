@@ -27,7 +27,7 @@ get_header(); ?>
 	<!--End @Core post area-->
 	
 	</div>
-<?php if ($options->get($themeslug.'_single_breadcrumbs') == "1") { bu_breadcrumbs();}?>
+<?php if ($options->get($themeslug.'_single_breadcrumbs') == "1") { business_breadcrumbs();}?>
 </div><!--end container-->
 
 <?php get_footer(); ?>
