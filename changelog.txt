@@ -2,7 +2,15 @@ Business lite Changelog
 
 ****************************
 
-Version 3.1.17 (08-08-12)
+Version 3.1.18 (08-13-12)
+-Changed bu_ prefix to business_.
+-Made core functions prefix match.
+-Removed decimal point from left sidebar.
+-Fixed classy options error.
+-App.css enqueued properly. 
+-Theme check fixes.
+
+Version 3.1.18 (08-08-12)
 -Callout section text updated.
 -Favicon option added (off by default).
 
