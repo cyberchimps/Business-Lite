@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.19 (08-13-12)
+-Changed slider default links to wordpress.org.
+
 Version 3.1.18 (08-13-12)
 -Changed bu_ prefix to business_.
 -Made core functions prefix match.
