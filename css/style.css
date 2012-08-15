@@ -17,6 +17,7 @@ input[type=reset]{font-size: 12px;padding: 2px;margin-top: 5px;border: 1px solid
 a img{border:none}
 a{outline:none}
 .clear {clear:both;}
+table {width: 100px!important}
 
 .entry.nine.columns {
 	margin-left: 1.4%;
@@ -375,7 +376,7 @@ ul, ol { margin: 0 0 10px 0; }
 
 th {padding-right: 20px; padding-bottom: 10px;}
 
-td {border-top: 1px solid #DDD;padding: 6px 100px 6px 0;}
+td {border-top: 1px solid #DDD;padding: 6px 6px 6px 0;}
 
 table {border-bottom: 1px solid #DDD;}
 
