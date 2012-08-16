@@ -2,6 +2,11 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.20 (08-16-12)
+-wp_title function fix.
+-Made meta tag language dynamic.
+-Fixed calendar size blowing out of container
+
 Version 3.1.19 (08-13-12)
 -Changed slider default links to wordpress.org.
 
