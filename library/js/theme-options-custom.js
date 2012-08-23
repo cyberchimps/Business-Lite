@@ -13,6 +13,14 @@ jQuery(document).ready(function($) {
       toShow.hide();
     }
   }).change();
+	$("#bu_logo_url_toggle").change(function() {
+    var toShow = $("#section-bu_logo_url");
+    if($(this).is(':checked')) {
+      toShow.show();
+    } else {
+      toShow.hide();
+    }
+  }).change();
 	$("#bu_favicon_toggle").change(function() {
     var toShow = $("#section-bu_favicon");
     if($(this).is(':checked')) {
