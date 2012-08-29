@@ -12,9 +12,9 @@ div.orbit-wrapper {
 .slider_content {
 	background: #3c3c3c url(../images/sliderbg.png);
 }
-
-#orbitDemo.orbit img {
-	}
+#orbitDemo.orbit > a {
+  width: 100%;
+}
 
 .content_title {font-size: 20px; color: #FFF;}
 
