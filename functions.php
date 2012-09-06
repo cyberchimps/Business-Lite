@@ -29,6 +29,23 @@
 * Set Content Width.
 */ 
 	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
+
+/**
+* Establishes 'business' as the textdomain, sets $locale and file path
+*
+* @since 3.0
+*/
+function business_text_domain() {
+	load_theme_textdomain( 'business', get_template_directory() . '/core/languages' );
+
+	    $locale = get_locale();
+	    $locale_file = get_template_directory() . "/core/languages/$locale.php";
+	    if ( is_readable( $locale_file ) )
+		    require_once( $locale_file );
+		
+		return;    
+}
+add_action('after_setup_theme', 'business_text_domain');
 	
 /**
 * Basic theme setup.
