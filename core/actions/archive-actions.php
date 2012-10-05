@@ -29,25 +29,25 @@ function business_archive_page_title() {
 	global $post; ?>
 	
 		<?php if (is_category()) { ?>
-			<h2 class="archivetitle"><?php printf( __( 'Archive for the &#8216;', 'business' )); ?><?php single_cat_title(); ?><?php printf( __( '&#8217; Category:', 'business' )); ?></h2><br />
+			<h2 class="archivetitle"><?php _e( 'Archive for the &#8216;', 'business' ); ?><?php single_cat_title(); ?><?php _e( '&#8217; Category:', 'business' ); ?></h2><br />
 
 		<?php } elseif( is_tag() ) { ?>
-			<h2 class="archivetitle"><?php printf( __( 'Posts Tagged &#8216;', 'business' )); ?><?php single_tag_title(); ?><?php printf( __( '&#8217;:', 'business' )); ?></h2><br />
+			<h2 class="archivetitle"><?php _e( 'Posts Tagged &#8216;', 'business' ); ?><?php single_tag_title(); ?><?php _e( '&#8217;:', 'business' ); ?></h2><br />
 
 		<?php } elseif (is_day()) { ?>
-			<h2 class="archivetitle"><?php printf( __( 'Archive for', 'business' )); ?> <?php the_time('F jS, Y'); ?>:</h2><br />
+			<h2 class="archivetitle"><?php _e( 'Archive for', 'business' ); ?> <?php the_time('F jS, Y'); ?>:</h2><br />
 
 		<?php } elseif (is_month()) { ?>
-			<h2 class="archivetitle"><?php printf( __( 'Archive for', 'business' )); ?> <?php the_time('F, Y'); ?>:</h2><br />
+			<h2 class="archivetitle"><?php _e( 'Archive for', 'business' ); ?> <?php the_time('F, Y'); ?>:</h2><br />
 
 		<?php } elseif (is_year()) { ?>
-			<h2 class="archivetitle"><?php printf( __( 'Archive for:', 'business' )); ?> <?php the_time('Y'); ?>:</h2><br />
+			<h2 class="archivetitle"><?php _e( 'Archive for:', 'business' ); ?> <?php the_time('Y'); ?>:</h2><br />
 
 		<?php } elseif (is_author()) { ?>
-			<h2 class="archivetitle"><?php printf( __( 'Author Archive:', 'business' )); ?></h2><br />
+			<h2 class="archivetitle"><?php _e( 'Author Archive:', 'business' ); ?></h2><br />
 
 		<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-			<h2 class="archivetitle"><?php printf( __('Blog Archives:', 'business' )); ?></h2><br />
+			<h2 class="archivetitle"><?php _e('Blog Archives:', 'business' ); ?></h2><br />
 	
 		<?php } 
 }
