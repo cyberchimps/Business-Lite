@@ -64,7 +64,10 @@ function business_html_attributes() { ?>
 <!--[if IE 7 ]>    <html class="ie7" <?php language_attributes('xhtml'); ?>> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8" <?php language_attributes('xhtml'); ?>> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie9" <?php language_attributes('xhtml'); ?>> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]> <html xmlns="http://www.w3.org/1999/xhtml"<?php language_attributes('xhtml'); ?>> <![endif]-->
+<!--[if gt IE 9]>  <html <?php language_attributes(); ?>> <![endif]-->
+<!--[if !IE]><!--> 
+<html <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head profile="http://gmpg.org/xfn/11"> <?php 
 }
 
