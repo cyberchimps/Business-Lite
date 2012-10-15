@@ -826,7 +826,8 @@ div.slider-nav span {top: 45%;}
 @media handheld, only screen and (max-width: 400px) {
 	#box1 {margin-top:0px;margin-bottom:7px;}
 	#box2 {margin-top:7px;margin-bottom:7px;}
-	#box3 {margin-top:7px;margin-bottom:14px;}
+	#box3 {margin-top:7px;margin-bottom:7px;}
+  #box3 {margin-top:7px;margin-bottom:14px;}
 	.carousel_caption {font-size: 6px;}
 	.icons{text-align: center;}
 	#logo{text-align:center;}
