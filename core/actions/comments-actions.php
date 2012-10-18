@@ -91,7 +91,9 @@ function business_comments_loop() {
 	<br /><p><?php _e( 'You must be ', 'business' ); ?><a href="<?php echo wp_login_url( get_permalink() ); ?>"> <?php _e( 'logged in ', 'business' ); ?></a> <?php _e('to post a comment.', 'business' ); ?></p>
 	<?php else : ?>
 	
-	<?php comment_form(); ?>
+	<?php if( ! post_password_required() ) {
+					comment_form(); 
+				}	?>
 	
 		<?php endif; ?>
 		
