@@ -62,8 +62,19 @@ function business_styles() {
 	else {
 		$font = $options->get($themeslug.'_font'); 
 	}
+	
 	// register font stylesheet
-	wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family='.$font, array( 'business_style' ) ); 		
+	if( $font == 'Actor' ||
+		$font == 'Coda' ||
+		$font == 'Maven Pro' ||
+		$font == 'Metrophobic' ||
+		$font == 'News Cycle' ||
+		$font == 'Nobile' ||
+		$font == 'Tenor Sans' ||
+		$font == 'Quicksand' ||
+		$font == 'Ubuntu') {
+		wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family='.$font, array( 'business_style' ) ); 		
+	}
 	
 	// enqueue stylesheets
 	wp_enqueue_style( 'foundation' );
