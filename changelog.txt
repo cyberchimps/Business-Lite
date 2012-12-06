@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.35 (12-6-12)
+-3.5 fixes.
+
 Version 3.1.35 (11-26-12)
 -Pinch to zoom.
 
