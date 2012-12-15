@@ -15,35 +15,36 @@
 * @since 3.0
 */
 
+$template_dir = get_template_directory();
 //Define custom core functions
-require_once ( get_template_directory() . '/core/core-functions.php' );
+require_once ( $template_dir . '/core/core-functions.php' );
 
 //Define the core hooks
-require_once ( get_template_directory() . '/core/core-hooks.php' );
+require_once ( $template_dir . '/core/core-hooks.php' );
 
 //Call the action files
 
-require_once ( get_template_directory() . '/core/actions/sidebar-actions.php' );
-require_once ( get_template_directory() . '/core/actions/404-actions.php' );
-require_once ( get_template_directory() . '/core/actions/archive-actions.php' ); 
-require_once ( get_template_directory() . '/core/actions/box-actions.php' ); 
-require_once ( get_template_directory() . '/core/actions/callout-actions.php' ); 
-require_once ( get_template_directory() . '/core/actions/comments-actions.php' );
-require_once ( get_template_directory() . '/core/actions/post-actions.php' );
-require_once ( get_template_directory() . '/core/actions/global-actions.php' );
-require_once ( get_template_directory() . '/core/actions/header-actions.php' );
-require_once ( get_template_directory() . '/core/actions/footer-actions.php' );
-require_once ( get_template_directory() . '/core/actions/pagination-actions.php' );
-require_once ( get_template_directory() . '/core/actions/page-actions.php' );
-require_once ( get_template_directory() . '/core/actions/search-actions.php' );
-require_once ( get_template_directory() . '/core/actions/slider-actions.php' );
+require_once ( $template_dir . '/core/actions/sidebar-actions.php' );
+require_once ( $template_dir . '/core/actions/404-actions.php' );
+require_once ( $template_dir . '/core/actions/archive-actions.php' ); 
+require_once ( $template_dir . '/core/actions/box-actions.php' ); 
+require_once ( $template_dir . '/core/actions/callout-actions.php' ); 
+require_once ( $template_dir . '/core/actions/comments-actions.php' );
+require_once ( $template_dir . '/core/actions/post-actions.php' );
+require_once ( $template_dir . '/core/actions/global-actions.php' );
+require_once ( $template_dir . '/core/actions/header-actions.php' );
+require_once ( $template_dir . '/core/actions/footer-actions.php' );
+require_once ( $template_dir . '/core/actions/pagination-actions.php' );
+require_once ( $template_dir . '/core/actions/page-actions.php' );
+require_once ( $template_dir . '/core/actions/search-actions.php' );
+require_once ( $template_dir . '/core/actions/slider-actions.php' );
 
 
 //Call metabox class file
-require_once ( get_template_directory() . '/core/metabox/meta-box-class.php' );
+require_once ( $template_dir . '/core/metabox/meta-box-class.php' );
 
 //CyberChimps Themes Page
-require_once ( get_template_directory() . '/core/classy-options/options-themes.php' );
+require_once ( $template_dir . '/core/classy-options/options-themes.php' );
 
 /**
 * End
