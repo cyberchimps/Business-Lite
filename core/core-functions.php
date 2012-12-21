@@ -73,7 +73,10 @@ function business_styles() {
 		$font == 'Tenor Sans' ||
 		$font == 'Quicksand' ||
 		$font == 'Ubuntu') {
-		wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family='.$font, array( 'business_style' ) ); 		
+		
+		// Check if SSL is present, if so then use https othereise use http
+		$protocol = is_ssl() ? 'https' : 'http';
+		wp_register_style( 'fonts', $protocol . '://fonts.googleapis.com/css?family=' . $font, array( 'business_style' ) );		
 	}
 	
 	// enqueue stylesheets
