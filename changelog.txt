@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.39 (12-29-12)
+-URI variable.
+
 Version 3.1.38 (12-22-12)
 -SSL compatibility.
 
