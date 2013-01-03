@@ -152,9 +152,9 @@ a:hover {color: #5ca9d6;}
 	text-decoration:none;
 }
 #nav_menu > li {
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
     float: left;
-    margin: 0 7px;
+    margin: 0 7px 10px 0;
 }
 #nav #nav_menu > li > .sub-menu {
     display: none;
@@ -165,7 +165,7 @@ a:hover {color: #5ca9d6;}
     padding: 8px 0 0;
     position: absolute;
     left: 0;
-    top: 25px;
+    top: 20px;
     float: left;
     width: 180px;
     z-index: 9999;
@@ -188,7 +188,7 @@ a:hover {color: #5ca9d6;}
     padding: 8px 0 0;
     position: absolute;
     left: 0;
-    top: 25px;
+    top: 20px;
     float: left;
     width: 180px;
     z-index: 9999;
