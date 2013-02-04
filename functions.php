@@ -191,16 +191,23 @@ add_filter('excerpt_more', 'business_new_excerpt_more');
 /**
 * Set custom post excerpt link if excerpt is supplied manually.
 */ 
-function excerpt_read_more_link($output) {
+function manual_excerpt_read_more_link($output) {
+
+	global $themename, $themeslug, $options, $post;
+
+	if ($options->get($themeslug.'_excerpt_link_text') == '') {
+		$linktext = 'Continue Reading...';
+	}
+	else {
+		$linktext = $options->get($themeslug.'_excerpt_link_text');
+	}
 	
-	global $post;
-   
 	if(!empty($post->post_excerpt))
-		return $output . '<div class="more-link"><a href="'. get_permalink($post->ID) . '"> Continue Reading...</a></div>';
+		return $output . '<div class="more-link"><a href="'. get_permalink($post->ID) . '">'. $linktext . '</a></div>';
 	else
 		return $output;
 }
-add_filter('the_excerpt', 'excerpt_read_more_link');
+add_filter('the_excerpt', 'manual_excerpt_read_more_link');
 
 /**
 * Set custom post excerpt length based on theme option.
