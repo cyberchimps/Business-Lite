@@ -140,8 +140,7 @@ add_action('wp_enqueue_scripts', 'business_scripts');
 */
 function business_shorten_linktext($linkstring,$link) {
 	$characters = 33;
-	preg_match('/<a.*?>(.*?)<\/a>/is',$linkstring,$matches);
-	$displayedTitle = $matches[1];
+	$displayedTitle = preg_match('/<a.*?>(.*?)<\/a>/is',$linkstring,$matches) ? $matches[1] : "";
 	$newTitle = shorten_with_ellipsis($displayedTitle,$characters);
 	return str_replace('>'.$displayedTitle.'<','>'.$newTitle.'<',$linkstring);
 }
