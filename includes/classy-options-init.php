@@ -70,7 +70,7 @@ $options
 			->upload($themeslug."_apple_touch", "Apple Touch Icon", array('default' => array('url' => TEMPLATE_URL . '/images/apple-icon.png')))
 		->subsection_end()
 		->subsection("Social")
-			->text($themeslug."_twitter", "Twitter Icon URL", array('default' => 'http://twitter.com'))
+			->text($themeslug."_twitter", "Twitter Icon URL", array('default' => 'http://twitter.com/WordPress'))
 			->checkbox($themeslug."_hide_twitter_icon", "Hide Twitter Icon", array('default' => true))
 			->text($themeslug."_facebook", "Facebook Icon URL", array('default' => 'http://facebook.com'))
 			->checkbox($themeslug."_hide_facebook_icon", "Hide Facebook Icon" , array('default' => true))
