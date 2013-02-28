@@ -842,8 +842,9 @@ add_action( 'admin_print_styles-post-new.php', 'metabox_enqueue' );
 add_action( 'admin_print_styles-post.php', 'metabox_enqueue' );
 
 function metabox_enqueue() {
-	$path =  get_template_directory_uri()."/core/library/js/";
-	$path2 = get_template_directory_uri()."/css/";
+	$directory_uri = get_template_directory_uri();
+	$path =  $directory_uri . "/core/library/js/";
+	$path2 = $directory_uri . "/css/";
 	$color = get_user_meta( get_current_user_id(), 'admin_color', true );
 
 	wp_register_style(  'metabox-tabs-css', $path2. 'metabox-tabs.css');
