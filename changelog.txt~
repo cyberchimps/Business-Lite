@@ -2,8 +2,11 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.50 (3-22-13)
+-stylesheet cleaned (shortcode.css)
+
 Version 3.1.49 (3-15-13)
--Replace the get_template_directory_uri() with the global variable defined with same value.
+-Replaced the get_template_directory_uri() with the global variable defined with same value.
 
 Version 3.1.48 (3-8-13)
 -Removed the unused global variables from the footer_credit function.
