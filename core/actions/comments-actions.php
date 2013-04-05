@@ -26,10 +26,7 @@ add_action( 'business_comments', 'business_comments_loop' );
 *
 * @since 3.0
 */
-function business_comments_password_required() {
-	
-	global $post;
-	
+function business_comments_password_required() {	
 	$password_text = apply_filters( 'business_password_required_text', 'This post is password protected. Enter the password to view comments.');
 	if ( post_password_required() ) { 
 		printf( $password_text ); 
@@ -43,28 +40,27 @@ function business_comments_password_required() {
 * @since 3.0
 */
 function business_comments_loop() { 
-	global $post; ?>
-<?php if ( have_comments() ) : ?>
-	<div class="comments_container">
-		<h2 class="commentsh2"><?php comments_number( __('No Responses', 'business' ), __( 'One Response', 'business' ), __('% Responses', 'business' ));?></h2>
-
-		<div class="navigation">
-			<div class="next-posts"><?php previous_comments_link() ?></div>
-			<div class="prev-posts"><?php next_comments_link() ?></div>
-		</div>
-    <div class="clear"></div>
-
-		<ol class="commentlist">
-			<?php wp_list_comments('callback=business_comment'); ?>
-		</ol>
-
-		<div class="navigation">
-			<div class="next-posts"><?php previous_comments_link() ?></div>
-			<div class="prev-posts"><?php next_comments_link() ?></div>
-		</div>		
-    <div class="clear"></div>
-		
-	</div><!--end comments_container-->
+	if ( have_comments() ) : ?>
+		<div class="comments_container">
+			<h2 class="commentsh2"><?php comments_number( __('No Responses', 'business' ), __( 'One Response', 'business' ), __('% Responses', 'business' ));?></h2>
+	
+			<div class="navigation">
+				<div class="next-posts"><?php previous_comments_link() ?></div>
+				<div class="prev-posts"><?php next_comments_link() ?></div>
+			</div>
+		<div class="clear"></div>
+	
+			<ol class="commentlist">
+				<?php wp_list_comments('callback=business_comment'); ?>
+			</ol>
+	
+			<div class="navigation">
+				<div class="next-posts"><?php previous_comments_link() ?></div>
+				<div class="prev-posts"><?php next_comments_link() ?></div>
+			</div>		
+		<div class="clear"></div>
+			
+		</div><!--end comments_container-->
 	
  <?php else : // this is displayed if there are no comments so far ?>
 
