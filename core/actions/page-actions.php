@@ -27,7 +27,7 @@ add_action('business_page_section', 'business_page_section_content' );
 * @since 1.0
 */
 function business_page_section_content() { 
-	global $options, $themeslug, $post, $sidebar, $content_grid;
+	global $post, $content_grid;
 	business_sidebar_init();
 	$hidetitle = get_post_meta($post->ID, 'hide_page_title' , true);
 ?>
