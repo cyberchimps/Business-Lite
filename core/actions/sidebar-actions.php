@@ -68,9 +68,9 @@ function business_sidebar_init_content() {
 * @since 3.0
 */
 function business_before_content_sidebar_markup() { 
-	global $options, $themeslug, $post, $sidebar; // call globals ?>
+	global $sidebar;
 				
-	<?php if ($sidebar == 'right-left' OR $sidebar == "2"): ?>
+	if ($sidebar == 'right-left' OR $sidebar == "2"): ?>
 	<div id="sidebar-left" class="three columns">
 		<?php get_sidebar('left'); ?>
 	</div>
@@ -89,9 +89,9 @@ function business_before_content_sidebar_markup() {
 * @since 3.0
 */
 function business_after_content_sidebar_markup() {
-	global $options, $themeslug, $post, $sidebar; // call globals ?>
+	global $sidebar;
 	
-	<?php if ($sidebar == 'right' OR $sidebar == '0' OR $sidebar == '' ): ?>
+	if ($sidebar == 'right' OR $sidebar == '0' OR $sidebar == '' ): ?>
 	<div id="sidebar" class="four columns">
 		<?php get_sidebar(); ?>
 	</div>
