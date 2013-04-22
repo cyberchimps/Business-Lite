@@ -603,11 +603,13 @@ blockquote {
 	color: #222;
 }
 
-blockquote p {margin: 10px; }
+blockquote p {
+	margin: 10px;
+}
 
-.sticky { }
-
-.gallery-caption { }
+.gallery-caption {
+	margin-left: 26px !important;
+}
 
 /* Lists */
 
