@@ -26,7 +26,7 @@ add_action ('business_page_slider', 'business_slider_content' );
 */
 function business_slider_content() {
 
-	global $themename, $themeslug, $options, $wp_query, $post, $slider_default, $root;
+	global $themeslug, $options, $post;
 		
 	if (is_front_page()) {
 		$hidenav = $options->get($themeslug.'_front_hide_slider_arrows');
