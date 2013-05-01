@@ -132,7 +132,7 @@ function business_link_rel() {
 	?>
 
 <?php if( $options->get($themeslug.'_favicon_toggle') == true ): ?>	
-	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?php echo esc_url( $favicon['url'] ); ?>" type="image/x-icon" />
 <?php endif; ?>
 
 
@@ -164,12 +164,12 @@ function business_header_sitename_content() {
 	}
 if ($options->get($themeslug.'_custom_logo') == '1') { ?>
 	<div id="logo">
-		<a href="<?php echo $url; ?>"><img src="<?php echo stripslashes($logo['url']); ?>" alt="logo"></a>
+		<a href="<?php echo esc_url( $url ); ?>"><img src="<?php echo esc_url( $logo['url'] ); ?>" alt="logo"></a>
 	</div> <?php
 	}
 						
 	else{ ?>
-		<h1 class="sitename"><a href="<?php echo $url; ?>/"><?php bloginfo('name'); ?> </a></h1>
+		<h1 class="sitename"><a href="<?php echo esc_url( $url ); ?>/"><?php bloginfo('name'); ?> </a></h1>
 		<?php
 	}						 
 }
@@ -297,49 +297,49 @@ function business_header_social_icons_content() {
 		<div class="icons">
 	
 		<?php if ($hidefacebook == '1' AND $facebook != '' OR $hidefacebook == '' AND $facebook != '' ):?>
-			<a href="<?php echo $facebook ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/facebook.png" alt="Facebook" /></a>
+			<a href="<?php echo esc_url( $facebook ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/facebook.png" alt="Facebook" /></a>
 		<?php endif;?>
 		<?php if ($hidefacebook == '1' AND $facebook == '' OR $hidefacebook == '' AND $facebook == '' ):?>
 			<a href="http://facebook.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/facebook.png" alt="Facebook" /></a>
 		<?php endif;?>
 		<?php if ($hidetwitter == '1' AND $twitter != '' OR $hidetwitter == '' AND $twitter != '' ):?>
-			<a href="<?php echo $twitter ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/twitter.png" alt="Twitter" /></a>
+			<a href="<?php echo esc_url( $twitter ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/twitter.png" alt="Twitter" /></a>
 		<?php endif;?>
 		<?php if ($hidetwitter == '1' AND $twitter == '' OR $hidetwitter == '' AND $twitter == '' ):?>
 			<a href="http://twitter.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/twitter.png" alt="Twitter" /></a>
 		<?php endif;?>
 		<?php if ($hidegplus == '1' AND $gplus != ''  OR $hidegplus == '' AND $gplus != '' ):?>
-			<a href="<?php echo $gplus ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/gplus.png" alt="Gplus" /></a>
+			<a href="<?php echo esc_url( $gplus ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/gplus.png" alt="Gplus" /></a>
 		<?php endif;?>
 		<?php if ($hidegplus == '1' AND $gplus == '' OR $hidegplus == '' AND $gplus == '' ):?>
 			<a href="https://plus.google.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/gplus.png" alt="Gplus" /></a>
 		<?php endif;?>
 		<?php if ($hideflickr == '1' AND $flickr != '' ):?>
-			<a href="<?php echo $flickr ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/flickr.png" alt="Flickr" /></a>
+			<a href="<?php echo esc_url( $flickr ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/flickr.png" alt="Flickr" /></a>
 		<?php endif;?>
 		<?php if ($hideflickr == '1' AND $flickr == '' ):?>
 			<a href="https://flickr.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/flickr.png" alt="Flickr" /></a>
 		<?php endif;?>
 		<?php if ($hidepinterest == '1' AND $pinterest != '' ):?>
-			<a href="<?php echo $pinterest ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/pinterest.png" alt="Pinterest" /></a>
+			<a href="<?php echo esc_url( $pinterest ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/pinterest.png" alt="Pinterest" /></a>
 		<?php endif;?>
 		<?php if ($hidepinterest == '1' AND $pinterest == '' ):?>
 			<a href="https://pinterest.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/pinterest.png" alt="Pinterest" /></a>
 		<?php endif;?>
 		<?php if ($hidelinkedin == '1' AND $linkedin != '' ):?>
-			<a href="<?php echo $linkedin ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/linkedin.png" alt="LinkedIn" /></a>
+			<a href="<?php echo esc_url( $linkedin ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/linkedin.png" alt="LinkedIn" /></a>
 		<?php endif;?>
 		<?php if ($hidelinkedin == '1' AND $linkedin == '' ):?>
 			<a href="http://linkedin.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/linkedin.png" alt="LinkedIn" /></a>
 		<?php endif;?>
 		<?php if ($hideyoutube == '1' AND $youtube != '' ):?>
-			<a href="<?php echo $youtube ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/youtube.png" alt="YouTube" /></a>
+			<a href="<?php echo esc_url( $youtube ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/youtube.png" alt="YouTube" /></a>
 		<?php endif;?>
 		<?php if ($hideyoutube == '1' AND $youtube == '' ):?>
 			<a href="http://youtube.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/youtube.png" alt="YouTube" /></a>
 		<?php endif;?>
 		<?php if ($hidegooglemaps == '1' AND $googlemaps != ''):?>
-			<a href="<?php echo $googlemaps ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/googlemaps.png" alt="Google Maps" /></a>
+			<a href="<?php echo esc_url( $googlemaps ) ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/googlemaps.png" alt="Google Maps" /></a>
 		<?php endif;?>
 		<?php if ($hidegooglemaps == '1' AND $googlemaps == ''):?>
 			<a href="http://google.com/maps" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/googlemaps.png" alt="Google Maps" /></a>
@@ -351,7 +351,7 @@ function business_header_social_icons_content() {
 			<a href="mailto:no@way.com" target="_blank"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/email.png" alt="E-mail" /></a>
 		<?php endif;?>
 		<?php if ($hiderss == '1' and $rss != '' OR $hiderss == '' and $rss != '' ):?>
-			<a href="<?php echo $rss ?>" target="_blank"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/rss.png" alt="RSS" /></a>
+			<a href="<?php echo esc_url( $rss ) ?>" target="_blank"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/rss.png" alt="RSS" /></a>
 		<?php endif;?>
 		<?php if ($hiderss == '1' and $rss == '' OR $hiderss == '' and $rss == '' ):?>
 			<a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/rss.png" alt="RSS" /></a>
