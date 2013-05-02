@@ -2,6 +2,10 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.56 (5-2-13)
+-Replaced stripslashes with esc_url for the urls
+-Sanitized social link urls with esc_url
+
 Version 3.1.55 (4-26-13)
 -Removed unused global variables from slider-actions.php file.
 -Fixed the gallery columns css issue. 
