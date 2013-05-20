@@ -1,0 +1,236 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cyberchimps Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
+"PO-Revision-Date: 2013-03-20 09:01-0000\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: German, Germany\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr "Oops! Diese Seite kann nicht gefunden werden."
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr "An dieser Stelle wurde nichts gefunden. Möchten Sie danach suchen?"
+
+#: ../../archive.php
+msgid "Category Archives: %s"
+msgstr "Archiv der Kategorie: %s"
+
+#: ../../archive.php
+msgid "Tag Archives: %s"
+msgstr "Schlagwort-Archive: %s"
+
+#: ../../archive.php
+msgid "Author Archives: %s"
+msgstr "Archiv des Autors: %s"
+
+#: ../../archive.php
+msgid "Daily Archives: %s"
+msgstr "Archiv für den Tag %s"
+
+#: ../../archive.php
+msgid "Monthly Archives: %s"
+msgstr "Archiv für den Monat %s"
+
+#: ../../archive.php
+msgid "Yearly Archives: %s"
+msgstr "Archiv für das Jahr %s"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php ../../archive.php
+msgid "Archives"
+msgstr "Archiv"
+
+#: ../../comments.php
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr "Kommentar-Navigation"
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "Permalink zu %s"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr "Weiterlesen"
+
+#: ../../image.php ../../content.php
+msgid "Pages:"
+msgstr "Seiten"
+
+#: ../../image.php ../../content.php
+msgid "Edit"
+msgstr "ed"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Pages"
+msgstr "Seiten"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Categories"
+msgstr "Kategorien"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Powered by WordPress - die zeitgemäße Plattform zum Veröffentlichen "
+"persönlicher Artikel."
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback (Kurzfassung):"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr "schreibt:"
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar wartet auf Freischaltung."
+
+#: ../../functions.php
+msgid "%1$s at %2$s"
+msgstr "%1$s um %2$s"
+
+#: ../../functions.php
+msgid "CyberChimps Pro Responsive WordPress Starter Theme"
+msgstr "CyberChimps Pro reagieren Starter in WordPress Theme"
+
+#: ../../functions.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps Link"
+
+#: ../../image.php
+msgid "Published"
+msgstr "Veröffentlicht"
+
+#: ../../image.php
+msgid "size"
+msgstr "Gre"
+
+#: ../../image.php
+msgid "in"
+msgstr ""
+
+#: ../../image.php
+msgid "Previous"
+msgstr "Zurück"
+
+#: ../../image.php
+msgid "Next"
+msgstr "Vor"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr "Kommentar verfassen"
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr "oder hinterlasse einen trackback"
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr "Trackback-URL"
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr ""
+"Kommentare sind geschlossen, aber Sie können einen Trackback hinterlassen:"
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can %s"
+msgstr "Trackbacks sind geschlossen, aber Sie können %s"
+
+#: ../../image.php
+msgid "post a comment"
+msgstr "Kommentar verfassen"
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Sowohl Kommentare als auch Pings stehen momentan nicht zur Verfügung."
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "Bereit, um Ihren ersten Beitrag zu veröffentlichen?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr "Hier geht es los"
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Zu Ihren Suchbegriffen gibt es keine Ergebnisse. Bitte versuchen Sie es "
+"erneut mit anderen Suchbegriffen."
+
+#: ../../no-results.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint, dass wir nicht finden können, was du suchst. Vielleicht suchen "
+"können."
+
+#: ../../search.php
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: ../../searchform.php
+msgid "Search &hellip;"
+msgstr "Suche &hellip;"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Subscribe"
+msgstr "Abonnieren"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Entries (RSS)"
+msgstr "Artikel (RSS)"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Comments (RSS)"
+msgstr "Kommentare (RSS)"

@@ -1,0 +1,234 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cyberchimps Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
+"PO-Revision-Date: 2013-03-20 09:02-0000\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Dutch, Netherlands\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr "Oops! Die pagina kan niet worden gevonden."
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+"Het lijkt erop dat er niets werd gevonden op deze locatie. Misschien "
+"proberen te zoeken voor?"
+
+#: ../../archive.php
+msgid "Category Archives: %s"
+msgstr "Categorie archief: %s"
+
+#: ../../archive.php
+msgid "Tag Archives: %s"
+msgstr "Tagarchief: %s"
+
+#: ../../archive.php
+msgid "Author Archives: %s"
+msgstr "Auteursarchief: %s"
+
+#: ../../archive.php
+msgid "Daily Archives: %s"
+msgstr "Dagelijks archief: %s"
+
+#: ../../archive.php
+msgid "Monthly Archives: %s"
+msgstr "Maandelijks archief: %s"
+
+#: ../../archive.php
+msgid "Yearly Archives: %s"
+msgstr "Jaarlijks archief: %s"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php ../../archive.php
+msgid "Archives"
+msgstr "Archief"
+
+#: ../../comments.php
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr "Reactienavigatie"
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr "Oudere Reacties"
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr "Nieuwere opmerkingen"
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "Permalink naar %s"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr "Lees verder"
+
+#: ../../image.php ../../content.php
+msgid "Pages:"
+msgstr "Paginas"
+
+#: ../../image.php ../../content.php
+msgid "Edit"
+msgstr "ed"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Pages"
+msgstr "Paginas"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Categories"
+msgstr "Categorieën"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Powered by WordPress"
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr "says"
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr "Je reactie moet nog  worden goedgekeurd."
+
+#: ../../functions.php
+msgid "%1$s at %2$s"
+msgstr "%1$s om %2$s"
+
+#: ../../functions.php
+msgid "CyberChimps Pro Responsive WordPress Starter Theme"
+msgstr "CyberChimps Pro responsieve Starter WordPress thema"
+
+#: ../../functions.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps Link"
+
+#: ../../image.php
+msgid "Published"
+msgstr "Gepubliceerd"
+
+#: ../../image.php
+msgid "size"
+msgstr "Omvang"
+
+#: ../../image.php
+msgid "in"
+msgstr "van"
+
+#: ../../image.php
+msgid "Previous"
+msgstr "Vorige"
+
+#: ../../image.php
+msgid "Next"
+msgstr "Verder"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr "Plaats een reactie"
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr "of laat een trackback"
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr "Trackback URL"
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr "Reacties zijn gesloten, maar je kunt een trackback achterlaten:"
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can %s"
+msgstr "Trackbacks zijn gesloten, maar u kunt %s"
+
+#: ../../image.php
+msgid "post a comment"
+msgstr "Plaats een reactie"
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Zowel reacties als trackbacks zijn momenteel gesloten."
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "Klaar om je eerste bericht te publiceren?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr "Get hier begon"
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, maar niets gevonden die aan uw zoektermen. Probeer het opnieuw met "
+"een aantal verschillende zoekwoorden."
+
+#: ../../no-results.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Het lijkt dat we kan niet vinden wat u zoekt. Misschien zoeken kan helpen."
+
+#: ../../search.php
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: ../../searchform.php
+msgid "Search &hellip;"
+msgstr "Zoek &hellip;"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Subscribe"
+msgstr "Abonneer"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Entries (RSS)"
+msgstr "Entries (RSS)"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Comments (RSS)"
+msgstr "Reacties (RSS)"

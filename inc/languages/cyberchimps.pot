@@ -1,0 +1,247 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cyberchimpspro v1.1.0.0\n"
+"POT-Creation-Date: 2013-03-19 15:48-0000\n"
+"PO-Revision-Date: 2013-03-19 15:49-0000\n"
+"Last-Translator: \n"
+"Language-Team: CyberChimps\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx;esc_attr__;"
+"esc_attr_e;esc_attr_x;esc_html__;esc_html_e;esc_html_x;_n_noop;_nx_noop;"
+"translate_nooped_plural\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+#: ../../404.php:34
+msgid "Oops! That page cannot be found."
+msgstr ""
+
+#: ../../404.php:42
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+
+#: ../../archive.php:34
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../../archive.php:37
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../../archive.php:44
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: ../../archive.php:52
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../../archive.php:55
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../../archive.php:58
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../../archive.php:61 ../../footer.php:33 ../../sidebar-left.php:32
+#: ../../sidebar-right.php:32 ../../sidebar.php:32
+msgid "Archives"
+msgstr ""
+
+#: ../../comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../comments.php:41 ../../comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: ../../comments.php:42 ../../comments.php:62
+msgid "Older Comments"
+msgstr ""
+
+#: ../../comments.php:43 ../../comments.php:63
+msgid "Newer Comments"
+msgstr ""
+
+#: ../../comments.php:73
+msgid "Comments are closed."
+msgstr ""
+
+#: ../../content.php:32 ../../content.php:45 ../../content.php:48
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../../content.php:65 ../../content.php:88 ../../content.php:108
+msgid "Continue reading"
+msgstr ""
+
+#: ../../content.php:66 ../../content.php:89 ../../content.php:109
+#: ../../image.php:75
+msgid "Pages:"
+msgstr ""
+
+#: ../../content.php:126 ../../image.php:47 ../../image.php:142
+msgid "Edit"
+msgstr ""
+
+#: ../../footer.php:26 ../../sidebar-left.php:25 ../../sidebar-right.php:25
+#: ../../sidebar.php:25
+msgid "Pages"
+msgstr ""
+
+#: ../../footer.php:40 ../../sidebar-left.php:39 ../../sidebar-right.php:39
+#: ../../sidebar.php:39
+msgid "Categories"
+msgstr ""
+
+#: ../../footer.php:47 ../../footer.php:51 ../../sidebar-left.php:46
+#: ../../sidebar-left.php:50 ../../sidebar-right.php:46
+#: ../../sidebar-right.php:50 ../../sidebar.php:46 ../../sidebar.php:50
+msgid "WordPress"
+msgstr ""
+
+#: ../../footer.php:51 ../../sidebar-left.php:50 ../../sidebar-right.php:50
+#: ../../sidebar.php:50
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: ../../functions.php:42
+msgid "Pingback:"
+msgstr ""
+
+#: ../../functions.php:42 ../../functions.php:65
+msgid "(Edit)"
+msgstr ""
+
+#: ../../functions.php:52
+msgid "says:"
+msgstr ""
+
+#: ../../functions.php:55
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../../functions.php:63
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../../functions.php:127
+msgid "CyberChimps Pro Responsive WordPress Starter Theme"
+msgstr ""
+
+#: ../../functions.php:210
+msgid "Cyberchimps Link"
+msgstr ""
+
+#: ../../image.php:37
+msgid "Published"
+msgstr ""
+
+#: ../../image.php:37
+msgid "size"
+msgstr ""
+
+#: ../../image.php:37
+msgid "in"
+msgstr ""
+
+#: ../../image.php:51
+msgid "Previous"
+msgstr ""
+
+#: ../../image.php:52
+msgid "Next"
+msgstr ""
+
+#: ../../image.php:133
+msgid "Post a comment"
+msgstr ""
+
+#: ../../image.php:133
+msgid "or leave a trackback"
+msgstr ""
+
+#: ../../image.php:133 ../../image.php:135
+msgid "Trackback URL"
+msgstr ""
+
+#: ../../image.php:135
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr ""
+
+#: ../../image.php:137
+#, php-format
+msgid "Trackbacks are closed, but you can %s"
+msgstr ""
+
+#: ../../image.php:138
+msgid "post a comment"
+msgstr ""
+
+#: ../../image.php:140
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: ../../no-results.php:19
+msgid "Nothing Found"
+msgstr ""
+
+#: ../../no-results.php:26
+msgid "Ready to publish your first post?"
+msgstr ""
+
+#: ../../no-results.php:28
+msgid "Get started here"
+msgstr ""
+
+#: ../../no-results.php:33
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../../no-results.php:38
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../../search.php:31
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../../searchform.php:18
+msgid "Search &hellip;"
+msgstr ""
+
+#: ../../sidebar-left.php:56 ../../sidebar-right.php:56 ../../sidebar.php:56
+msgid "Subscribe"
+msgstr ""
+
+#: ../../sidebar-left.php:58 ../../sidebar-right.php:58 ../../sidebar.php:58
+msgid "Entries (RSS)"
+msgstr ""
+
+#: ../../sidebar-left.php:59 ../../sidebar-right.php:59 ../../sidebar.php:59
+msgid "Comments (RSS)"
+msgstr ""
