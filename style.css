@@ -267,6 +267,11 @@ header#cc_header .header-search {
   text-shadow: none;
   padding: 7px 15px 7px;
 }
+.navbar-inverse .navbar-search .search-query:focus {
+  color: #ffffff;
+  text-shadow: 0 0 0 transparent;
+  background-color: #515151;
+}
 
 /********************************************************************************************************************/
 /******************************************** SECONDARY MENU ********************************************************/
@@ -333,6 +338,9 @@ article {
 }
 .container {
   background: transparent;
+}
+#content.content-sidebar-right article {
+  margin-right: 20px;
 }
 
 /*==================================== POST AND PAGE CONTENT ===========================================*/
@@ -864,13 +872,13 @@ table#wp-calendar td {
   background: #272727;
   padding: 40px 0;
 }
-#slider .carousel-control {
+#slider-lite .carousel-control {
   line-height: 30px;
 }
-#slider .container {
+#slider-lite .container {
   position: relative;
 }
-#slider.carousel {
+#slider-lite.carousel {
   margin-bottom: 0;
 }
 .carousel-control {
@@ -878,11 +886,11 @@ table#wp-calendar td {
   border-radius: 0;
   border: none;
 }
-.carousel-control.slider-left {
+.carousel-control.slider-lite-left {
   background: url('images/arrow-prev.png') 0 0 no-repeat;
 }
 
-.carousel-control.slider-right {
+.carousel-control.slider-lite-right {
   background: url('images/arrow-next.png') 0 0 no-repeat;
 }
 
@@ -933,10 +941,6 @@ table#wp-calendar td {
 
 /*==================================== WIDGET BOXES ===============================================*/
 
-#widgets_section_section {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #E4E4E4;
-}
 .box {
   padding: 0 10px;
   margin-bottom: 40px;
@@ -974,45 +978,6 @@ h2.box-widget-title {
   cursor: default;
 }
 
-/*==================================== CAROUSEL ===================================================*/
-
-#carousel_section_section {
-  margin-bottom: 40px;
-  border-bottom: 1px solid  #e4e4e4;
-}
-#carousel_section_section .es-carousel-wrapper {
-  padding: 0 40px;
-}
-#carousel_section_section .es-carousel ul li {
-  height: 164px;
-}
-#carousel_section_section .es-carousel ul li a img {
-  height: 138px;
-  width: 138px;
-}
-.es-carousel ul li:hover .carousel_caption {
-  display: block;
-}
-.es-carousel ul li {
-  padding: 12px;
-  background: url('images/frame.png') 0 0 no-repeat;
-  position: relative;
-}
-.carousel_caption {
-  display: none;
-  width: 138px;
-  max-width: 138px;
-  height: 128px;
-  position: absolute !important;
-  top: 12px;
-  left: 12px;
-  padding-top: 10px;
-  background: #636363;
-  opacity: .6;
-  color: white;
-  text-shadow: none;
-}
-
 /*==================================== PORTFOLIO ===================================================*/
 
 #portfolio {
@@ -1029,6 +994,7 @@ h2.box-widget-title {
   font-size: 1.6em;
   font-weight: 400;
   margin-top: 0;
+  margin-bottom: 20px;
   line-height: 1em;
 }
 #gallery .portfolio_item {
@@ -1109,70 +1075,6 @@ h2.box-widget-title {
   background: #fff;
 }
 
-/*==================================== RECENT POSTS ================================================*/
-
-#recent_posts_section {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #e4e4e4;
-}
-#recent_posts .recent-posts-container {
-  margin-bottom: 40px;
-}
-
-#recent_posts h5.recent_posts_post_title {
-  font-size: 1.2em;
-  line-height: 1em;
-}
-
-.recent-posts-image {
-  margin-bottom: 10px;
-}
-
-/*==================================== HTML BOX ==================================================*/
-
-#htmlbox-container {
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 23px;
-  line-height: 30px;
-}
-
-/*==================================== MAGAZINE ==================================================*/
-
-#magazine .magazine-post-container {
-  margin-bottom: 10px;
-  padding: 20px;
-  overflow: hidden;
-}
-
-#magazine .magazine-post-container  h2.posts-title {
-  font-size: 22px;
-  line-height: 1em;
-  margin: 0 0 10px 0;
-}
-
-#magazine .magazine-metadata {
-  font-size: 11px;
-  padding-bottom: 10px;
-}
-
-#magazine .magazine-post-container  div#comments {
-  font-size: 11px;
-  line-height: 1em;
-}
-
-#magazine .magazine-post-container img.wp-post-image {
-  width: 100%;
-  height: auto;
-}
-
-#magazine .magazine-wide-post img.wp-post-image {
-  float: left;
-  margin: 0 10px 10px 0;
-  width: auto;
-  height: auto;
-}
-
 /********************************************************************************************************************/
 /****************************************** MEDIA QUERIES ***********************************************************/
 /********************************************************************************************************************/
@@ -1225,6 +1127,7 @@ h2.box-widget-title {
 /********************************************************************************************************************/
 /****************************************** MISC STYLES *************************************************************/
 /********************************************************************************************************************/
+
 .container-fluid {
   padding: 0;
 }
