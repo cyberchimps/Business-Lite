@@ -836,6 +836,16 @@ table#wp-calendar td {
 #footer-widgets .widget-container ul li a {
   color: #d6d6d6;
 }
+#footer_social_icons {
+  background: #3b3b3b;
+  padding: 20px 0 0 0;
+}
+#footer_social_icons #social {
+  float: right;
+}
+#footer_social_icons #social a {
+  margin-left: 5px;
+}
 #after_footer {
   background-color: #3B3B3B;
 }

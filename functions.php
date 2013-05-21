@@ -383,8 +383,6 @@ add_filter( 'header_drag_and_drop_default', 'cyberchimps_business_pro_header_dra
 //add header drag and drop options
 function cyberchimps_business_pro_header_drag_and_drop_options() {
   $options = array(
-      'cyberchimps_sitename_contact'  => __( 'Logo + Contact', 'cyberchimps_elements' ),
-      'cyberchimps_header_content'    => __( 'Logo + Icons', 'cyberchimps_elements' ),
       'cyberchimps_sitename_register' => __( 'Logo + Login', 'cyberchimps_elements' ),
       'cyberchimps_logo_search'       => __( 'Logo + Search', 'cyberchimps_elements' ),
       'cyberchimps_logo'        => __( 'Logo', 'cyberchimps_elements' )
@@ -412,9 +410,6 @@ function cyberchimps_header_display() {
             case 'cyberchimps_sitename_contact':
                   cyberchimps_contact_info();
                 break;
-            case 'cyberchimps_header_content':
-                  cyberchimps_header_social_icons();
-                break;    
             case 'cyberchimps_sitename_register': ?>
                   <div class="register">
                   <?php
@@ -434,4 +429,32 @@ function cyberchimps_header_display() {
   }
 }
 add_action( 'cyberchimps_header_display', 'cyberchimps_header_display' );
+
+// Places icons in footer if there are any
+function cyberchimps_footer_social() {
+
+    $twitter_display = cyberchimps_get_option( 'social_twitter', 'checked' );
+    $facebook_display = cyberchimps_get_option( 'social_facebook', 'checked' );
+    $google_display = cyberchimps_get_option( 'social_google', 'checked' );
+    $flickr_display = cyberchimps_get_option('social_flickr');
+    $pinterest_display = cyberchimps_get_option('social_pinterest');
+    $linkedin_display = cyberchimps_get_option('social_linkedin');
+    $youtube_display = cyberchimps_get_option('social_youtube');
+    $googlemaps_display = cyberchimps_get_option('social_googlemaps');
+    $email_display = cyberchimps_get_option('social_email');
+    $rss_display = cyberchimps_get_option('social_rss');
+
+    if( !empty( $twitter_display ) || !empty( $facebook_display ) || !empty( $google_display ) || !empty( $flickr_display ) || !empty( $pinterest_display ) || !empty( $linkedin_display ) || !empty( $youtube_display ) || !empty( $googlemaps_display ) || !empty( $email_display ) || !empty( $rss_display ) ): ?>
+        <div class="container-full-width" id="footer_social_icons">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <?php cyberchimps_header_social_icons(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endif;
+}
+add_action( 'cyberchimps_before_footer_container', 'cyberchimps_footer_social' );
 ?>
