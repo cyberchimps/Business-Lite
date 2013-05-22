@@ -16,10 +16,6 @@
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 
-// Notify user of theme update on "Updates" page in Dashboard.
-require_once( get_template_directory() . '/inc/update.php' );
-new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 289, basename( get_template_directory() ) );
-
 // Set the content width based on the theme's design and stylesheet.
 if ( !isset( $content_width ) ) {
     $content_width = 640;
@@ -89,6 +85,24 @@ if ( !function_exists( 'cyberchimps_comment' ) ) :
         endswitch;
     }
 endif; // ends check for cyberchimps_comment()
+
+// set up next and previous post links for lite themes only
+function cyberchimps_next_previous_posts() {
+    if( get_next_posts_link() || get_previous_posts_link() ): ?>
+    <div class="more-content">
+        <div class="row-fluid">
+            <div class="span6 previous-post">
+                <?php previous_posts_link(); ?>
+            </div>
+            <div class="span6 next-post">
+                <?php next_posts_link(); ?>
+            </div>
+        </div>
+    </div>
+<?php
+    endif;
+}
+add_action( 'cyberchimps_after_content', 'cyberchimps_next_previous_posts' );
 
 // core options customization Names and URL's
 //Pro or Free
@@ -419,10 +433,17 @@ function cyberchimps_secondary_menu_title() {
     return $title;
 }
 
-add_filter( 'header_drag_and_drop_default', 'cyberchimps_business_pro_header_drag_and_drop_default', 20 );
+// header drag and drop default
+function cyberchimps_business_lite_header_drag_and_drop_default() {
+    $option = array( 'cyberchimps_logo' => __( 'Logo', 'cyberchimps_elements' )
+    );
+
+    return $option;
+}
+add_filter( 'header_drag_and_drop_default', 'cyberchimps_business_lite_header_drag_and_drop_default', 20 );
 
 //add header drag and drop options
-function cyberchimps_business_pro_header_drag_and_drop_options() {
+function cyberchimps_business_lite_header_drag_and_drop_options() {
     $options = array(
         'cyberchimps_sitename_register' => __( 'Logo + Login', 'cyberchimps_elements' ),
         'cyberchimps_logo_search'       => __( 'Logo + Search', 'cyberchimps_elements' ),
@@ -432,7 +453,7 @@ function cyberchimps_business_pro_header_drag_and_drop_options() {
     return $options;
 }
 
-add_filter( 'header_drag_and_drop_options', 'cyberchimps_business_pro_header_drag_and_drop_options', 15 );
+add_filter( 'header_drag_and_drop_options', 'cyberchimps_business_lite_header_drag_and_drop_options', 15 );
 
 //Create header drag and drop display on frontend
 function cyberchimps_header_display() {

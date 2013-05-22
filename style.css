@@ -85,7 +85,7 @@ header#cc_header {
   background-image: -moz-linear-gradient(top, #ffffff, #dadada);
   background-image: -ms-linear-gradient(top, #ffffff, #dadada);
   background-image: -o-linear-gradient(top, #ffffff, #dadada);
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 15px 0;
 }
 
@@ -149,6 +149,7 @@ header#cc_header .header-search {
 /********************************************************************************************************************/
 /******************************************** MENU ******************************************************************/
 /********************************************************************************************************************/
+
 #navigation {
   margin: 0;
   padding: 20px 0 30px 0;
@@ -165,6 +166,9 @@ header#cc_header .header-search {
 }
 .main-navigation .nav {
   margin-right: 0;
+}
+.main-navigation .nav li ul.dropdown-menu {
+  padding: 10px 0 2px 0;
 }
 .main-navigation .nav li ul li ul {
   list-style: none;
@@ -183,6 +187,8 @@ header#cc_header .header-search {
   display: block;
   margin-top: 0;
 }
+.main-navigation .nav li ul li a {
+}
 .main-navigation .nav li ul li a:hover {
   color: #08C;
   background: none;
@@ -200,28 +206,6 @@ header#cc_header .header-search {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
-@media (max-width: 979px) {
-  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
-    font-weight: normal;
-  }
-  .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
-    color: #fff;
-  }
-  .navbar-inverse .nav-collapse .nav > li.current-menu-item > a, .navbar-inverse .nav-collapse .nav > li.current-menu-ancestor > a {
-    color: #fff;
-  }
-  .nav-collapse .dropdown .caret {
-    display: none;
-  }
-  .nav-collapse .dropdown-menu {
-    display: block;
-  }
-  .navbar-inverse .nav-collapse .dropdown-menu .active > a {
-    color: #fff;
-    background-image: none;
-    background-color: #000;
-  }
-}
 .nav li.current-menu-item a, nav li a:hover, .main-navigation .nav li ul li a:hover, .nav li.current_page_item a, #respond p.form-submit input[type=submit] {
   background-image: url(images/active-nav.png) 0 0 repeat-x;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6eb1dc), to(#4181ab));
@@ -230,8 +214,8 @@ header#cc_header .header-search {
   background-image: -ms-linear-gradient(top, #6eb1dc, #4181ab);
   background-image: -o-linear-gradient(top, #6eb1dc, #4181ab);
   border-top: 1px solid #4085b2;
-  border-bottom: 1px solid #1f5374;
   border-right: 1px solid #306d94;
+  border-bottom: 1px solid #1f5374;
   border-left: 1px solid #306d94;
   text-shadow: none;
   color: white;
@@ -259,8 +243,11 @@ header#cc_header .header-search {
 .dropdown-menu li a {
   margin-right: 0;
   border-radius: 0;
-  background: none;
-  border: none;
+  background: none; 
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 .navbar-inverse .brand, .navbar-inverse .nav > li > a {
   color: #646464;
@@ -271,6 +258,33 @@ header#cc_header .header-search {
   color: #ffffff;
   text-shadow: 0 0 0 transparent;
   background-color: #515151;
+}
+@media (max-width: 979px) {
+  #navigation {
+    width: 100%;
+  }
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    font-weight: normal;
+    background: none;
+    border: none;
+  }
+  .nav li.current-menu-item a, nav li a:hover, .main-navigation .nav li ul li a:hover, .nav li.current_page_item a, #respond p.form-submit input[type=submit], .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    color: #6EB1DC;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+  }
+  .nav-collapse .dropdown .caret {
+    display: none;
+  }
+  .nav-collapse .dropdown-menu {
+    display: block;
+  }
+  .navbar-inverse .nav-collapse .dropdown-menu .active > a {
+    color: #fff;
+    background-image: none;
+    background-color: #000;
+  }
 }
 
 /********************************************************************************************************************/
@@ -987,7 +1001,7 @@ h2.box-widget-title {
 
 /*==================================== BOXES ======================================================*/
 
-#boxes_section {
+#boxes_lite_section {
   margin-bottom: 40px;
   border-bottom: 1px solid #E4E4E4;
 }
@@ -1002,6 +1016,9 @@ h2.box-widget-title {
 
 /*==================================== PORTFOLIO ===================================================*/
 
+#portfolio_lite_section {
+  margin-bottom: 40px;
+}
 #portfolio {
   padding-bottom: 20px;
 }
