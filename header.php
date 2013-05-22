@@ -106,6 +106,7 @@
 		
 	<?php do_action('cyberchimps_after_navigation'); ?>
 
+<?php if ( cyberchimps_secondary_menu_title() != '' || has_nav_menu( 'secondary' ) ): ?>
 <div class="container-full-width" id="second_menu">
   <div class="container">
     <div class="container-fluid">
@@ -118,7 +119,7 @@
         <?php if( has_nav_menu( 'secondary' ) ): ?>
         <div class="span7">
           <nav id="navigation" role="navigation">
-              <div class="second-navigation navbar<?php echo ( cyberchimps_get_option( 'cyberchimps_skin_color' ) == 'default' ) ? ' navbar-inverse' : ''; ?>">
+              <div class="second-navigation navbar">
                 <div class="navbar-inner">
                   
                           <?php wp_nav_menu( array( 'theme_location'  => 'secondary', 'depth' => 1, 'menu_class' => 'nav', 'walker' => new cyberchimps_walker(), 'fallback_cb' => 'cyberchimps_fallback_menu' ) ); ?>
@@ -133,3 +134,4 @@
     </div><!-- .container fluid -->
   </div><!-- container -->
 </div><!-- #second-menu -->
+<?php endif; ?>

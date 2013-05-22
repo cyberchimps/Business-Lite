@@ -175,6 +175,7 @@ add_filter( 'cyberchimps_slider_lite_img2', 'cyberchimps_default_slider2' );
 add_filter( 'cyberchimps_slider_lite_img3', 'cyberchimps_default_slider3' );
 
 //theme specific skin options in array. Must always include option default
+//todo clean up function
 function cyberchimps_skin_color_options( $options ) {
     // Get path of image
     $imagepath = get_template_directory_uri() . '/inc/css/skins/images/';
@@ -372,12 +373,15 @@ function cyberchimps_secondary_menu_title() {
     if ( is_home() || is_single() ) {
         $title = __( 'Our Blog', 'cyberchimps' );
     }
+    elseif ( is_page() && get_post_meta( get_the_ID(), 'cyberchimps_page_title_toggle', true) == 1 ) {
+        $title = esc_html( get_the_title() );
+    }
     elseif ( is_category() ) {
-        $title = sprintf( __( 'Category Archives: %s', 'cyberchimps' ), '<span>' . esc_html( single_cat_title( '', false ) ) . '</span>' );
+        $title = sprintf( __( 'Category Archives: %s', 'cyberchimps' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
     }
     elseif ( is_tag() ) {
-        $title = sprintf( __( 'Tag Archives: %s', 'cyberchimps' ), '<span>' . esc_html( single_tag_title( '', false ) ) . '</span>' );
+        $title = sprintf( __( 'Tag Archives: %s', 'cyberchimps' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 
     }
     elseif ( is_author() ) {
@@ -385,7 +389,7 @@ function cyberchimps_secondary_menu_title() {
          * what author we're dealing with (if that is the case).
         */
         the_post();
-        $title = sprintf( __( 'Author Archives: %s', 'cyberchimps' ), '<span>' . esc_html( get_the_author() ) . '</span>' );
+        $title = sprintf( __( 'Author Archives: %s', 'cyberchimps' ), '<span>' . get_the_author() . '</span>' );
         /* Since we called the_post() above, we need to
          * rewind the loop back to the beginning that way
          * we can run the loop properly, in full.
@@ -394,33 +398,25 @@ function cyberchimps_secondary_menu_title() {
 
     }
     elseif ( is_day() ) {
-        $title = sprintf( __( 'Daily Archives: %s', 'cyberchimps' ), '<span>' . esc_html( get_the_date() ) . '</span>' );
+        $title = sprintf( __( 'Daily Archives: %s', 'cyberchimps' ), '<span>' . get_the_date() . '</span>' );
 
     }
     elseif ( is_month() ) {
-        $title = sprintf( __( 'Monthly Archives: %s', 'cyberchimps' ), '<span>' . esc_html( get_the_date( 'F Y' ) ) . '</span>' );
+        $title = sprintf( __( 'Monthly Archives: %s', 'cyberchimps' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 
     }
     elseif ( is_year() ) {
-        $title = sprintf( __( 'Yearly Archives: %s', 'cyberchimps' ), '<span>' . esc_html( get_the_date( 'Y' ) ) . '</span>' );
+        $title = sprintf( __( 'Yearly Archives: %s', 'cyberchimps' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
     }
     elseif ( is_search() ) {
-        $title = sprintf( __( 'Search Results for: %s', 'cyberchimps' ), '<span>' . esc_html( get_search_query() ) . '</span>' );
+        $title = sprintf( __( 'Search Results for: %s', 'cyberchimps' ), '<span>' . get_search_query() . '</span>' );
     }
     else {
         $title = '';
     }
-
+    
     return $title;
-}
-
-// header drag and drop default
-function cyberchimps_business_pro_header_drag_and_drop_default() {
-    $option = array( 'cyberchimps_logo' => __( 'Logo', 'cyberchimps_elements' )
-    );
-
-    return $option;
 }
 
 add_filter( 'header_drag_and_drop_default', 'cyberchimps_business_pro_header_drag_and_drop_default', 20 );

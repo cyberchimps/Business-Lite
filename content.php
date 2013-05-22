@@ -20,33 +20,17 @@
 		<?php cyberchimps_post_format_icon(); ?>
 		<h2 class="entry-title">
 			<?php
-			if ( 'page' == get_post_type() ) : 
-				
-				// get the page title toggle option
-				 $page_title = get_post_meta( get_the_ID(), 'cyberchimps_page_title_toggle', true);
-				 
-				if( is_search() ):
-				?>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
-						<?php ( get_the_title() )? the_title() : the_permalink(); ?>
-					</a>
-				<?php	
-				elseif( $page_title == "1" || $page_title == "" ) :
-					( get_the_title() )? the_title() : the_permalink();
-				endif;
-			else :
-				if( 'post' == get_post_type() && is_single() ) :
-				
-					// get the post title toggle option
-					$post_title = cyberchimps_get_option( 'single_post_title' );
-					if( $post_title == "1" ) : ?>
-						<?php ( get_the_title() )? the_title() : the_permalink(); ?>
-			<?php	endif;
-				else : ?>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php ( get_the_title() )? the_title() : the_permalink(); ?></a>
-			<?php
-				endif;
-			endif; ?>
+      if( 'post' == get_post_type() && is_single() ) :
+        
+          // get the post title toggle option
+          $post_title = cyberchimps_get_option( 'single_post_title' );
+          if( $post_title == "1" ) : ?>
+            <?php ( get_the_title() )? the_title() : the_permalink(); ?>
+      <?php endif;
+        else : ?>
+          <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php ( get_the_title() )? the_title() : the_permalink(); ?></a>
+      <?php
+      endif; ?>
 		</h2>
 	
 		<?php if ( 'post' == get_post_type() ) : ?>

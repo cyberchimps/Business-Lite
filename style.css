@@ -277,9 +277,14 @@ header#cc_header .header-search {
 /******************************************** SECONDARY MENU ********************************************************/
 /********************************************************************************************************************/
 
+/* if the container below the header is the second menu remove the margin set by the header */
+.container-full-width:nth-child(2)#second_menu {
+  margin-top: -40px;
+}
 #second_menu {
   margin-bottom: 40px;
   background: #232323;
+  background-image: url('images/secondary-menu-bg.jpg') 0 0 repeat;
 }
 #second_menu #navigation {
   padding: 10px 0;
@@ -318,6 +323,10 @@ header#cc_header .header-search {
 /******************************************** MAIN CONTENT **********************************************************/
 /********************************************************************************************************************/
 
+/* if the container below the header is the slider remove the margin set by the header */
+.container-full-width:nth-child(2)#slider_lite_section {
+  margin-top: -40px;
+}
 /* if the container below the second menu is the slider remove the margin set by the second menu */
 .container-full-width:nth-child(3)#slider_lite_section {
   margin-top: -40px;
@@ -791,6 +800,7 @@ table#wp-calendar td {
 
 #footer_widgets_wrapper {
   background-color: #4E4E4E;
+  background-image: url('images/footer-bg.jpg');
 }
 #footer-widgets {
   margin-bottom: 20px;
@@ -837,8 +847,9 @@ table#wp-calendar td {
   color: #d6d6d6;
 }
 #footer_social_icons {
-  background: #3b3b3b;
   padding: 20px 0 0 0;
+  background: #3b3b3b;
+  background-image: url('images/after-footer-bg.jpg');
 }
 #footer_social_icons #social {
   float: right;
@@ -848,6 +859,7 @@ table#wp-calendar td {
 }
 #after_footer {
   background-color: #3B3B3B;
+  background-image: url('images/after-footer-bg.jpg');
 }
 .site-footer {
   margin: 0;
