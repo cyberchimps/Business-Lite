@@ -168,7 +168,7 @@ header#cc_header .header-search {
   margin-right: 0;
 }
 .main-navigation .nav li ul.dropdown-menu {
-  padding: 10px 0 2px 0;
+  padding: 10px 0 10px 0;
 }
 .main-navigation .nav li ul li ul {
   list-style: none;
@@ -220,7 +220,7 @@ header#cc_header .header-search {
   text-shadow: none;
   color: white;
 }
-.nav li a {
+.nav > li > a {
   margin-right: 7px;
   margin-bottom: 7px;
   border-radius: 5px;
