@@ -285,8 +285,11 @@ function cyberchimps_posted_on() {
                           esc_attr( get_the_date( 'c' ) ),
                           ( $show_date ) ? esc_html( get_the_date() ) : ''
     );
-    apply_filters( 'cyberchimps_posted_on', $posted_on );
-    echo $posted_on;
+    
+	if( $show_date ) {
+		apply_filters( 'cyberchimps_posted_on', $posted_on );
+		echo $posted_on;
+	}
 }
 
 //Get the meta author
@@ -307,8 +310,11 @@ function cyberchimps_posted_by() {
                           esc_attr( sprintf( __( 'View all posts by %s', 'cyberchimps_core' ), get_the_author() ) ),
                           ( $show_author ) ? esc_html( get_the_author() ) : ''
     );
-    apply_filters( 'cyberchimps_posted_by', $posted_by );
-    echo $posted_by;
+    
+	if( $show_author ) {
+		apply_filters( 'cyberchimps_posted_by', $posted_by );
+		echo $posted_by;
+	}
 }
 
 //categories
