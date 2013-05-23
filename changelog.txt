@@ -2,6 +2,9 @@ Business lite Changelog
 
 ****************************
 
+Version 3.1.59 (5-23-13)
+Removed unused global variables from core/core-functions.php.
+
 Version 3.1.58 (5-17-13)
 -Stylesheet cleaned (core/classy-options/themes.css)
 
