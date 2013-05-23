@@ -289,7 +289,7 @@ function business_breadcrumbs() {
 }
 
 function business_title_tag_filter( $old_title ) {
-	global $options, $themeslug, $query, $post; 
+	global $options, $themeslug, $post; 
 	
 	$blogtitle = ($options->get($themeslug.'_home_title'));
 	if (!is_404()) {
