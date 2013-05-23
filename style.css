@@ -56,10 +56,6 @@ pre {
 code {
   white-space: pre-wrap;
 }
-header {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 .clear {
   clear: both;
 }
@@ -85,7 +81,6 @@ header#cc_header {
   background-image: -moz-linear-gradient(top, #ffffff, #dadada);
   background-image: -ms-linear-gradient(top, #ffffff, #dadada);
   background-image: -o-linear-gradient(top, #ffffff, #dadada);
-  margin: 0 0 40px 0;
   padding: 15px 0;
 }
 
@@ -291,12 +286,7 @@ header#cc_header .header-search {
 /******************************************** SECONDARY MENU ********************************************************/
 /********************************************************************************************************************/
 
-/* if the container below the header is the second menu remove the margin set by the header */
-.container-full-width:nth-child(2)#second_menu {
-  margin-top: -40px;
-}
 #second_menu {
-  margin-bottom: 40px;
   background: #232323;
   background-image: url('images/secondary-menu-bg.jpg') 0 0 repeat;
 }
@@ -337,16 +327,8 @@ header#cc_header .header-search {
 /******************************************** MAIN CONTENT **********************************************************/
 /********************************************************************************************************************/
 
-/* if the container below the header is the slider remove the margin set by the header */
-.container-full-width:nth-child(2)#slider_lite_section {
-  margin-top: -40px;
-}
-/* if the container below the second menu is the slider remove the margin set by the second menu */
-.container-full-width:nth-child(3)#slider_lite_section {
-  margin-top: -40px;
-}
 article {
-  margin: 0 0 40px 0;
+  margin: 40px 0 0 0;
   padding-bottom: 40px;
   color: #828282;
   border-bottom: 1px solid #e4e4e4;
@@ -813,6 +795,7 @@ table#wp-calendar td {
 /********************************************************************************************************************/
 
 #footer_widgets_wrapper {
+  margin-top: 40px;
   background-color: #4E4E4E;
   background-image: url('images/footer-bg.jpg');
 }
@@ -904,7 +887,6 @@ table#wp-calendar td {
 /*==================================== SLIDER =====================================================*/
 
 #slider_lite_section {
-  margin-bottom: 40px;
   background: #272727;
   padding: 40px 0;
 }
@@ -928,51 +910,6 @@ table#wp-calendar td {
 
 .carousel-control.slider-lite-right {
   background: url('images/arrow-next.png') 0 0 no-repeat;
-}
-
-/*==================================== CALLOUT ====================================================*/
-
-#callout_section_section {
-  margin-bottom: 40px;
-  padding: 40px 0;
-  background: #f5f5f5;
-  border-bottom: 1px solid #e4e4e4;
-  text-align: center;
-}
-#callout-container .span9, #callout-container .span3 {
-  width: 100%;
-  margin: 0;
-}
-.callout-text h2.callout-title {
-  margin-top: 0;
-  font-size: 1.6em;
-  line-height: 1em;
-}
-.callout-text p {
-  font-size: 1.2em;
-}
-.callout-text p:last-child {
-  margin-bottom: 0;
-}
-#callout-container #callout_button {
-  margin-top: 20px;
-}
-#callout-container #callout_button a {
-  float: none;
-}
-#callout-container #callout_button button.btn-primary {
-  background-image: -webkit-linear-gradient(#64A8D2 0%, #4583AA 100%);
-  background-image: -moz-linear-gradient(#64A8D2 0%, #4583AA 100%);
-  background-image: -o-linear-gradient(#64A8D2 0%, #4583AA 100%);
-  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#64A8D2), to(#4583AA));
-  background-image: linear-gradient(#64A8D2 0%, #4583AA 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#64A8D2',endColorstr='#4583AA',GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-  background-color: #64A8D2 #64A8D2 #5185a3;
-  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-}
-#callout-container #callout_button button.btn-primary:hover {
-  background-color: #4583AA;
 }
 
 /*==================================== WIDGET BOXES ===============================================*/
@@ -1002,7 +939,7 @@ h2.box-widget-title {
 /*==================================== BOXES ======================================================*/
 
 #boxes_lite_section {
-  margin-bottom: 40px;
+  margin-top: 40px;
   border-bottom: 1px solid #E4E4E4;
 }
 #boxes-container .box a {
@@ -1017,7 +954,7 @@ h2.box-widget-title {
 /*==================================== PORTFOLIO ===================================================*/
 
 #portfolio_lite_section {
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 #portfolio {
   padding-bottom: 20px;
@@ -1052,7 +989,7 @@ h2.box-widget-title {
 /*==================================== TWITTER =====================================================*/
 
 #twitterbar_section_section {
-  margin-bottom: 40px;
+  margin-top: 40px;
   border-bottom: 1px solid #e4e4e4;
 }
 #twitter-bar {
@@ -1090,7 +1027,7 @@ h2.box-widget-title {
 
 .breadcrumbs {
   background: #fff;
-  margin: 0 0 40px 0;
+  margin: 40px 0 0 0;
   border-bottom: 1px dotted #e6e6e6;
   padding: 15px 0;
   font-size: 13px;
