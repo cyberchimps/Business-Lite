@@ -201,7 +201,7 @@ header#cc_header .header-search {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
-.nav li.current-menu-item a, nav li a:hover, .main-navigation .nav li ul li a:hover, .nav li.current_page_item a, #respond p.form-submit input[type=submit] {
+.nav li.current-menu-item > a, nav li a:hover, .main-navigation .nav li ul li a:hover, .nav li.current_page_item > a, #respond p.form-submit input[type=submit], .navbar-inverse .current-menu-ancestor.dropdown > a {
   background-image: url(images/active-nav.png) 0 0 repeat-x;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6eb1dc), to(#4181ab));
   background-image: -webkit-linear-gradient(top, #6eb1dc, #4181ab);
