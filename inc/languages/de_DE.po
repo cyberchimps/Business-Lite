@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Cyberchimps Pro\n"
+"Project-Id-Version: Business Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
-"PO-Revision-Date: 2013-03-20 09:01-0000\n"
+"POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
+"PO-Revision-Date: 2013-05-30 11:37-0000\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: German, Germany\n"
 "MIME-Version: 1.0\n"
@@ -21,38 +21,9 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
 msgstr "An dieser Stelle wurde nichts gefunden. Möchten Sie danach suchen?"
 
-#: ../../archive.php
-msgid "Category Archives: %s"
-msgstr "Archiv der Kategorie: %s"
-
-#: ../../archive.php
-msgid "Tag Archives: %s"
-msgstr "Schlagwort-Archive: %s"
-
-#: ../../archive.php
-msgid "Author Archives: %s"
-msgstr "Archiv des Autors: %s"
-
-#: ../../archive.php
-msgid "Daily Archives: %s"
-msgstr "Archiv für den Tag %s"
-
-#: ../../archive.php
-msgid "Monthly Archives: %s"
-msgstr "Archiv für den Monat %s"
-
-#: ../../archive.php
-msgid "Yearly Archives: %s"
-msgstr "Archiv für das Jahr %s"
-
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php ../../archive.php
-msgid "Archives"
-msgstr "Archiv"
-
 #: ../../comments.php
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
 msgstr[0] ""
 
 #: ../../comments.php
@@ -94,11 +65,16 @@ msgstr "Seiten"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
+msgid "Archives"
+msgstr "Archiv"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "Categories"
 msgstr "Kategorien"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "WordPress"
 msgstr "WordPress"
 
@@ -107,8 +83,8 @@ msgstr "WordPress"
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr ""
-"Powered by WordPress - die zeitgemäße Plattform zum Veröffentlichen "
-"persönlicher Artikel."
+"Powered by WordPress, state-of-the-art semantischen persönlichen Publishing-"
+"Plattform."
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -120,23 +96,83 @@ msgstr "(Edit)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "schreibt:"
+msgstr "sagt"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
 msgstr "Dein Kommentar wartet auf Freischaltung."
 
 #: ../../functions.php
-msgid "%1$s at %2$s"
-msgstr "%1$s um %2$s"
+msgid "%1$s"
+msgstr "%1$ s"
 
 #: ../../functions.php
-msgid "CyberChimps Pro Responsive WordPress Starter Theme"
-msgstr "CyberChimps Pro reagieren Starter in WordPress Theme"
+msgid "Professional Business Theme"
+msgstr "Professionelle Business-Theme"
 
 #: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps Link"
+msgid "Secondary Menu"
+msgstr "Untermenü"
+
+#: ../../functions.php
+msgid "View all posts by %s"
+msgstr "Zeige alle Beiträge von %s"
+
+#: ../../functions.php
+msgid "Leave a comment"
+msgstr "Hinterlasse ein Kommentar."
+
+#: ../../functions.php
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: ../../functions.php
+msgid "Comments"
+msgstr "Kommentar"
+
+#: ../../functions.php
+msgid "Our Blog"
+msgstr "Unser Blog"
+
+#: ../../functions.php
+msgid "Category Archives: %s"
+msgstr "Archiv der Kategorie: %s"
+
+#: ../../functions.php
+msgid "Tag Archives: %s"
+msgstr "Schlagwort-Archive: %s"
+
+#: ../../functions.php
+msgid "Author Archives: %s"
+msgstr "Archiv des Autors: %s"
+
+#: ../../functions.php
+msgid "Daily Archives: %s"
+msgstr "Tagesarchive: %s"
+
+#: ../../functions.php
+msgid "Monthly Archives: %s"
+msgstr "Monatsarchive: %s"
+
+#: ../../functions.php
+msgid "Yearly Archives: %s"
+msgstr "Jahresarchive: %s"
+
+#: ../../functions.php
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: ../../functions.php
+msgid "Logo"
+msgstr "Logo"
+
+#: ../../functions.php
+msgid "Logo + Login"
+msgstr "Logo + Login"
+
+#: ../../functions.php
+msgid "Logo + Search"
+msgstr "Logo + Suche"
 
 #: ../../image.php
 msgid "Published"
@@ -148,11 +184,11 @@ msgstr "Gre"
 
 #: ../../image.php
 msgid "in"
-msgstr ""
+msgstr "in"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "Zurück"
+msgstr "Früher"
 
 #: ../../image.php
 msgid "Next"
@@ -160,11 +196,11 @@ msgstr "Vor"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Kommentar verfassen"
+msgstr "Kommentar posten"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "oder hinterlasse einen trackback"
+msgstr "oder ein Trackback hinterlassen"
 
 #: ../../image.php
 msgid "Trackback URL"
@@ -173,7 +209,7 @@ msgstr "Trackback-URL"
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
 msgstr ""
-"Kommentare sind geschlossen, aber Sie können einen Trackback hinterlassen:"
+"Kommentare sind geschlossen, aber Sie können einen Trackback hinterlassen"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -181,7 +217,7 @@ msgstr "Trackbacks sind geschlossen, aber Sie können %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Kommentar verfassen"
+msgstr "Kommentar posten"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
@@ -193,11 +229,11 @@ msgstr "Nichts gefunden"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "Bereit, um Ihren ersten Beitrag zu veröffentlichen?"
+msgstr "Bereit, um Ihren ersten Beitrag veröffentlichen?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Hier geht es los"
+msgstr "Thalia"
 
 #: ../../no-results.php
 msgid ""
@@ -214,10 +250,6 @@ msgid ""
 msgstr ""
 "Es scheint, dass wir nicht finden können, was du suchst. Vielleicht suchen "
 "können."
-
-#: ../../search.php
-msgid "Search Results for: %s"
-msgstr "Suchergebnisse für: %s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Cyberchimps Pro\n"
+"Project-Id-Version: Business Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
-"PO-Revision-Date: 2013-03-20 09:00-0000\n"
+"POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
+"PO-Revision-Date: 2013-05-30 11:31-0000\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Hindi, India\n"
 "MIME-Version: 1.0\n"
@@ -22,38 +22,9 @@ msgid ""
 msgstr ""
 "ऐसा लगता है कि इस स्थान पर कुछ भी नहीं पाया गया था. शायद इसके लिए खोज की कोशिश की?"
 
-#: ../../archive.php
-msgid "Category Archives: %s"
-msgstr "श्रेणी अभिलेखागार: %s"
-
-#: ../../archive.php
-msgid "Tag Archives: %s"
-msgstr "टैग अभिलेखागार: %s"
-
-#: ../../archive.php
-msgid "Author Archives: %s"
-msgstr "लेखक अभिलेखागार: %s"
-
-#: ../../archive.php
-msgid "Daily Archives: %s"
-msgstr "नित्य संग्रह: %s"
-
-#: ../../archive.php
-msgid "Monthly Archives: %s"
-msgstr "मासिक संग्रह: %s"
-
-#: ../../archive.php
-msgid "Yearly Archives: %s"
-msgstr "वार्षिक संग्रह: %s"
-
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php ../../archive.php
-msgid "Archives"
-msgstr "अभिलेख"
-
 #: ../../comments.php
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
 msgstr[0] ""
 
 #: ../../comments.php
@@ -66,7 +37,7 @@ msgstr "पुराना टिप्पणियाँ"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "नई टिप्पणियाँ"
+msgstr "टिप्पणियां नए"
 
 #: ../../comments.php
 msgid "Comments are closed."
@@ -82,7 +53,7 @@ msgstr "पढ़ना जारी रखें"
 
 #: ../../image.php ../../content.php
 msgid "Pages:"
-msgstr "पृष्ठ:"
+msgstr "पृष्ठ"
 
 #: ../../image.php ../../content.php
 msgid "Edit"
@@ -95,13 +66,18 @@ msgstr "पृष्ठ"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
+msgid "Archives"
+msgstr "अभिलेख"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "Categories"
 msgstr "श्रेणी"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "WordPress"
-msgstr "वर्डप्रेस"
+msgstr "WordPress"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
@@ -126,16 +102,76 @@ msgid "Your comment is awaiting moderation."
 msgstr "आपकी टिप्पणी मॉडरेशन का इंतजार कर रहा है."
 
 #: ../../functions.php
-msgid "%1$s at %2$s"
-msgstr "%1$s को %2$s पर"
+msgid "%1$s"
+msgstr "%1$ s"
 
 #: ../../functions.php
-msgid "CyberChimps Pro Responsive WordPress Starter Theme"
-msgstr "CyberChimps प्रो उत्तरदायी WordPress स्टार्टर थीम"
+msgid "Professional Business Theme"
+msgstr "पेशेवर व्यापार विषय"
 
 #: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps लिंक"
+msgid "Secondary Menu"
+msgstr "द्वितीयक मेनू"
+
+#: ../../functions.php
+msgid "View all posts by %s"
+msgstr "सभी चिठ्ठीरसां या पोस्ट देखे %s"
+
+#: ../../functions.php
+msgid "Leave a comment"
+msgstr "एक टिप्पणी छोड़ दो"
+
+#: ../../functions.php
+msgid "1 Comment"
+msgstr "1 टिप्पणी"
+
+#: ../../functions.php
+msgid "Comments"
+msgstr "बीच में"
+
+#: ../../functions.php
+msgid "Our Blog"
+msgstr "हमारे ब्लॉग"
+
+#: ../../functions.php
+msgid "Category Archives: %s"
+msgstr "श्रेणी अभिलेखागार: %s"
+
+#: ../../functions.php
+msgid "Tag Archives: %s"
+msgstr "टैग अभिलेखागार: %s"
+
+#: ../../functions.php
+msgid "Author Archives: %s"
+msgstr "लेखक अभिलेखागार: %s"
+
+#: ../../functions.php
+msgid "Daily Archives: %s"
+msgstr "नित्य संग्रह: %s"
+
+#: ../../functions.php
+msgid "Monthly Archives: %s"
+msgstr "मासिक संग्रह: %s"
+
+#: ../../functions.php
+msgid "Yearly Archives: %s"
+msgstr "वार्षिक संग्रह: %s"
+
+#: ../../functions.php
+msgid "Search Results for: %s"
+msgstr ": के लिए खोज परिणाम %s"
+
+#: ../../functions.php
+msgid "Logo"
+msgstr "लोगो"
+
+#: ../../functions.php
+msgid "Logo + Login"
+msgstr "लोगो + लॉगिन"
+
+#: ../../functions.php
+msgid "Logo + Search"
+msgstr "लोगो + खोज"
 
 #: ../../image.php
 msgid "Published"
@@ -163,7 +199,7 @@ msgstr "पोस्ट एक टिप्पणी"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "या एक trackback छोड़ दो"
+msgstr "या एक trackback छोड़"
 
 #: ../../image.php
 msgid "Trackback URL"
@@ -171,7 +207,7 @@ msgstr "Trackback यूआरएल"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "टिप्पणियाँ बंद हो जाती हैं, लेकिन आप एक trackback छोड़ कर सकते हैं:"
+msgstr "टिप्पणियाँ बंद हो जाती हैं, लेकिन आप एक trackback छोड़ सकते हैं"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -212,10 +248,6 @@ msgid ""
 msgstr ""
 "ऐसा लगता है हम मिल नहीं कर सकता क्या आप के लिए देख रहे हैं। शायद खोज करने में मदद कर "
 "सकते हैं।"
-
-#: ../../search.php
-msgid "Search Results for: %s"
-msgstr "परिणाम खोजने के लिए लिखे %s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"

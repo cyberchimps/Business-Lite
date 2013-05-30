@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Cyberchimps Pro\n"
+"Project-Id-Version: Business Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
-"PO-Revision-Date: 2013-03-20 09:01-0000\n"
+"POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
+"PO-Revision-Date: 2013-05-30 11:31-0000\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Japanese, Japan\n"
 "MIME-Version: 1.0\n"
@@ -23,38 +23,9 @@ msgstr ""
 "何もこの場所で発見されなかったように見えます。多分それを検索してみてくださ"
 "い？"
 
-#: ../../archive.php
-msgid "Category Archives: %s"
-msgstr "カテゴリー:"
-
-#: ../../archive.php
-msgid "Tag Archives: %s"
-msgstr "アーカイブ:"
-
-#: ../../archive.php
-msgid "Author Archives: %s"
-msgstr "著者アーカイブ: %s"
-
-#: ../../archive.php
-msgid "Daily Archives: %s"
-msgstr "日別アーカイブ: %s"
-
-#: ../../archive.php
-msgid "Monthly Archives: %s"
-msgstr "月別アーカイブ: %s"
-
-#: ../../archive.php
-msgid "Yearly Archives: %s"
-msgstr "年別アーカイブ: %s"
-
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php ../../archive.php
-msgid "Archives"
-msgstr "お知らせ"
-
 #: ../../comments.php
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
 msgstr[0] ""
 
 #: ../../comments.php
@@ -79,11 +50,11 @@ msgstr "パーマへ%s"
 
 #: ../../content.php
 msgid "Continue reading"
-msgstr "読み続ける"
+msgstr "続きを読む"
 
 #: ../../image.php ../../content.php
 msgid "Pages:"
-msgstr "ページ:"
+msgstr "ページ"
 
 #: ../../image.php ../../content.php
 msgid "Edit"
@@ -96,11 +67,16 @@ msgstr "ページ"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
+msgid "Archives"
+msgstr "お知らせ"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "Categories"
 msgstr "部類"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "WordPress"
 msgstr "ワードプレス"
 
@@ -122,23 +98,83 @@ msgstr "(編集)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "さんより:"
+msgstr "発言"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは承認待ちです。"
 
 #: ../../functions.php
-msgid "%1$s at %2$s"
-msgstr "%1$s %2$s"
+msgid "%1$s"
+msgstr "%1$ s"
 
 #: ../../functions.php
-msgid "CyberChimps Pro Responsive WordPress Starter Theme"
-msgstr "Cyber​​ChimpsプロレスポンシブWordPressのスターターテーマ"
+msgid "Professional Business Theme"
+msgstr "プロのビジネス テーマ"
 
 #: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyber​​chimpsリンク"
+msgid "Secondary Menu"
+msgstr "セカンダリ メニュー"
+
+#: ../../functions.php
+msgid "View all posts by %s"
+msgstr "%s の投稿をすべて表示"
+
+#: ../../functions.php
+msgid "Leave a comment"
+msgstr "コメントする"
+
+#: ../../functions.php
+msgid "1 Comment"
+msgstr "コメント1件"
+
+#: ../../functions.php
+msgid "Comments"
+msgstr "コメント"
+
+#: ../../functions.php
+msgid "Our Blog"
+msgstr "私たちのブログ"
+
+#: ../../functions.php
+msgid "Category Archives: %s"
+msgstr "カテゴリー:"
+
+#: ../../functions.php
+msgid "Tag Archives: %s"
+msgstr "アーカイブ:"
+
+#: ../../functions.php
+msgid "Author Archives: %s"
+msgstr "著者アーカイブ: %s"
+
+#: ../../functions.php
+msgid "Daily Archives: %s"
+msgstr "%sのお知らせ"
+
+#: ../../functions.php
+msgid "Monthly Archives: %s"
+msgstr "%sのお知らせ"
+
+#: ../../functions.php
+msgid "Yearly Archives: %s"
+msgstr "%sのお知らせ"
+
+#: ../../functions.php
+msgid "Search Results for: %s"
+msgstr "検索結果: %s"
+
+#: ../../functions.php
+msgid "Logo"
+msgstr "ロゴ"
+
+#: ../../functions.php
+msgid "Logo + Login"
+msgstr "ロゴ + ログイン"
+
+#: ../../functions.php
+msgid "Logo + Search"
+msgstr "ロゴ+検索"
 
 #: ../../image.php
 msgid "Published"
@@ -166,7 +202,7 @@ msgstr "コメントを投稿するにはログインしてください。"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "またはトラック バックを残す"
+msgstr "かtrackbackを残す"
 
 #: ../../image.php
 msgid "Trackback URL"
@@ -174,7 +210,7 @@ msgstr "トラックバックURL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "コメントは閉鎖されていますが、トラックバックを残すことができます："
+msgstr "コメント閉鎖されていますが、トラックバックを残すことができ"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -215,10 +251,6 @@ msgid ""
 msgstr ""
 "それはあなたが探しているものを見つけることができないようです。おそらく、検索"
 "することができます。"
-
-#: ../../search.php
-msgid "Search Results for: %s"
-msgstr "検索結果: %s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"

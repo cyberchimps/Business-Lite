@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Cyberchimps Pro\n"
+"Project-Id-Version: Business Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
-"PO-Revision-Date: 2013-03-20 09:02-0000\n"
+"POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
+"PO-Revision-Date: 2013-05-30 11:31-0000\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Dutch, Netherlands\n"
 "MIME-Version: 1.0\n"
@@ -23,38 +23,9 @@ msgstr ""
 "Het lijkt erop dat er niets werd gevonden op deze locatie. Misschien "
 "proberen te zoeken voor?"
 
-#: ../../archive.php
-msgid "Category Archives: %s"
-msgstr "Categorie archief: %s"
-
-#: ../../archive.php
-msgid "Tag Archives: %s"
-msgstr "Tagarchief: %s"
-
-#: ../../archive.php
-msgid "Author Archives: %s"
-msgstr "Auteursarchief: %s"
-
-#: ../../archive.php
-msgid "Daily Archives: %s"
-msgstr "Dagelijks archief: %s"
-
-#: ../../archive.php
-msgid "Monthly Archives: %s"
-msgstr "Maandelijks archief: %s"
-
-#: ../../archive.php
-msgid "Yearly Archives: %s"
-msgstr "Jaarlijks archief: %s"
-
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php ../../archive.php
-msgid "Archives"
-msgstr "Archief"
-
 #: ../../comments.php
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
 msgstr[0] ""
 
 #: ../../comments.php
@@ -67,7 +38,7 @@ msgstr "Oudere Reacties"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "Nieuwere opmerkingen"
+msgstr "Nieuwere reacties"
 
 #: ../../comments.php
 msgid "Comments are closed."
@@ -96,11 +67,16 @@ msgstr "Paginas"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
+msgid "Archives"
+msgstr "Archief"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "Categories"
 msgstr "Categorieën"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "WordPress"
 msgstr "WordPress"
 
@@ -120,23 +96,83 @@ msgstr "(Edit)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "says"
+msgstr "zegt"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
 msgstr "Je reactie moet nog  worden goedgekeurd."
 
 #: ../../functions.php
-msgid "%1$s at %2$s"
-msgstr "%1$s om %2$s"
+msgid "%1$s"
+msgstr "%1$ s"
 
 #: ../../functions.php
-msgid "CyberChimps Pro Responsive WordPress Starter Theme"
-msgstr "CyberChimps Pro responsieve Starter WordPress thema"
+msgid "Professional Business Theme"
+msgstr "Professionele thema"
 
 #: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps Link"
+msgid "Secondary Menu"
+msgstr "Secundaire Menu"
+
+#: ../../functions.php
+msgid "View all posts by %s"
+msgstr "Bekijk alle berichten van %s"
+
+#: ../../functions.php
+msgid "Leave a comment"
+msgstr "Geef een reactie"
+
+#: ../../functions.php
+msgid "1 Comment"
+msgstr "1 reactie"
+
+#: ../../functions.php
+msgid "Comments"
+msgstr "reacties"
+
+#: ../../functions.php
+msgid "Our Blog"
+msgstr "Onze Blog"
+
+#: ../../functions.php
+msgid "Category Archives: %s"
+msgstr "Categorie archief: %s"
+
+#: ../../functions.php
+msgid "Tag Archives: %s"
+msgstr "Tagarchief: %s"
+
+#: ../../functions.php
+msgid "Author Archives: %s"
+msgstr "Auteursarchief: %s"
+
+#: ../../functions.php
+msgid "Daily Archives: %s"
+msgstr "Dagelijks archief: %s"
+
+#: ../../functions.php
+msgid "Monthly Archives: %s"
+msgstr "Maandelijks archief: %s"
+
+#: ../../functions.php
+msgid "Yearly Archives: %s"
+msgstr "Jaarlijks archief: %s"
+
+#: ../../functions.php
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: ../../functions.php
+msgid "Logo"
+msgstr "Logo"
+
+#: ../../functions.php
+msgid "Logo + Login"
+msgstr "Logo + Login"
+
+#: ../../functions.php
+msgid "Logo + Search"
+msgstr "Logo + Zoeken"
 
 #: ../../image.php
 msgid "Published"
@@ -152,7 +188,7 @@ msgstr "van"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "Vorige"
+msgstr "vorige"
 
 #: ../../image.php
 msgid "Next"
@@ -172,7 +208,7 @@ msgstr "Trackback URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Reacties zijn gesloten, maar je kunt een trackback achterlaten:"
+msgstr "Reacties zijn gesloten, maar je kunt een trackback achterlaten"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -212,10 +248,6 @@ msgid ""
 "searching can help."
 msgstr ""
 "Het lijkt dat we kan niet vinden wat u zoekt. Misschien zoeken kan helpen."
-
-#: ../../search.php
-msgid "Search Results for: %s"
-msgstr "Zoekresultaten voor: %s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"

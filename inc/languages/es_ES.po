@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Cyberchimps Pro\n"
+"Project-Id-Version: Business Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
-"PO-Revision-Date: 2013-03-20 09:01-0000\n"
+"POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
+"PO-Revision-Date: 2013-05-30 11:31-0000\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Spanish, Spain\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Oops! Esa página no se puede encontrar."
+msgstr "¡ Uy! Esa página no se encuentra."
 
 #: ../../404.php
 msgid ""
@@ -22,43 +22,14 @@ msgid ""
 msgstr ""
 "Parece que no se encontró nada en este lugar. Tal vez intente buscarlo?"
 
-#: ../../archive.php
-msgid "Category Archives: %s"
-msgstr "Archivo de la categoría: %s"
-
-#: ../../archive.php
-msgid "Tag Archives: %s"
-msgstr "Archivo de la etiqueta: %s"
-
-#: ../../archive.php
-msgid "Author Archives: %s"
-msgstr "Archivo del Autor: %s"
-
-#: ../../archive.php
-msgid "Daily Archives: %s"
-msgstr "Archivos diarios: %s"
-
-#: ../../archive.php
-msgid "Monthly Archives: %s"
-msgstr "Archivos Mensuales: %s"
-
-#: ../../archive.php
-msgid "Yearly Archives: %s"
-msgstr "Archivo Anual: %s"
-
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php ../../archive.php
-msgid "Archives"
-msgstr "Archivos"
-
 #: ../../comments.php
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
 msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "Navegación de comentarios"
+msgstr "Navegación de comentario"
 
 #: ../../comments.php
 msgid "Older Comments"
@@ -66,7 +37,7 @@ msgstr "Mayores Comentarios"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "Nuevos comentarios "
+msgstr "Nuevos comentarios"
 
 #: ../../comments.php
 msgid "Comments are closed."
@@ -74,11 +45,11 @@ msgstr "Los comentarios están cerrados"
 
 #: ../../content.php
 msgid "Permalink to %s"
-msgstr "Enlace permanente a %s"
+msgstr "Permalink a %s"
 
 #: ../../content.php
 msgid "Continue reading"
-msgstr "Continuar leyendo &raquo;"
+msgstr "Seguir leyendo"
 
 #: ../../image.php ../../content.php
 msgid "Pages:"
@@ -86,7 +57,7 @@ msgstr "Páginas"
 
 #: ../../image.php ../../content.php
 msgid "Edit"
-msgstr "editar"
+msgstr "Editar"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
@@ -95,11 +66,16 @@ msgstr "Páginas"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
+msgid "Archives"
+msgstr "Archivos"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "Categories"
 msgstr "Categoras"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "WordPress"
 msgstr "WordPress"
 
@@ -108,8 +84,8 @@ msgstr "WordPress"
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr ""
-"Gestionado con WordPress, una avanzada plataforma semántica de publicación "
-"personal."
+"Powered by WordPress, plataforma de publicación personal semántica de "
+"vanguardia."
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -121,31 +97,91 @@ msgstr "(Editar)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "dice:"
+msgstr "dice"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr "Tu comentario está pendiente de moderación."
+msgstr "Tu comentario está esperando moderación."
 
 #: ../../functions.php
-msgid "%1$s at %2$s"
-msgstr "%1$s en %2$s"
+msgid "%1$s"
+msgstr "%1$ s"
 
 #: ../../functions.php
-msgid "CyberChimps Pro Responsive WordPress Starter Theme"
-msgstr "CyberChimps Pro Starter Responsive WordPress Tema"
+msgid "Professional Business Theme"
+msgstr "Tema de profesionales"
 
 #: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Enlace Cyberchimps"
+msgid "Secondary Menu"
+msgstr "Menú secundario"
+
+#: ../../functions.php
+msgid "View all posts by %s"
+msgstr "Ver todas las entradas de %s"
+
+#: ../../functions.php
+msgid "Leave a comment"
+msgstr "Deja un Comentario"
+
+#: ../../functions.php
+msgid "1 Comment"
+msgstr "1 Comentario"
+
+#: ../../functions.php
+msgid "Comments"
+msgstr "respuestas"
+
+#: ../../functions.php
+msgid "Our Blog"
+msgstr "Nuestro Blog"
+
+#: ../../functions.php
+msgid "Category Archives: %s"
+msgstr "Archivo de la categoría: %s"
+
+#: ../../functions.php
+msgid "Tag Archives: %s"
+msgstr "Tags: %s"
+
+#: ../../functions.php
+msgid "Author Archives: %s"
+msgstr "Archivo del autor: %s"
+
+#: ../../functions.php
+msgid "Daily Archives: %s"
+msgstr "Archivos diarios: %s"
+
+#: ../../functions.php
+msgid "Monthly Archives: %s"
+msgstr "Archivos del mes: %s"
+
+#: ../../functions.php
+msgid "Yearly Archives: %s"
+msgstr "Archivo Anual: %s"
+
+#: ../../functions.php
+msgid "Search Results for: %s"
+msgstr "Resultados de búsqueda de: %s"
+
+#: ../../functions.php
+msgid "Logo"
+msgstr "Logo"
+
+#: ../../functions.php
+msgid "Logo + Login"
+msgstr "Logo + Login"
+
+#: ../../functions.php
+msgid "Logo + Search"
+msgstr "Logo + Buscar"
 
 #: ../../image.php
 msgid "Published"
-msgstr "Publicado"
+msgstr "Publicada"
 
 #: ../../image.php
 msgid "size"
-msgstr "Tamaño"
+msgstr "tamaño"
 
 #: ../../image.php
 msgid "in"
@@ -161,7 +197,7 @@ msgstr "Avanzar"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Publicar un comentar"
+msgstr "Enviar un Comentario"
 
 #: ../../image.php
 msgid "or leave a trackback"
@@ -173,7 +209,7 @@ msgstr "URL Trackback"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Los comentarios están cerrados, pero puedes dejar un trackback:"
+msgstr "Los comentarios están cerrados, pero puedes dejar un trackback"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -181,15 +217,15 @@ msgstr "Trackbacks están cerrados, pero puedes %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Publicar un comentar"
+msgstr "Enviar un Comentario"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Los comentarios y trackbacks están cerrados."
+msgstr "Comentarios y trackbacks están cerrados."
 
 #: ../../no-results.php
 msgid "Nothing Found"
-msgstr "No se encontró nada"
+msgstr "Nada encontrado"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
@@ -214,17 +250,13 @@ msgid ""
 msgstr ""
 "Parece que no podemos encontrar lo que buscas. Tal vez buscar puede ayudar."
 
-#: ../../search.php
-msgid "Search Results for: %s"
-msgstr "Resultados de la búsqueda para: %s"
-
 #: ../../searchform.php
 msgid "Search &hellip;"
 msgstr "Búsqueda &hellip;"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 msgid "Subscribe"
-msgstr "Suscribirse"
+msgstr "Suscríbete"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 msgid "Entries (RSS)"

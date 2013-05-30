@@ -5,24 +5,21 @@ msgstr ""
 "POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
 "PO-Revision-Date: 2013-05-30 11:31-0000\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
-"Language-Team: Russian, Russia\n"
+"Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Oops! Это страница не может быть найдена."
+msgstr "Oops! Bu sayfa bulunamadı."
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
-msgstr ""
-"Похоже, ничего найдено не было на этом месте. Может быть, попробуйте "
-"поискать его?"
+msgstr "Bu konumda hiçbir şey bulunamamış gözüküyor. Bir de aramayı deneyin?"
 
 #: ../../comments.php
 msgid "One Comment"
@@ -31,50 +28,50 @@ msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "Комментарий навигации"
+msgstr "Yorum Navigasyonu"
 
 #: ../../comments.php
 msgid "Older Comments"
-msgstr "← Предыдущие комментарии"
+msgstr "Eski Yorumlar"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "Новые комментарии"
+msgstr "Yeni Yorumlar"
 
 #: ../../comments.php
 msgid "Comments are closed."
-msgstr "Комментарии закрыты"
+msgstr "Üzgünüz, bu öğe için yorum özelliği kapatılmış."
 
 #: ../../content.php
 msgid "Permalink to %s"
-msgstr "Постоянная ссылка на %s"
+msgstr "Kalıcı %s"
 
 #: ../../content.php
 msgid "Continue reading"
-msgstr "Продолжить чтение"
+msgstr "Okumaya devam etmek"
 
 #: ../../image.php ../../content.php
 msgid "Pages:"
-msgstr "Страницы"
+msgstr "Sayfalar"
 
 #: ../../image.php ../../content.php
 msgid "Edit"
-msgstr "все"
+msgstr "Düzen"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
 msgid "Pages"
-msgstr "Страницы"
+msgstr "Sayfalar"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
 msgid "Archives"
-msgstr "Архив"
+msgstr "Arşivler"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
 msgid "Categories"
-msgstr "Рубрики"
+msgstr "Kategoriler"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
@@ -85,9 +82,7 @@ msgstr "WordPress"
 #: ../../footer.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Сайт работает на WordPress &#8212; современной системе персональных "
-"публикаций."
+msgstr "WordPress'in desteğiyle, kişisel yayımlama ortamı"
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -95,15 +90,15 @@ msgstr "Pingback:"
 
 #: ../../functions.php
 msgid "(Edit)"
-msgstr "(Edit)"
+msgstr "(Düzenleme)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "говорит"
+msgstr "diyor ki:"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш комментарий ожидает проверки."
+msgstr "Yorumunu ılımlılık bekliyor."
 
 #: ../../functions.php
 msgid "%1$s"
@@ -111,99 +106,99 @@ msgstr "%1$ s"
 
 #: ../../functions.php
 msgid "Professional Business Theme"
-msgstr "Профессиональный бизнес-тема"
+msgstr "Profesyonel iş Tema"
 
 #: ../../functions.php
 msgid "Secondary Menu"
-msgstr "Дополнительное меню"
+msgstr "İkincil menü"
 
 #: ../../functions.php
 msgid "View all posts by %s"
-msgstr "Показать все публикации автора: %s"
+msgstr "%s tarafından eklenmiş tüm öğeleri göster."
 
 #: ../../functions.php
 msgid "Leave a comment"
-msgstr "Отзыв об упражнении"
+msgstr "Yorum yapın"
 
 #: ../../functions.php
 msgid "1 Comment"
-msgstr "1 комментарий"
+msgstr "1 Yorum"
 
 #: ../../functions.php
 msgid "Comments"
-msgstr "Примечания"
+msgstr "yorum"
 
 #: ../../functions.php
 msgid "Our Blog"
-msgstr "Наш блог"
+msgstr "Bizim Blog"
 
 #: ../../functions.php
 msgid "Category Archives: %s"
-msgstr "Архив категорий: %s"
+msgstr "Kategori Archives: %s"
 
 #: ../../functions.php
 msgid "Tag Archives: %s"
-msgstr "Тег Архивы: %s"
+msgstr "Tag Archives: %s"
 
 #: ../../functions.php
 msgid "Author Archives: %s"
-msgstr "Автор Архивы: %s"
+msgstr "Yazar Arşiv: %s"
 
 #: ../../functions.php
 msgid "Daily Archives: %s"
-msgstr "Архивы за день: %s"
+msgstr "Günlük Arşivler: %s"
 
 #: ../../functions.php
 msgid "Monthly Archives: %s"
-msgstr "Архивы за месяц: %s"
+msgstr "Aylık Arşivler: %s"
 
 #: ../../functions.php
 msgid "Yearly Archives: %s"
-msgstr "Архивы за год: %s"
+msgstr "Yıllık Arşivler: %s"
 
 #: ../../functions.php
 msgid "Search Results for: %s"
-msgstr "Результаты по запросу: %s"
+msgstr "Arama sonuçları: %s"
 
 #: ../../functions.php
 msgid "Logo"
-msgstr "Логотип"
+msgstr "Logo"
 
 #: ../../functions.php
 msgid "Logo + Login"
-msgstr "Логотип + Вход"
+msgstr "Logo + giriş"
 
 #: ../../functions.php
 msgid "Logo + Search"
-msgstr "Логотип + поиск"
+msgstr "Logo + arama"
 
 #: ../../image.php
 msgid "Published"
-msgstr "Опубликован"
+msgstr "Yayımlanmış"
 
 #: ../../image.php
 msgid "size"
-msgstr "размер"
+msgstr "Boyut"
 
 #: ../../image.php
 msgid "in"
-msgstr "в"
+msgstr "içinde"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "Пред."
+msgstr "İleri"
 
 #: ../../image.php
 msgid "Next"
-msgstr "Далее"
+msgstr "Geri"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "оставить комментарий"
+msgstr "Yorum Gönder"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "или трекбек"
+msgstr "ya da trackback"
 
 #: ../../image.php
 msgid "Trackback URL"
@@ -211,59 +206,59 @@ msgstr "Trackback URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Комментарии закрыты, но вы можете оставить трекбек"
+msgstr "Yorum are yumuk, ama eğer trackback bırakabilirsiniz:"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr "Trackbacks закрыты, но вы можете %s"
+msgstr "Trackbacks kapalı, ancak %s yapabilirsiniz"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "оставить комментарий"
+msgstr "Yorum Gönder"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Оба замечания и обратные ссылки в настоящее время закрыты."
+msgstr "Yorum ve notlarını şu anda kapalı."
 
 #: ../../no-results.php
 msgid "Nothing Found"
-msgstr "Ничего не найдено"
+msgstr "Hiçbir şey bulunamadı"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "Готовы опубликовать свой первый пост?"
+msgstr "İlk yazı yayınlamak için hazır mısınız?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Начните здесь"
+msgstr "Burada başlamak"
 
 #: ../../no-results.php
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Извините, но ничего не соответствующих условиям поиска. Пожалуйста, "
-"попробуйте еще раз с некоторыми различные ключевые слова."
+"Üzgünüz, ama hiçbir şey arama terimlerinizle eşleşen. Tekrar biraz farklı "
+"anahtar kelimeler ile deneyin."
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Кажется, мы не можем найти то, что вы ищете. Возможно, поиск может помочь."
+"Biz size aradığınızı bulamıyor görünüyor. Belki de aramayı yardımcı olabilir."
 
 #: ../../searchform.php
 msgid "Search &hellip;"
-msgstr "Поиск &hellip;"
+msgstr "Arama &hellip;"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 msgid "Subscribe"
-msgstr "Подпис"
+msgstr "Abone"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 msgid "Entries (RSS)"
-msgstr "Записи (RSS)"
+msgstr "Yazılar (RSS)"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 msgid "Comments (RSS)"
-msgstr "Комментарии (RSS)"
+msgstr "Yorumlar (RSS)"

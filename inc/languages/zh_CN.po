@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Cyberchimps Pro\n"
+"Project-Id-Version: Business Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
-"PO-Revision-Date: 2013-03-20 09:00-0000\n"
+"POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
+"PO-Revision-Date: 2013-05-30 11:38-0000\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Chinese, China\n"
 "MIME-Version: 1.0\n"
@@ -21,38 +21,9 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
 msgstr "它看起来像什么也没发现在这个位置。也许尝试寻找它呢？"
 
-#: ../../archive.php
-msgid "Category Archives: %s"
-msgstr "分类存档: %s"
-
-#: ../../archive.php
-msgid "Tag Archives: %s"
-msgstr "标签归档： %s"
-
-#: ../../archive.php
-msgid "Author Archives: %s"
-msgstr "作者档案： %s"
-
-#: ../../archive.php
-msgid "Daily Archives: %s"
-msgstr "按日查看： %s"
-
-#: ../../archive.php
-msgid "Monthly Archives: %s"
-msgstr "按月查看： %s"
-
-#: ../../archive.php
-msgid "Yearly Archives: %s"
-msgstr "按年查看： %s"
-
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php ../../archive.php
-msgid "Archives"
-msgstr "文章："
-
 #: ../../comments.php
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
 msgstr[0] ""
 
 #: ../../comments.php
@@ -81,7 +52,7 @@ msgstr "继续阅读"
 
 #: ../../image.php ../../content.php
 msgid "Pages:"
-msgstr "页面："
+msgstr "页面"
 
 #: ../../image.php ../../content.php
 msgid "Edit"
@@ -94,11 +65,16 @@ msgstr "页面"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 #: ../../footer.php
-msgid "Categories"
-msgstr "类别"
+msgid "Archives"
+msgstr "归档"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Categories"
+msgstr "类型"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "WordPress"
 msgstr "WordPress"
 
@@ -110,7 +86,7 @@ msgstr "基于 WordPress，优美的个人信息发布平台。"
 
 #: ../../functions.php
 msgid "Pingback:"
-msgstr "Pingback 摘要："
+msgstr "通告:"
 
 #: ../../functions.php
 msgid "(Edit)"
@@ -118,23 +94,83 @@ msgstr "（编辑）"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "说："
+msgstr "说"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
 msgstr "您的评论需要审核…"
 
 #: ../../functions.php
-msgid "%1$s at %2$s"
-msgstr "%1$s于%2$s"
+msgid "%1$s"
+msgstr "%1$ s"
 
 #: ../../functions.php
-msgid "CyberChimps Pro Responsive WordPress Starter Theme"
-msgstr "Cyber​​Chimps临响应WordPress的入门主题"
+msgid "Professional Business Theme"
+msgstr "专业的商务主题"
 
 #: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyber​​chimps的链接"
+msgid "Secondary Menu"
+msgstr "第二级菜单"
+
+#: ../../functions.php
+msgid "View all posts by %s"
+msgstr "查看 %s 的所有文章"
+
+#: ../../functions.php
+msgid "Leave a comment"
+msgstr "留下评论"
+
+#: ../../functions.php
+msgid "1 Comment"
+msgstr "1条回复"
+
+#: ../../functions.php
+msgid "Comments"
+msgstr "评论"
+
+#: ../../functions.php
+msgid "Our Blog"
+msgstr "我们的博客"
+
+#: ../../functions.php
+msgid "Category Archives: %s"
+msgstr "分类存档： %s"
+
+#: ../../functions.php
+msgid "Tag Archives: %s"
+msgstr "Tag存档：%s"
+
+#: ../../functions.php
+msgid "Author Archives: %s"
+msgstr "作者存档：%s"
+
+#: ../../functions.php
+msgid "Daily Archives: %s"
+msgstr "每日存档：%s"
+
+#: ../../functions.php
+msgid "Monthly Archives: %s"
+msgstr "每月存档：%s"
+
+#: ../../functions.php
+msgid "Yearly Archives: %s"
+msgstr "每年存档：%s"
+
+#: ../../functions.php
+msgid "Search Results for: %s"
+msgstr "搜索结果：%s"
+
+#: ../../functions.php
+msgid "Logo"
+msgstr "徽标"
+
+#: ../../functions.php
+msgid "Logo + Login"
+msgstr "徽标 + 登录"
+
+#: ../../functions.php
+msgid "Logo + Search"
+msgstr "徽标+搜索"
 
 #: ../../image.php
 msgid "Published"
@@ -154,7 +190,7 @@ msgstr "預覽"
 
 #: ../../image.php
 msgid "Next"
-msgstr "下一个"
+msgstr "下一步"
 
 #: ../../image.php
 msgid "Post a comment"
@@ -162,7 +198,7 @@ msgstr "评论："
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "或离开引用通告"
+msgstr "或留下引用"
 
 #: ../../image.php
 msgid "Trackback URL"
@@ -170,7 +206,7 @@ msgstr "引用URLs"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "评论已关闭，但你可以留下引用："
+msgstr "评论已关闭，但你可以留下引用"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -208,10 +244,6 @@ msgid ""
 "searching can help."
 msgstr "看来我们找不到你在寻找什么。也许搜索可以帮助。"
 
-#: ../../search.php
-msgid "Search Results for: %s"
-msgstr "搜索结果： %s"
-
 #: ../../searchform.php
 msgid "Search &hellip;"
 msgstr "搜索 &hellip;"
@@ -222,7 +254,7 @@ msgstr "订阅"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 msgid "Entries (RSS)"
-msgstr "参赛作品（RSS）"
+msgstr "条目 (RSS)"
 
 #: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
 msgid "Comments (RSS)"
