@@ -294,7 +294,7 @@ function cyberchimps_posted_on() {
         $show_date = ( cyberchimps_get_option( 'post_byline_date', 1 ) ) ? cyberchimps_get_option( 'post_byline_date', 1 ) : false;
     }
 
-    $posted_on = sprintf( '<span class="meta-date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>',
+    $posted_on = sprintf( '<span class="meta-date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated" datetime="%3$s">%4$s</time></a></span>',
                           esc_url( get_permalink() ),
                           esc_attr( get_the_time() ),
                           esc_attr( get_the_date( 'c' ) ),
