@@ -46,9 +46,9 @@ if ( !function_exists( 'cyberchimps_comment' ) ) :
             default :
                 ?>
                     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-                    <article id="comment-<?php comment_ID(); ?>" class="comment">
+                    <article id="comment-<?php comment_ID(); ?>" class="comment hreview">
                         <footer>
-                            <div class="comment-author vcard">
+                            <div class="comment-author reviewer vcard">
                                 <?php echo get_avatar( $comment, 40 ); ?>
                                 <?php printf( '%s <span class="says">' . __( 'says:', 'cyberchimps' ) . '</span>', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
                             </div>
@@ -59,7 +59,7 @@ if ( !function_exists( 'cyberchimps_comment' ) ) :
                             <?php endif; ?>
 
                             <div class="comment-meta commentmetadata">
-                                <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
+                                <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>" class="dtreviewed">
                                     <time pubdate datetime="<?php comment_time( 'c' ); ?>">
                                         <?php
                                         /* translators: 1: date, 2: time */
