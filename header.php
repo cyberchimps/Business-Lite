@@ -32,7 +32,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="initial-scale=1.0; maximum-scale=3.0;width=device-width" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=3.0, width=device-width" />
 	
 	<title><?php wp_title(''); ?></title>
 	
