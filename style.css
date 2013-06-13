@@ -107,12 +107,12 @@ header#cc_header .span5 {
   width: 100%;
   margin-left: 0;
 }
-header#cc_header h1.site-title {
+header#cc_header h2.site-title {
   margin-bottom: 5px;
   margin-top: 0;
 }
 
-header#cc_header h1.site-title a {
+header#cc_header h2.site-title a {
   font-size: 28px;
   color: #333;
 }
