@@ -108,8 +108,8 @@ header#cc_header .span5 {
   margin-left: 0;
 }
 header#cc_header h2.site-title {
+  margin-top: 15px;
   margin-bottom: 5px;
-  margin-top: 0;
 }
 
 header#cc_header h2.site-title a {
