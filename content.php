@@ -18,7 +18,9 @@
 	<header class="entry-header">
 		
 		<?php cyberchimps_post_format_icon(); ?>
-		<h1 class="entry-title">
+
+        <?php echo ( 'post' == get_post_type() && !is_single() || is_search() ) ? '<h2 class="entry-title">' : '<h1 class="entry-title">'; ?>
+
 			<?php
       if( 'post' == get_post_type() && is_single() ) :
         
@@ -31,7 +33,8 @@
           <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php ( get_the_title() )? the_title() : the_permalink(); ?></a>
       <?php
       endif; ?>
-		</h1>
+
+        <?php echo ( 'post' == get_post_type() && !is_single() && is_search() ) ? '</h2>' : '</h1>'; ?>
 	
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">

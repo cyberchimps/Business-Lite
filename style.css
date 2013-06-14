@@ -298,7 +298,7 @@ header#cc_header .header-search {
 #second_menu .title {
   margin-left: 0;
 }
-#second_menu h2 {
+#second_menu h1, #second_menu h2 {
   color: #dedede;
   font-size: 21px;
 }
@@ -417,16 +417,16 @@ blockquote cite:before {
 
 /*==================================== TAXONOMY ========================================================*/
 
-h1.entry-title {
+.entry-title {
   font-size: 1.6em;
   margin-top: 0;
   margin-bottom: 5px;
   line-height: 1em;
 }
-h1.entry-title a {
+.entry-title a {
   color: #383838;
 }
-h1.entry-title a:hover {
+.entry-title a:hover {
   color: #0088CC;
 }
 article.post p, article.page p {
