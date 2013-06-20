@@ -111,13 +111,17 @@
   <div class="container">
     <div class="container-fluid">
       <div class="row-fluid">
-        
-        <div class="title <?php echo $span = ( has_nav_menu( 'secondary' ) ) ? 'span5' : 'span12'; ?>">
-            <?php echo ( 'post' == get_post_type() && !is_single() || is_search() ) ? '<h1>' : '<h2>'; ?>
-                <?php echo cyberchimps_secondary_menu_title(); ?>
-            <?php echo ( 'post' == get_post_type() && !is_single() || is_search() ) ? '</h1>' : '</h2>'; ?>
-        </div>
-        
+		<?php
+		if( has_nav_menu( 'secondary' ) ) {
+		?>        
+			<div class="title <?php echo $span = ( has_nav_menu( 'secondary' ) ) ? 'span5' : 'span12'; ?>">
+				<?php echo ( 'post' == get_post_type() && !is_single() || is_search() ) ? '<h1>' : '<h2>'; ?>
+					<?php echo cyberchimps_secondary_menu_title(); ?>
+				<?php echo ( 'post' == get_post_type() && !is_single() || is_search() ) ? '</h1>' : '</h2>'; ?>
+			</div>
+		<?php
+		}?>
+		
         <?php if( has_nav_menu( 'secondary' ) ): ?>
         <div class="span7">
           <nav id="navigation" role="navigation">
