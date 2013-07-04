@@ -2,6 +2,15 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.6 (7-4-13)
+-Removed twitter element.
+-Updated default images and icons.
+-Updated translation.
+-Added option to add title to blog page.
+-Updated carousel plugin.
+-Fixed YouTube video responsive issue.
+-Fixed page title option.
+
 Version 4.0.5 (6-27-13)
 -Updated twitter API to v1.1
 
