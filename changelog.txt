@@ -2,6 +2,11 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.7 (7-11-13)
+- Added filters to widget titles.
+- Woocommerce - removed max-width.
+- Changed where the skin css gets added in the head.
+
 Version 4.0.6 (7-4-13)
 -Removed twitter element.
 -Updated default images and icons.
