@@ -1,0 +1,269 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-28 15:29:01 UTC\n"
+"PO-Revision-Date: 2013-07-26 12:16+0530\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Polish, Poland\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr "Oops! Nie można odnaleźć strony."
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+"Wygląda na to, że nic nie został znaleziony w tym miejscu. Może spróbuj "
+"poszukać go?"
+
+#: ../../comments.php
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr "Komentarz nawigacji"
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr "Starsze komentarze"
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr "Nowsze komentarze"
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr "Komentarze są zamknięte."
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "Permalink do %s"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr "Kontynuuj czytanie"
+
+#: ../../image.php ../../content.php
+msgid "Pages:"
+msgstr "Stron:"
+
+#: ../../image.php ../../content.php
+msgid "Edit"
+msgstr "Edycja"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Pages"
+msgstr "Stron"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Archives"
+msgstr "Archiwum"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "Categories"
+msgstr "Kategorie"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Zasilany przez WordPress, semantyczne osobistej platformy blogowej stan of--"
+"art."
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr "mówi:"
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz oczekuje na moderację."
+
+#: ../../functions.php
+msgid "%1$s"
+msgstr "%1$ s"
+
+#: ../../functions.php
+msgid "Professional Business Theme"
+msgstr "Profesjonalne biznes tematu"
+
+#: ../../functions.php
+msgid "Secondary Menu"
+msgstr "Menu pomocnicze"
+
+#: ../../functions.php
+msgid "View all posts by %s"
+msgstr "Wyświetlić wszystkie stanowiska przez %s"
+
+#: ../../functions.php
+msgid "Leave a comment"
+msgstr "Zostaw komentarz"
+
+#: ../../functions.php
+msgid "1 Comment"
+msgstr "1 Komentarz"
+
+#: ../../functions.php
+msgid "Comments"
+msgstr "Komentarze"
+
+#: ../../functions.php
+msgid "Our Blog"
+msgstr "Nasz Blog"
+
+#: ../../functions.php
+msgid "Category Archives: %s"
+msgstr "Archiwum kategorii: %s"
+
+#: ../../functions.php
+msgid "Tag Archives: %s"
+msgstr "Archiwa znaczników: %s"
+
+#: ../../functions.php
+msgid "Author Archives: %s"
+msgstr "Archiwum Autor: %s"
+
+#: ../../functions.php
+msgid "Daily Archives: %s"
+msgstr "Codziennie Archiwum: %s"
+
+#: ../../functions.php
+msgid "Monthly Archives: %s"
+msgstr "Miesięczne Archiwum: %s"
+
+#: ../../functions.php
+msgid "Yearly Archives: %s"
+msgstr "Roczne Archiwum: %s"
+
+#: ../../functions.php
+msgid "Search Results for: %s"
+msgstr "Wyniki wyszukiwania dla: %s"
+
+#: ../../functions.php
+msgid "Logo"
+msgstr "Logo"
+
+#: ../../functions.php
+msgid "Logo + Login"
+msgstr "Logo + Login"
+
+#: ../../functions.php
+msgid "Logo + Search"
+msgstr "Logo + Szukaj"
+
+#: ../../image.php
+msgid "Published"
+msgstr "Opublikowane"
+
+#: ../../image.php
+msgid "size"
+msgstr "rozmiar"
+
+#: ../../image.php
+msgid "in"
+msgstr "w"
+
+#: ../../image.php
+msgid "Previous"
+msgstr "Poprzedni"
+
+#: ../../image.php
+msgid "Next"
+msgstr "Następny"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr "Skomentuj"
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr "lub zostawić trackback"
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr "Trackback URL"
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr "Komentarze są zamknięte, ale możesz zostawić trackback: "
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can %s"
+msgstr "Trackbacks są zamknięte, ale można %s"
+
+#: ../../image.php
+msgid "post a comment"
+msgstr "Skomentuj"
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Zarówno komentarze i trackbacks są obecnie zamknięte."
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr "Nic nie znaleziono"
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "Gotowy, aby opublikować swój pierwszy post?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr "Zacznij tutaj"
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Przepraszamy, ale nic nie dopasowane haseł. Proszę spróbować ponownie z "
+"kilka różnych słów kluczowych."
+
+#: ../../no-results.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Wydaje się, że nie możemy znaleźć to, co szukasz. Wyszukiwanie może pomóc."
+
+#: ../../searchform.php
+msgid "Search &hellip;"
+msgstr "Szukaj &hellip;"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Subscribe"
+msgstr "Zapisz się"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Entries (RSS)"
+msgstr "Wpisy (RSS)"
+
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+msgid "Comments (RSS)"
+msgstr "Komentarze (RSS)"
