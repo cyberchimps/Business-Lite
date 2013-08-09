@@ -119,23 +119,30 @@ function cyberchimps_options_theme_name() {
     return $text;
 }
 
+//Pro version name
+function cyberchimps_upgrade_bar_pro_title() {
+    $text = 'Business Pro';
+
+    return $text;
+}
+
+//Pro version link
+function cyberchimps_options_pro_link() {
+    $url = 'http://cyberchimps.com/store/business-pro/';
+
+    return $url;
+}
+
 //Doc's URL
 function cyberchimps_options_documentation_url() {
-    $url = 'http://cyberchimps.com/help/';
+    $url = 'http://cyberchimps.com/guides/';
 
     return $url;
 }
 
 // Support Forum URL
 function cyberchimps_options_support_forum() {
-    $url = 'http://cyberchimps.com/forum/free/';
-
-    return $url;
-}
-
-//Page Options Help URL
-function cyberchimps_options_page_options_help() {
-    $url = 'http://cyberchimps.com/element-how-tos/';
+    $url = 'http://cyberchimps.com/forum/free/business-lite/';
 
     return $url;
 }
@@ -148,9 +155,10 @@ function cyberchimps_options_slider_options_help() {
 }
 
 add_filter( 'cyberchimps_current_theme_name', 'cyberchimps_options_theme_name', 1 );
+add_filter( 'cyberchimps_upgrade_pro_title', 'cyberchimps_upgrade_bar_pro_title' );
+add_filter( 'cyberchimps_upgrade_link', 'cyberchimps_options_pro_link' );
 add_filter( 'cyberchimps_documentation', 'cyberchimps_options_documentation_url' );
 add_filter( 'cyberchimps_support_forum', 'cyberchimps_options_support_forum' );
-add_filter( 'cyberchimps_page_options_help', 'cyberchimps_options_page_options_help' );
 add_filter( 'cyberchimps_slider_options_help', 'cyberchimps_options_slider_options_help' );
 
 // Help Section
