@@ -99,7 +99,7 @@
 					    </div><!-- main-navigation navbar -->
 					</nav><!-- #navigation -->
 				</div><!-- span 8 -->
-				
+			</div><!-- .row-fluid -->
 		</div><!-- .container fluid -->
 	</div><!-- .container -->
 </header><!-- container full width -->
