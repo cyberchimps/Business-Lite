@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.14 (8-30-13)
+- Added new class for metabox options.
+
 Version 4.0.13 (8-23-13)
 - Social icons reordering.
 - Upsell page update: Updated screenshot and info of Neuro Pro.
