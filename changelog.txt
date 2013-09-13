@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.15 (13-6-13)
+- Updated README file.
+
 Version 4.0.15 (9-6-13)
 - Minified multi media upload.
 - Meta box fix - changed save_post hook to pre_post_update.
