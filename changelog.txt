@@ -2,7 +2,11 @@ Business Lite 4 Changelog
 
 ****************************
 
-Version 4.0.15 (13-6-13)
+Version 4.0.17 (9-20-13)
+- Slider option from post is removed as it was not part of free themes.
+- Fixed google font issue.
+
+Version 4.0.16 (9-13-13)
 - Updated README file.
 
 Version 4.0.15 (9-6-13)
