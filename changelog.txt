@@ -2,6 +2,10 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.19 (10-4-13)
+- Minified JS.
+- Reformatted code( Replaced spaces with tabs ).
+
 Version 4.0.18 (9-27-13)
 - Upsell page: If the listed theme is installed then add a tick mark next to it.
 
