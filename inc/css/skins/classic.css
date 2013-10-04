@@ -2,33 +2,36 @@
 Default Skin Color settings
 */
 
-
 /********************************************************************************************************************/
 /******************************************** NAVIGATION ************************************************************/
 /********************************************************************************************************************/
 
 .navbar .current-menu-ancestor.dropdown > a {
-	color: #555;
+	color: #555555;
 	text-decoration: none;
-	background-color: #E5E5E5;
+	background-color: #e5e5e5;
 	-webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-	-moz-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
+	-moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
+
 .navbar .nav li a:hover {
-	color: #08c;
+	color: #0088cc;
 }
+
 @media (max-width: 979px) {
 	.navbar .btn-navbar {
 		background-image: none;
-		background-color: #08c;
+		background-color: #0088cc;
 	}
+
 	.navbar .btn-navbar:hover {
 		background-image: none;
-		background-color: #0284CA;
+		background-color: #0284ca;
 	}
+
 	.nav-collapse .dropdown-menu .active > a {
-		color: #fff;
+		color: #ffffff;
 	}
 }
 
@@ -37,13 +40,15 @@ Default Skin Color settings
 /********************************************************************************************************************/
 
 article.post, article.page, article.attachment {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
+
 .more-content {
-  border: 1px solid #DDD;
+	border: 1px solid #dddddd;
 }
+
 .comments-area {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /********************************************************************************************************************/
@@ -51,7 +56,7 @@ article.post, article.page, article.attachment {
 /********************************************************************************************************************/
 
 .widget-container {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /********************************************************************************************************************/
@@ -59,7 +64,7 @@ article.post, article.page, article.attachment {
 /********************************************************************************************************************/
 
 #footer-widget-container {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /********************************************************************************************************************/
@@ -69,66 +74,68 @@ article.post, article.page, article.attachment {
 /*==================================== CALLOUT ====================================================*/
 
 #callout {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /*====================================== BOX ======================================================*/
 
 .box {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /*==================================== CAROUSEL ===================================================*/
 
 .es-carousel-wrapper {
-	border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
+
 .carousel_caption {
 	margin-top: -21px;
-	background: #333;
+	background: #333333;
 	background: rgba(0, 0, 0, .6);
-	color: #fff;
+	color: #ffffff;
 }
+
 .es-carousel ul li {
-	border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /*==================================== SLIDER =====================================================*/
 
 #slider {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /*==================================== TWITTER ====================================================*/
 
 #twitter-bar {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /*=================================== BREADCRUMBS =================================================*/
 
 .breadcrumbs {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /*================================= RECENT POSTS ==================================================*/
 
 #recent_posts {
-	border: 1px solid #DDDDDD;
+	border: 1px solid #dddddd;
 }
 
 /*==================================== PORTFOLIO ==================================================*/
 
 #gallery {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 #gallery ul.row-fluid li#portfolio_wrap {
-  border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 /*==================================== HTML BOX ===================================================*/
 
 #htmlbox {
-	border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
