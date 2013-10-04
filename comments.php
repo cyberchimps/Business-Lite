@@ -33,7 +33,7 @@ if( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php
 			printf( _n( 'One Comment', '%1$s Comments', get_comments_number(), 'cyberchimps' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+			        number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 			&nbsp;&middot;&nbsp;
 			<a href="#respond">Leave Comment</a>

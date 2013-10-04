@@ -35,13 +35,13 @@ get_header(); ?>
 							<?php
 							$metadata = wp_get_attachment_metadata();
 							printf( __( 'Published', 'cyberchimps' ) . ' <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> - ' . __( 'size', 'cyberchimps' ) . ': <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> ' . __( 'in', 'cyberchimps' ) . ' <a href="%6$s" title="Return to %7$s" rel="gallery">%7$s</a>',
-									esc_attr( get_the_date( 'c' ) ),
-									esc_html( get_the_date() ),
-									wp_get_attachment_url(),
-									$metadata['width'],
-									$metadata['height'],
-									get_permalink( $post->post_parent ),
-									get_the_title( $post->post_parent )
+							        esc_attr( get_the_date( 'c' ) ),
+							        esc_html( get_the_date() ),
+							        wp_get_attachment_url(),
+							        $metadata['width'],
+							        $metadata['height'],
+							        get_permalink( $post->post_parent ),
+							        get_the_title( $post->post_parent )
 							);
 							?>
 							<?php edit_post_link( __( 'Edit', 'cyberchimps' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
@@ -143,11 +143,13 @@ get_header(); ?>
 						<?php elseif( !comments_open() && pings_open() ) : // Only trackbacks open ?>
 							<?php printf( __( 'Comments are closed, but you can leave a trackback: ', 'cyberchimps' ) . '<a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">' . __( 'Trackback URL', 'cyberchimps' ) . '</a>.', get_trackback_url() ); ?>
 						<?php
-						elseif( comments_open() && !pings_open() ) : // Only comments open ?>
+						elseif( comments_open() && !pings_open() ) : // Only comments open
+							?>
 							<?php printf( __( 'Trackbacks are closed, but you can %s', 'cyberchimps' ),
-										  '<a class="comment-link" href="#respond" title="Post a comment">' . __( 'post a comment', 'cyberchimps' ) . '</a>.' ); ?>
+							              '<a class="comment-link" href="#respond" title="Post a comment">' . __( 'post a comment', 'cyberchimps' ) . '</a>.' ); ?>
 						<?php
-						elseif( !comments_open() && !pings_open() ) : // Comments and trackbacks closed ?>
+						elseif( !comments_open() && !pings_open() ) : // Comments and trackbacks closed
+							?>
 							<?php _e( 'Both comments and trackbacks are currently closed.', 'cyberchimps' ); ?>
 						<?php endif; ?>
 						<?php edit_post_link( __( 'Edit', 'cyberchimps' ), ' <span class="edit-link">', '</span>' ); ?>

@@ -24,19 +24,23 @@
 		<?php if( is_home() ) { ?>
 
 			<p><?php printf( '%1$s <a href="%2$s"></a>.',
-							 __( 'Ready to publish your first post?', 'cyberchimps' ),
-							 admin_url( 'post-new.php' ),
-							 __( 'Get started here', 'cyberchimps' )
+			                 __( 'Ready to publish your first post?', 'cyberchimps' ),
+			                 admin_url( 'post-new.php' ),
+			                 __( 'Get started here', 'cyberchimps' )
 				); ?></p>
 
-		<?php }
-		elseif( is_search() ) { ?>
+		<?php
+		}
+		elseif( is_search() ) {
+			?>
 
 			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'cyberchimps' ); ?></p>
 			<?php get_search_form(); ?>
 
-		<?php }
-		else { ?>
+		<?php
+		}
+		else {
+			?>
 
 			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'cyberchimps' ); ?></p>
 			<?php get_search_form(); ?>

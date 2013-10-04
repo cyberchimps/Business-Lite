@@ -303,10 +303,10 @@ function cyberchimps_posted_on() {
 	}
 
 	$posted_on = sprintf( '<span class="meta-date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date updated" datetime="%3$s">%4$s</time></a></span>',
-						  esc_url( get_permalink() ),
-						  esc_attr( get_the_time() ),
-						  esc_attr( get_the_date( 'c' ) ),
-						  ( $show_date ) ? esc_html( get_the_date() ) : ''
+	                      esc_url( get_permalink() ),
+	                      esc_attr( get_the_time() ),
+	                      esc_attr( get_the_date( 'c' ) ),
+	                      ( $show_date ) ? esc_html( get_the_date() ) : ''
 	);
 
 	if( $show_date ) {
@@ -329,9 +329,9 @@ function cyberchimps_posted_by() {
 	}
 
 	$posted_by = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
-						  esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-						  esc_attr( sprintf( __( 'View all posts by %s', 'cyberchimps_core' ), get_the_author() ) ),
-						  ( $show_author ) ? esc_html( get_the_author() ) : ''
+	                      esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+	                      esc_attr( sprintf( __( 'View all posts by %s', 'cyberchimps_core' ), get_the_author() ) ),
+	                      ( $show_author ) ? esc_html( get_the_author() ) : ''
 	);
 
 	if( $show_author ) {
