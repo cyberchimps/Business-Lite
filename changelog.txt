@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.20 (10-11-13)
+- Changed ID name separator to (_) from (-) for elements/boxes.php
+
 Version 4.0.19 (10-4-13)
 - Minified JS.
 - Reformatted code( Replaced spaces with tabs ).
