@@ -1072,15 +1072,15 @@ table#wp-calendar td {
 	padding: 40px 0;
 }
 
-#slider-lite .carousel-control {
+#slider_lite .carousel-control {
 	line-height: 30px;
 }
 
-#slider-lite .container {
+#slider_lite .container {
 	position: relative;
 }
 
-#slider-lite.carousel {
+#slider_lite.carousel {
 	margin-bottom: 0;
 }
 
