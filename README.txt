@@ -3,7 +3,7 @@ Business Lite responsive Wordpress theme
 
 - Business Lite
 - by CyberChimps http://cyberchimps.com
-- Licensed under GNU General Public License v2.0 - http://www.gnu.org/licenses/gpl-2.0.html
+- Licensed under GNU General Public License v3.0 - http://www.gnu.org/licenses/gpl-3.0.html
 
 - Bootstrap
 - Adds core styles and responsive structure
@@ -32,7 +32,7 @@ Business Lite responsive Wordpress theme
 
 - All other images
 - by CyberChimps http://cyberchimps.com
-- Licensed under GNU General Public License v2.0 - http://www.gnu.org/licenses/gpl-2.0.html
+- Licensed under GNU General Public License v3.0 - http://www.gnu.org/licenses/gpl-3.0.html
 
 ====================================================================================================================================
 

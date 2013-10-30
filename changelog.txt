@@ -4,6 +4,8 @@ Business Lite 4 Changelog
 
 Version 4.0.22 (10-28-13)
 - Slider lite ID separator change from (-) to(_). Changed affected JS and CSS.
+- Theme License update to GPL v3.0
+- Updated Font licenses
 
 Version 4.0.21 (10-18-13)
 - Container width fix.
@@ -63,7 +65,7 @@ Version 4.0.8 (7-19-13)
 - Swapped position of buttons "Save Option" and "Restore Defaults" so that when you are in an input field, on press of "Enter" it saves the options.
 - Added default text for boxes element.
 - New HTML structure for password protected page/post.
-- Typography improvement: implemented dfferent font family for headings and text, both in theme option and customizer.
+- Typography improvement: implemented different font family for headings and text, both in theme option and customizer.
 
 Version 4.0.7 (7-11-13)
 - Added filters to widget titles.
