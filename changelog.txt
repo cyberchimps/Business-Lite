@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.23 (11-1-13)
+- Added new metabox class.
+
 Version 4.0.22 (10-30-13)
 - Slider lite ID separator change from (-) to(_). Changed affected JS and CSS.
 - Theme License update to GPL v3.0
