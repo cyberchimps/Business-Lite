@@ -281,7 +281,7 @@ add_filter( 'cyberchimps_post_thumbnail_size', 'cyberchimps_featured_image_size'
 
 //Register Secondary Menu
 function cyberchimps_secondary_menu() {
-	register_nav_menu( 'secondary', __( 'Secondary Menu' ) );
+	register_nav_menu( 'secondary', __( 'Secondary Menu', 'cyberchimps' ) );
 }
 
 add_action( 'init', 'cyberchimps_secondary_menu' );
