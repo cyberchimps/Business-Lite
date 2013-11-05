@@ -1,0 +1,15 @@
+# The Project API Token from Web Translate It
+api_key: eJ1DxiETWEgpELmttUVWJw
+
+# Optional: locales not to sync with Web Translate It.
+# Takes a string, a symbol, or an array of string or symbol.
+# More information here: https://github.com/AtelierConvivialite/webtranslateit/wiki
+# ignore_locales: :en
+
+# Optional
+# before_pull: "echo 'some unix command'"   # Command executed before pulling files
+# Find PO files, process each with msgfmt and rename the result to MO
+after_pull: for file in `/usr/bin/find . -name '*.po'` ; do /usr/bin/msgfmt -o ${file/.po/.mo} $file ; done
+#
+# before_push: "echo 'some unix command'"   # Command executed before pushing files
+# after_push:  "touch tmp/restart.txt"      # Command executed after pushing files
