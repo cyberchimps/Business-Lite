@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.24 (11-7-13)
+- Removed unused code
+
 Version 4.0.23 (11-1-13)
 - Added new metabox class.
 
