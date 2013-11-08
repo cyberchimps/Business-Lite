@@ -2,6 +2,11 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.25 (11-8-13)
+- Translation domain fix.
+- Sanitization added to few metabox option types.
+- Js minification in core.
+
 Version 4.0.24 (11-7-13)
 - Removed unused code
 
