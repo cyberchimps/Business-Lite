@@ -1,4 +1,4 @@
-Business Lite responsive Wordpress theme
+Business Lite responsive WordPress theme
 ====================================
 
 - Business Lite, Copyright 2013
