@@ -439,6 +439,17 @@ article.post p {
 	float: right;
 }
 
+.postformats .glyphicon {
+	position: relative;
+	font-size: 1.1em;
+	color: #fff;
+	padding: 8px;
+	background: #5b9dc9;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
 blockquote {
 	background-color: #cccccc;
 	margin: 20px 10px;
