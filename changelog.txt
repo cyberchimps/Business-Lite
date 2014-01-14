@@ -2,6 +2,10 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.33 (1-14-14)
+- Changed blog layout option text.
+- Fixed upload button not working issue with child themes.
+
 Version 4.0.32 (1-6-14)
 - Modified Helvetica font-family.
 - Removed translation of a variable.
