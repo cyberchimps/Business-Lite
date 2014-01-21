@@ -2,6 +2,10 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.34 (1-21-14)
+- Email icon made not to open a new tab.
+- Removed Twitter bar from default option
+
 Version 4.0.33 (1-14-14)
 - Changed blog layout option text.
 - Fixed upload button not working issue with child themes.
