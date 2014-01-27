@@ -2,6 +2,11 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.35 (1-27-14)
+- Boxes: Added latest default images and retina versions.
+- Added Danish translation to core.
+- Added hook to set blog layout option default.
+
 Version 4.0.34 (1-21-14)
 - Email icon made not to open a new tab.
 - Removed Twitter bar from default option
