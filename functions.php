@@ -13,6 +13,11 @@
  * @link     http://www.cyberchimps.com/
  */
 
+function cyberchimps_text_domain() {
+	load_theme_textdomain( 'business-lite', get_template_directory() . '/inc/languages' );
+}
+add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
+
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 
@@ -40,7 +45,7 @@ if( !function_exists( 'cyberchimps_comment' ) ) :
 			case 'trackback' :
 				?>
 				<li class="post pingback">
-				<p><?php _e( 'Pingback:', 'cyberchimps' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'cyberchimps' ), ' ' ); ?></p>
+				<p><?php _e( 'Pingback:', 'business-lite' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'business-lite' ), ' ' ); ?></p>
 				<?php
 				break;
 			default :
@@ -50,11 +55,11 @@ if( !function_exists( 'cyberchimps_comment' ) ) :
 						<footer>
 							<div class="comment-author reviewer vcard">
 								<?php echo get_avatar( $comment, 40 ); ?>
-								<?php printf( '%s <span class="says">' . __( 'says:', 'cyberchimps' ) . '</span>', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+								<?php printf( '%s <span class="says">' . __( 'says:', 'business-lite' ) . '</span>', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 							</div>
 							<!-- .comment-author .vcard -->
 							<?php if( $comment->comment_approved == '0' ) : ?>
-								<em><?php _e( 'Your comment is awaiting moderation.', 'cyberchimps' ); ?></em>
+								<em><?php _e( 'Your comment is awaiting moderation.', 'business-lite' ); ?></em>
 								<br/>
 							<?php endif; ?>
 
@@ -63,10 +68,10 @@ if( !function_exists( 'cyberchimps_comment' ) ) :
 									<time pubdate datetime="<?php comment_time( 'c' ); ?>">
 										<?php
 										/* translators: 1: date, 2: time */
-										printf( __( '%1$s', 'cyberchimps' ), get_comment_date( 'm / d / y' ) ); ?>
+										printf( __( '%1$s', 'business-lite' ), get_comment_date( 'm / d / y' ) ); ?>
 									</time>
 								</a>
-								<?php edit_comment_link( __( '(Edit)', 'cyberchimps' ), ' ' );
+								<?php edit_comment_link( __( '(Edit)', 'business-lite' ), ' ' );
 								?>
 							</div>
 							<!-- .comment-meta .commentmetadata -->
@@ -170,7 +175,7 @@ function cyberchimps_options_help_header() {
 }
 
 function cyberchimps_options_help_sub_header() {
-	$text = __( 'Professional Business Theme', 'cyberchimps' );
+	$text = __( 'Professional Business Theme', 'business-lite' );
 
 	return $text;
 }
@@ -281,7 +286,7 @@ add_filter( 'cyberchimps_post_thumbnail_size', 'cyberchimps_featured_image_size'
 
 //Register Secondary Menu
 function cyberchimps_secondary_menu() {
-	register_nav_menu( 'secondary', __( 'Secondary Menu', 'cyberchimps' ) );
+	register_nav_menu( 'secondary', __( 'Secondary Menu', 'business-lite' ) );
 }
 
 add_action( 'init', 'cyberchimps_secondary_menu' );
@@ -393,17 +398,17 @@ function cyberchimps_post_comments() {
 //Create secondary menu page title
 function cyberchimps_secondary_menu_title() {
 	if( is_home() || is_single() ) {
-		$title = __( 'Our Blog', 'cyberchimps' );
+		$title = __( 'Our Blog', 'business-lite' );
 	}
 	elseif( is_page() && get_post_meta( get_the_ID(), 'cyberchimps_page_title_toggle', true ) == 1 ) {
 		$title = esc_html( get_the_title() );
 	}
 	elseif( is_category() ) {
-		$title = sprintf( __( 'Category Archives: %s', 'cyberchimps' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+		$title = sprintf( __( 'Category Archives: %s', 'business-lite' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
 	}
 	elseif( is_tag() ) {
-		$title = sprintf( __( 'Tag Archives: %s', 'cyberchimps' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+		$title = sprintf( __( 'Tag Archives: %s', 'business-lite' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 
 	}
 	elseif( is_author() ) {
@@ -411,7 +416,7 @@ function cyberchimps_secondary_menu_title() {
 		 * what author we're dealing with (if that is the case).
 		*/
 		the_post();
-		$title = sprintf( __( 'Author Archives: %s', 'cyberchimps' ), '<span>' . get_the_author() . '</span>' );
+		$title = sprintf( __( 'Author Archives: %s', 'business-lite' ), '<span>' . get_the_author() . '</span>' );
 		/* Since we called the_post() above, we need to
 		 * rewind the loop back to the beginning that way
 		 * we can run the loop properly, in full.
@@ -420,19 +425,19 @@ function cyberchimps_secondary_menu_title() {
 
 	}
 	elseif( is_day() ) {
-		$title = sprintf( __( 'Daily Archives: %s', 'cyberchimps' ), '<span>' . get_the_date() . '</span>' );
+		$title = sprintf( __( 'Daily Archives: %s', 'business-lite' ), '<span>' . get_the_date() . '</span>' );
 
 	}
 	elseif( is_month() ) {
-		$title = sprintf( __( 'Monthly Archives: %s', 'cyberchimps' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
+		$title = sprintf( __( 'Monthly Archives: %s', 'business-lite' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 
 	}
 	elseif( is_year() ) {
-		$title = sprintf( __( 'Yearly Archives: %s', 'cyberchimps' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+		$title = sprintf( __( 'Yearly Archives: %s', 'business-lite' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
 	}
 	elseif( is_search() ) {
-		$title = sprintf( __( 'Search Results for: %s', 'cyberchimps' ), '<span>' . get_search_query() . '</span>' );
+		$title = sprintf( __( 'Search Results for: %s', 'business-lite' ), '<span>' . get_search_query() . '</span>' );
 	}
 	else {
 		$title = '';
