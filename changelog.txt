@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.38 (2-18-14)
+- Slider is made to be start sliding on page load.
+
 Version 4.0.37 (2-11-14)
 - Updated Translation.
 
