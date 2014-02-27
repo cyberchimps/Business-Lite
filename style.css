@@ -17,8 +17,7 @@ body {
 	color: #555555;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
 	font-weight: 300;
-	-ms-word-break: break-all;
-	word-break: break-all;
+	word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
