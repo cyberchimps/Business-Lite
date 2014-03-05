@@ -2,6 +2,10 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.40 (3-5-14)
+- Fixed conflict between blog post excerpt option and bbpress user profile page.
+- Set up element options defaults for better wp.org preview.
+
 Version 4.0.39 (2-27-14)
 - Slider fix to start on page load.
 - Updated elements images along with boxes images.
