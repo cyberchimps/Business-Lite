@@ -2,8 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
-Version 4.0.42 (3-20-14)
+Version 4.0.42 (3-21-14)
 - Updated support forum URL.
+- Fixed IE8 compatibility issue.
 
 Version 4.0.41 (3-12-14)
 - Fixed duplicate plugin install notification in option page.
