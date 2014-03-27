@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.43 (3-27-14)
+- Updated Elements Translation.
+
 Version 4.0.42 (3-21-14)
 - Updated support forum URL.
 - Fixed IE8 compatibility issue.
