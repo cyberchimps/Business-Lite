@@ -260,6 +260,8 @@ header#cc_header .header-search {
 	border-left: 1px solid #306d94;
 	text-shadow: none;
 	color: white;
+}
+#cc_header .nav li.current-menu-item > a, #cc_header nav li a:hover, #cc_header .main-navigation .nav li ul li a:hover, #cc_header .nav li.current_page_item > a, #cc_header .navbar-inverse .current-menu-ancestor.dropdown > a {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6eb1dc', endColorstr='#4181ab', GradientType=0);
 }
 
@@ -277,6 +279,9 @@ header#cc_header .header-search {
 	border-bottom: 1px solid #8b8b8b;
 	border-right: 1px solid #adadad;
 	border-left: 1px solid #adadad;
+}
+
+#cc_header .nav > li > a{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0);
 }
 
@@ -308,7 +313,7 @@ header#cc_header .header-search {
 	background-color: #515151;
 }
 
-.navbar-inverse .navbar-inner {
+.navbar-inverse .navbar-inner, .navbar-inner {
 	filter: none;
 }
 
