@@ -2,6 +2,11 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.44 (4-3-14)
+- Added new background option.
+- Menu/header color fix in IE8/9.
+- Removed wp_register_style(or script) for local css/js files.
+
 Version 4.0.43 (3-27-14)
 - Updated Elements Translation.
 
