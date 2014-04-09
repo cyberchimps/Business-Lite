@@ -2,6 +2,10 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.45 (4-9-14)
+-Added upgrade button to the free theme customizer.
+-Fixed Vimeo video responsiveness.
+
 Version 4.0.44 (4-3-14)
 - Added new background option.
 - Menu/header color fix in IE8/9.
