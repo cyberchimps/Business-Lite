@@ -2,6 +2,10 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.46 (4-16-14)
+- Changed social font icons to font awesome.
+- Removed unwanted function_exists() conditional wrapper.
+
 Version 4.0.45 (4-9-14)
 -Added upgrade button to the free theme customizer.
 -Fixed Vimeo video responsiveness.
