@@ -2,7 +2,7 @@ Business Lite 4 Changelog
 
 ****************************
 
-Version 4.0.46 (4-24-14)
+Version 4.0.47 (4-24-14)
 - Added recommendation for clef plugin.
 - Updated translations.
 - Youtube video fixed.
