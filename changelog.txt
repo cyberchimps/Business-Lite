@@ -2,6 +2,11 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.51 (5-23-14)
+- Updated ugrade text.
+- Removed left sidebar from widget section.
+- Removed "Custom Callout" from sub settings.
+
 Version 4.0.50 (5-16-14)
 - Correct spelling of CyberChimps/CSS.
 - Change text for Google font field.
