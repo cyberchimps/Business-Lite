@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.53 (6-06-14)
+- Code reformatting: Changed spaces to tabs.
+
 Version 4.0.52 (5-30-14)
 - Fixed casing of CyberChimpsParallax class.
 
