@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.59 (7-18-14)
+- Fixed broken link to CyberChimps logo.
+
 Version 4.0.58 (7-11-14)
 - Replaced logo with text in footer credit link.
 
