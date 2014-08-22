@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.62 (8-22-14)
+- Updated Translations.
+
 Version 4.0.61 (8-08-14)
 - Fixed conflict of footer widgets with other widgets.
 - Responsive fix for uploaded video.
