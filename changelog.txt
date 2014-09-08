@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.63 (9-08-14)
+- Added iFeature slider to plugin suggestion list.
+
 Version 4.0.62 (8-22-14)
 - Updated Translations.
 
