@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.64 (9-24-14)
+- Placeholder fix for IE8/9.
+
 Version 4.0.63 (9-08-14)
 - Added iFeature slider to plugin suggestion list.
 
