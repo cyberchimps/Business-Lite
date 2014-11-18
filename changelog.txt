@@ -2,6 +2,13 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.67 (11-18-14)
+- Removed theme activation notice.
+- Changed default links for slider.
+
+Version 4.0.66 (11-16-14)
+- Added missing slider-lite.php
+
 Version 4.0.65 (11-16-14)
 - Removed cyberchimps_mlu_init() as it has register_post_type() which is plugin-territory functionality.
 - Added sanitization to customizer options.
