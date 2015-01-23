@@ -2,6 +2,10 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.68 (1-23-15)
+- Fixed conflict between slider free and pro plugin.
+- Added new plugin suggestion.
+
 Version 4.0.67 (11-18-14)
 - Removed theme activation notice.
 - Changed default links for slider.
