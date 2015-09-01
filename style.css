@@ -437,6 +437,9 @@ article {
 
 article {
 	background: #ffffff;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
 }
 
 article.post p {
@@ -699,6 +702,9 @@ article .featured-image img {
 	margin-bottom: 40px;
 	background: #ffffff;
 	clear: both;
+        padding-bottom: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
 }
 
 #comments .navigation {
@@ -887,8 +893,7 @@ ol.commentlist li.odd {
 	display: block;
 	text-align: center;
 	border-radius: 5px;
-	border-right: 1px solid #3677a1;
-	border-left: 1px solid #3677a1;
+	border: 1px solid #3677a1;
 }
 
 h2.comments-title {
@@ -1152,6 +1157,10 @@ h2.box-widget-title {
 
 .box p:last-child {
 	margin-bottom: 0;
+}
+
+.box-image {
+    margin-top: 3%;
 }
 
 /*==================================== BOXES ======================================================*/
