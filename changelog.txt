@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.0.70 (24-11-15)
+- Fix few minor issues related to customization
+
 Version 4.0.69 (16-07-15)
 - Change in theme customizer as per wordpress.org guidelines
 
