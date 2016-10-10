@@ -2,6 +2,9 @@ Business Lite 4 Changelog
 
 ****************************
 
+Version 4.1 (10-12-16)
+- Fixed layout issue of sidebar search and comment button.
+
 Version 4.0.71 (3-2-16)
 - Fixed minor font style issue
 
