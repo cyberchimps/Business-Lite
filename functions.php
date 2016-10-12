@@ -15,6 +15,7 @@
 
 function cyberchimps_text_domain() {
 	load_theme_textdomain( 'business-lite', get_template_directory() . '/inc/languages' );
+		add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 
@@ -497,7 +498,7 @@ function cyberchimps_header_display() {
 							wp_loginout(); ?> <?php wp_meta(); ?> | <?php wp_register( '', '', true );
 						else :?>
 							Welcome back <strong><?php global $current_user;
-								get_currentuserinfo();
+								wp_get_current_user();
 								echo( $current_user->user_login ); ?></strong> | <?php wp_loginout(); ?>
 						<?php endif; ?>
 					</div>
