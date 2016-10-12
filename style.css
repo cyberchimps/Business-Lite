@@ -348,6 +348,10 @@ header#cc_header .header-search {
 		background-image: none;
 		background-color: #000000;
 	}
+	
+	#respond p.form-submit input[type=submit] {
+		width: 50% !important;
+	}
 }
 
 /********************************************************************************************************************/
