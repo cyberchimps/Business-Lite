@@ -1,6 +1,8 @@
 Business Lite 4 Changelog
 
 ****************************
+Version 4.2 (04-18-17)
+- Fixed issue with PHP version 7.1
 
 Version 4.1 (10-12-16)
 - Fixed layout issue of sidebar search and comment button.
