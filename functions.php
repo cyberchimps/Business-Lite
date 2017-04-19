@@ -449,7 +449,7 @@ function cyberchimps_secondary_menu_title() {
 
 // header drag and drop default
 function cyberchimps_business_lite_header_drag_and_drop_default() {
-	$option = array( 'cyberchimps_logo' => __( 'Logo', 'cyberchimps_elements' )
+	$option = array( 'cyberchimps_logo' => __( 'Logo', 'business-lite' )
 	);
 
 	return $option;
@@ -460,9 +460,9 @@ add_filter( 'header_drag_and_drop_default', 'cyberchimps_business_lite_header_dr
 //add header drag and drop options
 function cyberchimps_business_lite_header_drag_and_drop_options() {
 	$options = array(
-		'cyberchimps_sitename_register' => __( 'Logo + Login', 'cyberchimps_elements' ),
-		'cyberchimps_logo_search'       => __( 'Logo + Search', 'cyberchimps_elements' ),
-		'cyberchimps_logo'              => __( 'Logo', 'cyberchimps_elements' )
+		'cyberchimps_sitename_register' => __( 'Logo + Login', 'business-lite' ),
+		'cyberchimps_logo_search'       => __( 'Logo + Search', 'business-lite' ),
+		'cyberchimps_logo'              => __( 'Logo', 'business-lite' )
 	);
 
 	return $options;
