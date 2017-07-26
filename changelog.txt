@@ -1,6 +1,9 @@
 Business Lite 4 Changelog
 
 ****************************
+Version 4.3 (07-26-17)
+- Added visible edit links in the customizer preview
+
 Version 4.2 (04-19-17)
 - Fixed issue with PHP version 7.1
 
