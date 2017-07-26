@@ -568,16 +568,16 @@ function business_lite_customize_edit_links( $wp_customize ) {
 		'selector' => '#navigation #searchform'
 	) );
 
-	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[footer_show_toggle]', array(
-		'selector' => '#footer_wrapper'
-	) );
-
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[footer_copyright_text]', array(
 		'selector' => '#copyright'
 	) );
 
 	$wp_customize->selective_refresh->add_partial( 'nav_menu_locations[primary]', array(
-		'selector' => '#navigation .nav'
+		'selector' => '.main-navigation'
+	) );
+
+	$wp_customize->selective_refresh->add_partial( 'nav_menu_locations[secondary]', array(
+		'selector' => '.second-navigation'
 	) );
 
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[blog_title]', array(
@@ -585,7 +585,7 @@ function business_lite_customize_edit_links( $wp_customize ) {
 	) );
 
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[footer_show_toggle]', array(
-		'selector' => '#footer-widget-container'
+		'selector' => '#footer_wrapper'
 	) );
 
 }
