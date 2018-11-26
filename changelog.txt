@@ -1,6 +1,10 @@
 Business Lite 4 Changelog
 
 ****************************
+Version 4.4 (11-26-18)
+- Added Gutenberg compatibility
+- Added testimonial and contact us elements
+
 Version 4.3 (07-26-17)
 - Added visible edit links in the customizer preview
 
@@ -94,7 +98,7 @@ Version 4.0.49 (5-9-14)
 - Added FooBox as recommended plugin.
 
 Version 4.0.48 (5-2-14)
-- Fixed byline toggle issue. 
+- Fixed byline toggle issue.
 
 Version 4.0.47 (4-24-14)
 - Added recommendation for clef plugin.
@@ -301,7 +305,7 @@ Version 4.0.3 (6-13-13)
 -Removed the unused global variable from boxes.php.
 
 Version 4.0.2 (6-10-13)
--Made the content of the viewport in meta tag comma separated. 
+-Made the content of the viewport in meta tag comma separated.
 
 Version 4.0.1 (6-6-13)
 -Updated meta in pot file.

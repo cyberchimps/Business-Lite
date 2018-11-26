@@ -3,9 +3,9 @@
  Theme URI: http://cyberchimps.com/businesslite/
  Author: CyberChimps
  Author URI: http://www.cyberchimps.com/
- Description: Business lite 4 is a touch friendly Responsive Drag & Drop WordPress Theme developed by CyberChimps WordPress Themes. It lets you create amazing responsive websites that you can control on any touch friendly device including the iPad, iPhone, and Android devices. Business Lite has visible edit links in the customizer preview. For Support - <a href="https://cyberchimps.com/forum/free/business/" target="_blank"> Support forum</a> (https://cyberchimps.com/forum/free/business/).
- Version: 4.3
-Text Domain: business-lite
+ Description: Business lite 4 is a gutenberg compatible, touch friendly, Responsive Drag & Drop WordPress Theme developed by CyberChimps WordPress Themes. It lets you create amazing responsive websites that you can control on any touch friendly device including the iPad, iPhone, and Android devices. Business Lite has visible edit links in the customizer preview. For Support - <a href="https://cyberchimps.com/forum/free/business/" target="_blank"> Support forum</a> (https://cyberchimps.com/forum/free/business/).
+ Version: 4.4
+ Text Domain: business-lite
  Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, sticky-post, full-width-template, blog, custom-logo, threaded-comments
  License: GNU General Public License version 3
  License URI: http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
@@ -57,7 +57,7 @@ table {
 	margin-bottom: 25px;
 }
 
-ul, ol { 
+ul, ol {
 	margin: 0 0 25px 0;
 }
 
@@ -136,13 +136,8 @@ header#cc_header h2.site-title {
 	margin-bottom: 5px;
 }
 
-header#cc_header h2.site-title a {
-	font-size: 28px;
-	color: #333333;
-}
-
 header#cc_header h2.site-description {
-	font-size: 14px;
+	font-size: 1em;
 	margin: 0;
 }
 
@@ -349,7 +344,7 @@ header#cc_header .header-search {
 		background-image: none;
 		background-color: #000000;
 	}
-	
+
 	#respond p.form-submit input[type=submit] {
 		width: 50% !important;
 	}
@@ -477,7 +472,7 @@ article.post p {
 }
 
 blockquote {
-	background-color: #cccccc;
+	background-color: #cccccc !important;
 	margin: 20px 10px;
 	padding: 3px;
 }
@@ -529,14 +524,6 @@ blockquote cite:before {
 	margin-top: 0;
 	margin-bottom: 5px;
 	line-height: 1em;
-}
-
-.entry-title a {
-	color: #383838;
-}
-
-.entry-title a:hover {
-	color: #0088cc;
 }
 
 article.post p, article.page p {
@@ -729,7 +716,6 @@ ol.commentlist {
 ol.commentlist p {
 	clear: left;
 	margin: 0 0 0 8px;
-	color: #828282;
 }
 
 ol.commentlist li.comment {
@@ -927,8 +913,6 @@ h3.widget-title {
 	margin-top: 0;
 	margin-bottom: 10px;
 	line-height: 1em;
-	color: #6d6d6d;
-	font-size: 19px;
 }
 
 .widget-container ul, .widget ul {
@@ -936,13 +920,8 @@ h3.widget-title {
 }
 
 .widget-container ul li, .widget ul li {
-	font-size: 14px;
 	line-height: 1.8em;
 	list-style: none;
-}
-
-.widget-container ul li a {
-	color: #828282;
 }
 
 .widget-container ul li img {
@@ -1104,10 +1083,8 @@ table#wp-calendar td {
 /********************************************************************************************************************/
 
 /*==================================== SLIDER =====================================================*/
-
-#slider_lite_section {
-	background: #272727;
-	padding: 40px 0;
+#slider_lite {
+	margin: 30px 0;
 }
 
 #slider_lite .carousel-control {
@@ -1116,10 +1093,6 @@ table#wp-calendar td {
 
 #slider_lite .container {
 	position: relative;
-}
-
-#slider_lite.carousel {
-	margin-bottom: 0;
 }
 
 .carousel-control {
@@ -1154,8 +1127,6 @@ h2.box-widget-title {
 
 .box p {
 	text-align: center;
-	color: #828282;
-	font-size: 14px;
 	line-height: 20px;
 	margin-top: 15px;
 }
@@ -1169,10 +1140,8 @@ h2.box-widget-title {
 }
 
 /*==================================== BOXES ======================================================*/
-
-#boxes_lite_section {
-	margin-top: 40px;
-	border-bottom: 1px solid #e4e4e4;
+#widget_boxes_container {
+	padding: 30px 0;
 }
 
 #boxes-container .box a {
@@ -1187,12 +1156,8 @@ h2.box-widget-title {
 
 /*==================================== PORTFOLIO ===================================================*/
 
-#portfolio_lite_section {
-	margin-top: 40px;
-}
-
 #portfolio {
-	padding-bottom: 20px;
+	padding: 30px 0;
 }
 
 #gallery {
@@ -1205,11 +1170,12 @@ h2.box-widget-title {
 }
 
 #gallery h2 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 20px;
 	line-height: 1em;
+	text-align: center;
 }
 
 #gallery .portfolio_item {
@@ -1223,47 +1189,6 @@ h2.box-widget-title {
 	-o-border-image: url(images/frame-border.jpg) 9 11 20 20 stretch;
 	border-image: url(images/frame-border.jpg) 9 11 20 20 fill stretch;
 	text-align: center;
-}
-
-/*==================================== TWITTER =====================================================*/
-
-#twitterbar_section_section {
-	margin-top: 40px;
-	border-bottom: 1px solid #e4e4e4;
-}
-
-#twitter-bar {
-	background: #ffffff;
-	margin-bottom: 40px;
-}
-
-#twitter-bar #twitter-text img {
-	float: left;
-	margin-top: 10px;
-}
-
-#twitter-bar #twitter-text p {
-	margin-left: 75px;
-	padding: 10px 20px;
-	background: #f1f1f1;
-	border-radius: 35px;
-	color: #838383;
-}
-
-#twitter-bar #twitter-text a {
-	color: #444444;
-}
-
-@media (max-width: 480px) {
-	#twitter-bar #twitter-text img {
-		/*width: 30px;
-		 height: 21px;*/
-		margin-top: 0;
-	}
-
-	#twitter-bar #twitter-text p {
-		padding-left: 40px;
-	}
 }
 
 /*==================================== BREADCRUMBS =================================================*/
@@ -1337,7 +1262,7 @@ h2.box-widget-title {
 	}
 	.widget-container #searchform input.input-medium {
 		width: 60%;
-		
+
 	}
 }
 
@@ -1391,4 +1316,293 @@ button.btn {
 }
 select{
 	width:100%;
+}
+
+
+/*============= Testimonial ==========*/
+.business_lite_main_title{
+      margin-top: 80px;
+      text-align: center;
+      font-size: 1.8em;
+  }
+  ul.slides {
+      margin-left: 0;
+  }
+  .flexslider .slides > li {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ 	.slides.business_lite_carousel {
+    max-width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+    width: auto !important;
+}
+ 	#testimonial_section .business_lite_short_desc {
+      margin-top: 80px;
+}
+#testimonial_section {
+background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%; }
+#testimonial_section .img-responsive {
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  border: 5px solid #fff; }
+#testimonial_section .flexslider {
+  background: transparent;
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+#testimonial_section .business_lite_slider_text_img {
+  color: #fff; }
+  #testimonial_section .business_lite_slider_text_img li {
+    width: auto;
+    text-align: center;
+}
+ #testimonial_section .business_lite_testimonial_author {
+  font-weight: 600;
+  font-size: 1.125em; }
+#testimonial_section .business_lite_testimonial_abt_author {
+  font-weight: 500;
+  margin-bottom: 15%; }
+#testimonial_section .after_testimonial_text {
+  margin: 25px auto;
+  padding: 0;
+  max-width: 84px;
+  border: 0;
+  border-top: solid 2px #cd834a;
+  text-align: center;
+  background: transparent; }
+#testimonial_section #carousel2.flexslider {
+  position: absolute;
+  bottom: -20%; }
+#testimonial_section .flex-active-slide img {
+  border-color: #cd834a; }
+#testimonial_section .flex-active-slide .arrow-top {
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e14c3d;
+  border-left: 10px solid transparent;
+  top: 12px;
+  left: 13%; }
+#testimonial_section .flex-viewport {
+  text-align: center; }
+testimonial_section .flexslider .slides {
+  padding-bottom: 30px; }
+ #testimonial_section{
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+}
+.business_lite_main_title{
+    margin-top: 80px;
+    text-align: center;
+}
+.flex-direction-nav,
+.flex-dneuroection-nav{
+    display: none;
+}
+	/* =============================== Contact Section  ========================== */
+.contactus_wrapper{
+    padding: 0 0 3% 0;
+    color: #fff;
+	}
+.contactus_wrapper.span12
+{
+     margin: 0 auto;
+}
+
+#contact_us input[type="text"], #contact_us textarea{
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 12px;
+	}
+.contact_left_sec{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.fa
+{
+    font-size: 30px;
+}
+.contact_right_sec input[type="submit"]
+{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #cd834a 0%, #9e663d 100%) repeat scroll 0 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: lobster,cursive;
+    font-size: 17.5px;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 55px;
+    margin: 2% 32%;
+	}
+.contact_title{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 1.8em;
+}
+	@media all and (max-width: 767px) {
+    .contact_left_sec
+    {
+        text-align: center;
+    }
+    .contactus_wrapper.span12
+    {
+        padding: 20px 30px;
+    }
+    .contact_addr {
+    padding-bottom: 10px;
+    }
+    .business_lite_testimonial_text{
+    padding: 0 20px;
+    }
+}
+/* ========================== Contact details in header  =========================== */
+	.contact_details{
+    font-family: lobster,cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.contact_details:before{
+    font-family: "FontAwesome";
+    content: "\f095";
+}
+#register
+{
+    padding: 12px 0 0 0;
+}
+
+
+.entry-content ol,
+.entry-content ul,
+.entry-summary ol,
+.entry-summary ul{
+	margin-left: 2.9em;
+}
+
+.entry-content ol.wp-block-gallery,
+.entry-content ul.wp-block-gallery,
+.entry-summary ol.wp-block-gallery,
+.entry-summary ul.wp-block-gallery {
+	display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+	margin-left: 0;
+	margin-right: 0;
+}
+	audio, canvas, video {
+    display: inline-block;
+    width: 100%;
+}
+	.wp-block-column p {
+    padding: 0 14px;
+}
+	.wp-block-gallery .blocks-gallery-item figcaption {
+        padding: 40px 0;
+}
+
+code, pre {
+	font-size: .86em;
+}
+
+h1{
+	font-size: 2.75em;
+	line-height: 1;
+}
+
+h2{
+	font-size: 2.25em;
+	line-height: 1.2;
+}
+
+h3{
+	font-size: 1.75em;
+	line-height: 1.6;
+}
+
+h4{
+	font-size: 1.25em;
+	line-height: 1.14;
+}
+
+h5{
+	font-size: 1em;
+	line-height: 1.43;
+}
+
+h6{
+	font-size: 0.85em;
+	line-height: 1.68;
+}
+
+
+div.wp-block-cover .wp-block-cover-text{
+ 	position: absolute;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.25;
+    margin-bottom: 0;
+    max-width: 610px;
+    padding: 14px;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+div.wp-block-cover.aligncenter {
+	clear: both;
+}
+
+
+.has-light-gray-background-color{
+	background-color: #f5f5f5;
+}
+.has-light-gray-color{
+	color: #f5f5f5;
+}
+
+.has-gray-background-color{
+	background-color: #777;
+}
+.has-gray-color{
+	color: #777;
+}
+
+.has-black-background-color{
+	background-color: #000000;
+}
+.has-black-color{
+	color: #000000;
+}
+
+.has-blue-background-color{
+	background-color: #0286cf;
+}
+.has-blue-color{
+	color: #0286cf;
+}
+
+.has-legacy-background-color{
+	background-color: #b6b6b6;
+}
+.has-legacy-color{
+	color: #b6b6b6;
+}
+
+.has-red-background-color{
+	background-color: #c80a00;
+}
+.has-red-color{
+	color: #c80a00;
 }
