@@ -15,13 +15,58 @@
 
 function cyberchimps_text_domain() {
 	load_theme_textdomain( 'business-lite', get_template_directory() . '/inc/languages' );
-		add_theme_support( 'title-tag' );
+	// enabling theme support for title tag.
+	add_theme_support( 'title-tag' );
+
+	// Add support for full and wide align images.
+	add_theme_support( 'align-wide' );
+
+	// Adds support for editor color palette.
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => __( 'Gray', 'business-lite' ),
+				'slug'  => 'gray',
+				'color' => '#777',
+			),
+			array(
+				'name'  => __( 'Light Gray', 'business-lite' ),
+				'slug'  => 'light-gray',
+				'color' => '#f5f5f5',
+			),
+			array(
+				'name'  => __( 'Black', 'business-lite' ),
+				'slug'  => 'black',
+				'color' => '#000000',
+			),
+
+			array(
+				'name'  => __( 'Blue', 'business-lite' ),
+				'slug'  => 'blue',
+				'color' => '#0286cf',
+			),
+
+			array(
+				'name'  => __( 'Legacy', 'business-lite' ),
+				'slug'  => 'legacy',
+				'color' => '#b6b6b6',
+			),
+
+			array(
+				'name'  => __( 'Red', 'business-lite' ),
+				'slug'  => 'red',
+				'color' => '#c80a00',
+			),
+		)
+	);
 }
 add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 require_once( get_template_directory() . '/inc/admin-about.php' );
+require_once( get_template_directory() . '/inc/testimonial_template.php' );
 
 // Set the content width based on the theme's design and stylesheet.
 if( !isset( $content_width ) ) {
@@ -663,3 +708,95 @@ function business_lite_admin_notices()
 	}
 
 }
+
+
+
+/**
+ * [business-lite_enqueue description]
+ *
+ * @return void
+ */
+function business_lite_enqueue() {
+	$directory_uri = get_template_directory_uri();
+	wp_enqueue_script( 'jquery-flexslider', $directory_uri . '/inc/js/jquery.flexslider.js', 'jquery', '1.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'business_lite_enqueue' );
+
+
+/**
+ *  Enqueue block styles  in editor
+ */
+function business_lite_block_styles() {
+
+	wp_enqueue_style( 'business-lite-google-font', 'https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web', array(), '1.0' );
+
+	$typography_options   = cyberchimps_get_option( 'typography_options' );
+	$font_family_headings = cyberchimps_get_option( 'font_family_headings' );
+
+	$font_family                        = $typography_options['face'] ? $typography_options['face'] : '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif';
+	$font_size                          = $typography_options['size'] ? $typography_options['size'] : '14px';
+	$font_weight                        = $typography_options['style'] ? $typography_options['style'] : 'Normal';
+	$color                              = cyberchimps_get_option( 'text_colorpicker' ) ? cyberchimps_get_option( 'text_colorpicker' ) : '#333333';
+	$link_colorpicker                   = cyberchimps_get_option( 'link_colorpicker' ) ? cyberchimps_get_option( 'link_colorpicker' ) : '#4c8eb8';
+	$link_hover_colorpicker             = cyberchimps_get_option( 'link_hover_colorpicker' ) ? cyberchimps_get_option( 'link_hover_colorpicker' ) : '#005580';
+	$business_lite_headings_font_family = $font_family_headings['face'] ? $font_family_headings['face'] : '"Titillium Web", Helvetica, Arial, "Lucida Grande", sans-serif';
+
+	?>
+	<style>
+	.wp-block-freeform,
+	.editor-writing-flow,
+	.editor-styles-wrapper{
+		font-family: <?php echo $font_family; ?>;
+		font-size: <?php echo esc_html( $font_size, 'business-lite' ); ?> !important;
+		font-weight: <?php echo esc_html( $font_weight, 'business-lite' ); ?>;
+		color: <?php echo esc_html( $color, 'business-lite' ); ?>;
+		line-height: 1.5;
+	}
+	.wp-block-freeform.block-library-rich-text__tinymce h1,
+	.wp-block-freeform.block-library-rich-text__tinymce h2,
+	.wp-block-freeform.block-library-rich-text__tinymce h3,
+	.wp-block-freeform.block-library-rich-text__tinymce h4,
+	.wp-block-freeform.block-library-rich-text__tinymce h5,
+	.wp-block-freeform.block-library-rich-text__tinymce h6,
+	.wp-block-heading h1.editor-rich-text__tinymce,
+	.wp-block-heading h2.editor-rich-text__tinymce,
+	.wp-block-heading h3.editor-rich-text__tinymce,
+	.wp-block-heading h4.editor-rich-text__tinymce,
+	.wp-block-heading h5.editor-rich-text__tinymce,
+	.wp-block-heading h6.editor-rich-text__tinymce {
+		font-family: <?php echo $business_lite_headings_font_family; ?>;
+		font-weight: 400;
+		margin-bottom: 15px;
+	}
+	.editor-post-title__block .editor-post-title__input{
+		font-family: <?php echo $business_lite_headings_font_family; ?> !important;
+	}
+
+	.wp-block-freeform.block-library-rich-text__tinymce a,
+	.editor-writing-flow a{
+		color: <?php echo esc_html( $link_colorpicker, 'business-lite' ); ?> !impotant;
+		text-decoration: none;
+	}
+
+	.wp-block-freeform.block-library-rich-text__tinymce a:hover,
+	.wp-block-freeform.block-library-rich-text__tinymce a:focus,
+	.editor-writing-flow a:hover,
+	.editor-writing-flow a:focus{
+		color:  <?php echo esc_html( $link_hover_colorpicker, 'business-lite' ); ?>;
+	}
+
+	</style>
+	<?php
+	wp_enqueue_style( 'business-lite-gutenberg-blocks', get_stylesheet_directory_uri() . '/inc/css/gutenberg-blocks.css', array(), '1.0' );
+
+}
+add_action( 'enqueue_block_editor_assets', 'business_lite_block_styles' );
+
+/**
+ * [business-lite_set_defaults description].
+ */
+function business_lite_set_defaults() {
+	remove_action( 'testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ) );
+	add_action( 'testimonial', 'business_lite_testimonial_render_display' );
+}
+add_action( 'init', 'business_lite_set_defaults' );
