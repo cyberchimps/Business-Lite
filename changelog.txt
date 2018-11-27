@@ -1,7 +1,7 @@
 Business Lite 4 Changelog
 
 ****************************
-Version 4.4 (11-26-18)
+Version 4.4 (11-27-18)
 - Added Gutenberg compatibility
 - Added testimonial and contact us elements
 
